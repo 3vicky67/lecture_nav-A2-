@@ -1,116 +1,192 @@
 [
   {
-    "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
-    "video_file": "kuttystory.mp4",
+    "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
+    "video_file": "0Q-UQVVIUeA?si=utroSZ6ZxRQcWWUh",
     "t_start": 0.0,
-    "t_end": 30.0,
+    "t_end": 45.0,
     "start_time": "00:00",
-    "end_time": "00:30",
-    "title": "Segment 1 (00:00-00:30)",
-    "snippet": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things.",
-    "score": 0.5165112186130911,
+    "end_time": "00:45",
+    "title": "Segment 1 (00:00-00:45)",
+    "snippet": "Welcome back to 30 Days of AI Challenge where hopefully by the end you'll be able to train your own AI. Anyway, let's roll in day 3, shall we? What are the day 4? Now in this gender to be eyed there is an elam's agents, foundation moral slora and for it is sure you guys know all this okay? From the fact that you've already had a lot of questions because of your agurotality you all okay? First of all what is elalance? What is agents? What is foundation moral slora right? And there is again agents. There is no two agents Fun fact this is made by AI so there will be some errors for give me. So what is elalance? Large language models right? And pretty sure you guys heard about chanceypety. So this chanceypety",
+    "score": 0.12243625521659851,
     "citation": {
-      "citation_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_0_0.0_30.0",
+      "citation_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_0_0.0_45.0",
       "source": {
-        "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
+        "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
         "segment_idx": 0,
         "start_time": 0.0,
-        "end_time": 30.0,
-        "timestamp": "0.0s-30.0s"
+        "end_time": 45.0,
+        "timestamp": "0.0s-45.0s"
       },
       "content": {
-        "text": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things.",
+        "text": "Welcome back to 30 Days of AI Challenge where hopefully by the end you'll be able to train your own AI. Anyway, let's roll in day 3, shall we? What are the day 4? Now in this gender to be eyed there is an elam's agents, foundation moral slora and for it is sure you guys know all this okay? From the fact that you've already had a lot of questions because of your agurotality you all okay? First of all what is elalance? What is agents? What is foundation moral slora right? And there is again agents. There is no two agents Fun fact this is made by AI so there will be some errors for give me. So what is elalance? Large language models right? And pretty sure you guys heard about chanceypety. So this chanceypety",
         "span_start": 0,
-        "span_end": 246,
-        "span_text": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things."
+        "span_end": 714,
+        "span_text": "Welcome back to 30 Days of AI Challenge where hopefully by the end you'll be able to train your own AI. Anyway, let's roll in day 3, shall we? What are the day 4? Now in this gender to be eyed there is an elam's agents, foundation moral slora and for it is sure you guys know all this okay? From the fact that you've already had a lot of questions because of your agurotality you all okay? First of all what is elalance? What is agents? What is foundation moral slora right? And there is again agents. There is no two agents Fun fact this is made by AI so there will be some errors for give me. So what is elalance? Large language models right? And pretty sure you guys heard about chanceypety. So this chanceypety"
       },
       "metadata": {
-        "relevance_score": 0.5165112186130911,
-        "created_at": "2025-09-27T11:09:31.147665",
-        "confidence": 0.5165112186130911
+        "relevance_score": 0.12243625521659851,
+        "created_at": "2025-09-27T13:42:23.865159",
+        "confidence": 0.12243625521659851
       }
     },
-    "source_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_0_0.0_30.0",
+    "source_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_0_0.0_45.0",
     "spans": {
       "start": 0,
-      "end": 246,
-      "text": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things."
+      "end": 714,
+      "text": "Welcome back to 30 Days of AI Challenge where hopefully by the end you'll be able to train your own AI. Anyway, let's roll in day 3, shall we? What are the day 4? Now in this gender to be eyed there is an elam's agents, foundation moral slora and for it is sure you guys know all this okay? From the fact that you've already had a lot of questions because of your agurotality you all okay? First of all what is elalance? What is agents? What is foundation moral slora right? And there is again agents. There is no two agents Fun fact this is made by AI so there will be some errors for give me. So what is elalance? Large language models right? And pretty sure you guys heard about chanceypety. So this chanceypety"
     }
   },
   {
-    "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
-    "video_file": "kuttystory.mp4",
-    "t_start": 15.0,
-    "t_end": 41.0,
-    "start_time": "00:15",
-    "end_time": "00:41",
-    "title": "Segment 2 (00:15-00:41)",
-    "snippet": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
-    "score": 0.4000433800992168,
-    "citation": {
-      "citation_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_1_15.0_41.0",
-      "source": {
-        "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
-        "segment_idx": 1,
-        "start_time": 15.0,
-        "end_time": 41.0,
-        "timestamp": "15.0s-41.0s"
-      },
-      "content": {
-        "text": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
-        "span_start": 0,
-        "span_end": 266,
-        "span_text": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
-      },
-      "metadata": {
-        "relevance_score": 0.4000433800992168,
-        "created_at": "2025-09-27T11:09:31.147683",
-        "confidence": 0.4000433800992168
-      }
-    },
-    "source_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_1_15.0_41.0",
-    "spans": {
-      "start": 0,
-      "end": 266,
-      "text": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
-    }
-  },
-  {
-    "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
-    "video_file": "kuttystory.mp4",
+    "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
+    "video_file": "0Q-UQVVIUeA?si=utroSZ6ZxRQcWWUh",
     "t_start": 30.0,
-    "t_end": 41.0,
+    "t_end": 75.0,
     "start_time": "00:30",
-    "end_time": "00:41",
-    "title": "Segment 3 (00:30-00:41)",
-    "snippet": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
-    "score": 0.17931927740573883,
+    "end_time": "01:15",
+    "title": "Segment 2 (00:30-01:15)",
+    "snippet": "because of your agurotality you all okay? First of all what is elalance? What is agents? What is foundation moral slora right? And there is again agents. There is no two agents Fun fact this is made by AI so there will be some errors for give me. So what is elalance? Large language models right? And pretty sure you guys heard about chanceypety. So this chanceypety and but an elama all are part of this elalance or large language models that train or like a big data set let's say the whole Instagram data of people talking and all already or internet as a whole and based on that they are being created. Now GPT is like gender to pre-transformer",
+    "score": 0.08951716870069504,
     "citation": {
-      "citation_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_2_30.0_41.0",
+      "citation_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_1_30.0_75.0",
       "source": {
-        "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
-        "segment_idx": 2,
+        "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
+        "segment_idx": 1,
         "start_time": 30.0,
-        "end_time": 41.0,
-        "timestamp": "30.0s-41.0s"
+        "end_time": 75.0,
+        "timestamp": "30.0s-75.0s"
       },
       "content": {
-        "text": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
+        "text": "because of your agurotality you all okay? First of all what is elalance? What is agents? What is foundation moral slora right? And there is again agents. There is no two agents Fun fact this is made by AI so there will be some errors for give me. So what is elalance? Large language models right? And pretty sure you guys heard about chanceypety. So this chanceypety and but an elama all are part of this elalance or large language models that train or like a big data set let's say the whole Instagram data of people talking and all already or internet as a whole and based on that they are being created. Now GPT is like gender to pre-transformer",
         "span_start": 0,
-        "span_end": 111,
-        "span_text": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
+        "span_end": 648,
+        "span_text": "because of your agurotality you all okay? First of all what is elalance? What is agents? What is foundation moral slora right? And there is again agents. There is no two agents Fun fact this is made by AI so there will be some errors for give me. So what is elalance? Large language models right? And pretty sure you guys heard about chanceypety. So this chanceypety and but an elama all are part of this elalance or large language models that train or like a big data set let's say the whole Instagram data of people talking and all already or internet as a whole and based on that they are being created. Now GPT is like gender to pre-transformer"
       },
       "metadata": {
-        "relevance_score": 0.17931927740573883,
-        "created_at": "2025-09-27T11:09:31.147690",
-        "confidence": 0.17931927740573883
+        "relevance_score": 0.08951716870069504,
+        "created_at": "2025-09-27T13:42:23.865257",
+        "confidence": 0.08951716870069504
       }
     },
-    "source_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_2_30.0_41.0",
+    "source_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_1_30.0_75.0",
     "spans": {
       "start": 0,
-      "end": 111,
-      "text": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
+      "end": 648,
+      "text": "because of your agurotality you all okay? First of all what is elalance? What is agents? What is foundation moral slora right? And there is again agents. There is no two agents Fun fact this is made by AI so there will be some errors for give me. So what is elalance? Large language models right? And pretty sure you guys heard about chanceypety. So this chanceypety and but an elama all are part of this elalance or large language models that train or like a big data set let's say the whole Instagram data of people talking and all already or internet as a whole and based on that they are being created. Now GPT is like gender to pre-transformer"
+    }
+  },
+  {
+    "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
+    "video_file": "0Q-UQVVIUeA?si=utroSZ6ZxRQcWWUh",
+    "t_start": 120.0,
+    "t_end": 165.0,
+    "start_time": "02:00",
+    "end_time": "02:45",
+    "title": "Segment 5 (02:00-02:45)",
+    "snippet": "B codes it. Then it encodes it. So it answers how what is elal is artificial intelligence. So it starts answering that is decoding. So this gender to pre-transformer what is that? Gender to pre-transformer means generating, generating text, paste on, pre-trained information for based on the transformer architecture of neural networks. Now there is another way that elalums could learn right? Not just looking at the question then answering it based on the previous data. That is birth. But basically it looks at the question in a different way and rather than looking at the question and answer it doesn't do that. What it does is it just goes to the answer. So for example",
+    "score": 0.09895818680524826,
+    "citation": {
+      "citation_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_4_120.0_165.0",
+      "source": {
+        "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
+        "segment_idx": 4,
+        "start_time": 120.0,
+        "end_time": 165.0,
+        "timestamp": "120.0s-165.0s"
+      },
+      "content": {
+        "text": "B codes it. Then it encodes it. So it answers how what is elal is artificial intelligence. So it starts answering that is decoding. So this gender to pre-transformer what is that? Gender to pre-transformer means generating, generating text, paste on, pre-trained information for based on the transformer architecture of neural networks. Now there is another way that elalums could learn right? Not just looking at the question then answering it based on the previous data. That is birth. But basically it looks at the question in a different way and rather than looking at the question and answer it doesn't do that. What it does is it just goes to the answer. So for example",
+        "span_start": 0,
+        "span_end": 675,
+        "span_text": "B codes it. Then it encodes it. So it answers how what is elal is artificial intelligence. So it starts answering that is decoding. So this gender to pre-transformer what is that? Gender to pre-transformer means generating, generating text, paste on, pre-trained information for based on the transformer architecture of neural networks. Now there is another way that elalums could learn right? Not just looking at the question then answering it based on the previous data. That is birth. But basically it looks at the question in a different way and rather than looking at the question and answer it doesn't do that. What it does is it just goes to the answer. So for example"
+      },
+      "metadata": {
+        "relevance_score": 0.09895818680524826,
+        "created_at": "2025-09-27T13:42:23.865271",
+        "confidence": 0.09895818680524826
+      }
+    },
+    "source_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_4_120.0_165.0",
+    "spans": {
+      "start": 0,
+      "end": 675,
+      "text": "B codes it. Then it encodes it. So it answers how what is elal is artificial intelligence. So it starts answering that is decoding. So this gender to pre-transformer what is that? Gender to pre-transformer means generating, generating text, paste on, pre-trained information for based on the transformer architecture of neural networks. Now there is another way that elalums could learn right? Not just looking at the question then answering it based on the previous data. That is birth. But basically it looks at the question in a different way and rather than looking at the question and answer it doesn't do that. What it does is it just goes to the answer. So for example"
+    }
+  },
+  {
+    "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
+    "video_file": "0Q-UQVVIUeA?si=utroSZ6ZxRQcWWUh",
+    "t_start": 600.0,
+    "t_end": 617.0,
+    "start_time": "10:00",
+    "end_time": "10:17",
+    "title": "Segment 21 (10:00-10:17)",
+    "snippet": "Thank you.",
+    "score": 0.1495829075574875,
+    "citation": {
+      "citation_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_20_600.0_617.0",
+      "source": {
+        "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
+        "segment_idx": 20,
+        "start_time": 600.0,
+        "end_time": 617.0,
+        "timestamp": "600.0s-617.0s"
+      },
+      "content": {
+        "text": "Thank you.",
+        "span_start": 0,
+        "span_end": 10,
+        "span_text": "Thank you."
+      },
+      "metadata": {
+        "relevance_score": 0.1495829075574875,
+        "created_at": "2025-09-27T13:42:23.865281",
+        "confidence": 0.1495829075574875
+      }
+    },
+    "source_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_20_600.0_617.0",
+    "spans": {
+      "start": 0,
+      "end": 10,
+      "text": "Thank you."
+    }
+  },
+  {
+    "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
+    "video_file": "0Q-UQVVIUeA?si=utroSZ6ZxRQcWWUh",
+    "t_start": 150.0,
+    "t_end": 195.0,
+    "start_time": "02:30",
+    "end_time": "03:15",
+    "title": "Segment 6 (02:30-03:15)",
+    "snippet": "then answering it based on the previous data. That is birth. But basically it looks at the question in a different way and rather than looking at the question and answer it doesn't do that. What it does is it just goes to the answer. So for example everyone uses auto-character in the keyboard right? They type AI, what will come next right? Go to your keyboard and type something. I am maybe your name might come. It predicts what the next test will be. That is birth right? So it goes to both the sides and then it predicts for the next text will be. Everyone will go to end up but hope that is understandable. So alarm and all is also similar to the ongoing two end up. These are large language models and foundation models are actually similar to this two right?",
+    "score": 0.0646040141582489,
+    "citation": {
+      "citation_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_5_150.0_195.0",
+      "source": {
+        "video_id": "27e7c7b8-437d-4b5c-a97f-52bfec2815c6",
+        "segment_idx": 5,
+        "start_time": 150.0,
+        "end_time": 195.0,
+        "timestamp": "150.0s-195.0s"
+      },
+      "content": {
+        "text": "then answering it based on the previous data. That is birth. But basically it looks at the question in a different way and rather than looking at the question and answer it doesn't do that. What it does is it just goes to the answer. So for example everyone uses auto-character in the keyboard right? They type AI, what will come next right? Go to your keyboard and type something. I am maybe your name might come. It predicts what the next test will be. That is birth right? So it goes to both the sides and then it predicts for the next text will be. Everyone will go to end up but hope that is understandable. So alarm and all is also similar to the ongoing two end up. These are large language models and foundation models are actually similar to this two right?",
+        "span_start": 0,
+        "span_end": 766,
+        "span_text": "then answering it based on the previous data. That is birth. But basically it looks at the question in a different way and rather than looking at the question and answer it doesn't do that. What it does is it just goes to the answer. So for example everyone uses auto-character in the keyboard right? They type AI, what will come next right? Go to your keyboard and type something. I am maybe your name might come. It predicts what the next test will be. That is birth right? So it goes to both the sides and then it predicts for the next text will be. Everyone will go to end up but hope that is understandable. So alarm and all is also similar to the ongoing two end up. These are large language models and foundation models are actually similar to this two right?"
+      },
+      "metadata": {
+        "relevance_score": 0.0646040141582489,
+        "created_at": "2025-09-27T13:42:23.865290",
+        "confidence": 0.0646040141582489
+      }
+    },
+    "source_id": "cite_27e7c7b8-437d-4b5c-a97f-52bfec2815c6_5_150.0_195.0",
+    "spans": {
+      "start": 0,
+      "end": 766,
+      "text": "then answering it based on the previous data. That is birth. But basically it looks at the question in a different way and rather than looking at the question and answer it doesn't do that. What it does is it just goes to the answer. So for example everyone uses auto-character in the keyboard right? They type AI, what will come next right? Go to your keyboard and type something. I am maybe your name might come. It predicts what the next test will be. That is birth right? So it goes to both the sides and then it predicts for the next text will be. Everyone will go to end up but hope that is understandable. So alarm and all is also similar to the ongoing two end up. These are large language models and foundation models are actually similar to this two right?"
     }
   }
 ]
