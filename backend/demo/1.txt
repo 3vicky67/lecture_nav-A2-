@@ -1,0 +1,89 @@
+{
+  "matches": [
+    {
+      "start_time": 0.0,
+      "end_time": 3.52,
+      "content": "AI is changing the game for app development."
+    },
+    {
+      "start_time": 3.52,
+      "end_time": 5.8,
+      "content": "Firebase is here to help."
+    },
+    {
+      "start_time": 5.8,
+      "end_time": 8.36,
+      "content": "We offer a platform designed to support you"
+    },
+    {
+      "start_time": 8.36,
+      "end_time": 10.76,
+      "content": "throughout your app and business's journey."
+    },
+    {
+      "start_time": 10.76,
+      "end_time": 13.96,
+      "content": "So you can rapidly build, release, monitor,"
+    },
+    {
+      "start_time": 13.96,
+      "end_time": 17.72,
+      "content": "and optimize apps with Google's latest AI technology."
+    },
+    {
+      "start_time": 17.72,
+      "end_time": 20.88,
+      "content": "Easily build AI-powered experiences into your apps"
+    },
+    {
+      "start_time": 20.88,
+      "end_time": 22.52,
+      "content": "with speed and safety."
+    },
+    {
+      "start_time": 22.52,
+      "end_time": 26.04,
+      "content": "Then launch, monitor, and iterate with AI tools"
+    },
+    {
+      "start_time": 26.04,
+      "end_time": 29.96,
+      "content": "that help you optimize your app's quality and experience."
+    },
+    {
+      "start_time": 30.12,
+      "end_time": 32.32,
+      "content": "All with assistance provided by Gemini,"
+    },
+    {
+      "start_time": 32.32,
+      "end_time": 35.36,
+      "content": "Google's largest and most capable AI model,"
+    },
+    {
+      "start_time": 35.36,
+      "end_time": 38.16,
+      "content": "helping you to work faster and smarter."
+    },
+    {
+      "start_time": 38.16,
+      "end_time": 40.68,
+      "content": "Firebase helps you run your app with confidence,"
+    },
+    {
+      "start_time": 40.68,
+      "end_time": 43.28,
+      "content": "deliver the best experience for your users,"
+    },
+    {
+      "start_time": 43.28,
+      "end_time": 47.44,
+      "content": "and get to market quickly and securely, doing what you love."
+    },
+    {
+      "start_time": 47.44,
+      "end_time": 51.28,
+      "content": "Make your app the best it can be with Firebase."
+    }
+  ]
+}

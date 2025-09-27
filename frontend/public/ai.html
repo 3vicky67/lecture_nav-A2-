@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI Page - Upload, Transcribe, Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gray-50">
+    <div class="max-w-5xl mx-auto p-4 md:p-8">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">AI Navigator</h1>
+
+      <!-- YouTube Data API + URL + Backend Transcribe (like home) -->
+      <div class="bg-white rounded-xl shadow p-4 md:p-6 mb-6">
+        <h2 class="text-xl font-semibold mb-4">YouTube Data + URL</h2>
+        <div class="flex flex-col gap-3">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">YouTube Data API Key</label>
+            <input id="yt-api" type="text" placeholder="Paste API key (optional for UI)" class="w-full border rounded px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">YouTube URL</label>
+            <div class="flex gap-2">
+              <input id="yt-url" type="text" placeholder="https://www.youtube.com/watch?v=..." class="flex-1 border rounded px-3 py-2" />
+              <button id="ingest-yt" class="px-4 py-2 bg-blue-600 text-white rounded disabled:opacity-50 disabled:cursor-not-allowed" disabled>Transcribe</button>
+            </div>
+          </div>
+          <div id="status" class="text-sm text-gray-600"></div>
+        </div>
+      </div>
+
+      <!-- Search + Segments (hidden until transcribe succeeds) -->
+      <div id="search-section" class="bg-white rounded-xl shadow p-4 md:p-6 mb-6 hidden">
+        <h2 class="text-xl font-semibold mb-3">Search in transcript</h2>
+        <div class="flex gap-2 mb-4">
+          <input id="query" type="text" placeholder="Enter query..." class="flex-1 border rounded px-3 py-2" />
+          <button id="search" class="px-4 py-2 bg-green-600 text-white rounded disabled:opacity-50" disabled>Search</button>
+        </div>
+        <div id="answer" class="text-sm text-gray-700 mb-2"></div>
+        <div id="results" class="space-y-3"></div>
+      </div>
+
+      <!-- AI Chat (backend first, simple) -->
+      <div class="bg-white rounded-xl shadow p-4 md:p-6">
+        <h2 class="text-xl font-semibold mb-3">AI Chat</h2>
+        <div class="flex gap-2 mb-2">
+          <input id="chat-input" type="text" placeholder="Ask something..." class="flex-1 border rounded px-3 py-2" />
+          <button id="chat-send" class="px-4 py-2 bg-purple-600 text-white rounded">Send</button>
+        </div>
+        <div id="chat-log" class="text-sm space-y-2 max-h-72 overflow-auto"></div>
+      </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+      const ytApiEl = document.getElementById('yt-api');
+      const ytUrlEl = document.getElementById('yt-url');
+      const ingestYtBtn = document.getElementById('ingest-yt');
+      const statusEl = document.getElementById('status');
+      const searchSection = document.getElementById('search-section');
+      const queryEl = document.getElementById('query');
+      const searchBtn = document.getElementById('search');
+      const resultsEl = document.getElementById('results');
+      const answerEl = document.getElementById('answer');
+      const chatInput = document.getElementById('chat-input');
+      const chatSend = document.getElementById('chat-send');
+      const chatLog = document.getElementById('chat-log');
+
+      let videoId = null;
+      let segmentEndHandler = null;
+      let ytPlayer = null;
+
+      // Enable Transcribe only when URL present
+      ytUrlEl.addEventListener('input', () => {
+        const hasUrl = (ytUrlEl.value || '').trim().length > 0;
+        ingestYtBtn.disabled = !hasUrl;
+      });
+
+      // Ingest YouTube via backend (same transcribe path as home but using video_url)
+      ingestYtBtn.addEventListener('click', async () => {
+        const url = (ytUrlEl.value || '').trim();
+        if (!url) { statusEl.textContent = 'Enter a YouTube URL'; return; }
+        statusEl.textContent = 'Transcribing from YouTube URL...';
+        searchBtn.disabled = true;
+        try {
+          const resp = await fetch('http://localhost:5000/api/ingest_video', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ video_url: url })
+          });
+          if (!resp.ok) throw new Error('Ingest failed: ' + resp.status);
+          const data = await resp.json();
+          videoId = data.video_id;
+          statusEl.textContent = 'Done. video_id=' + videoId;
+          searchBtn.disabled = false;
+          searchSection.classList.remove('hidden');
+
+          // Show YouTube player for the given URL
+          const ytId = getYouTubeVideoId(url);
+          if (ytId) mountYouTubePlayer(ytId);
+        } catch (e) {
+          statusEl.textContent = 'Error: ' + e;
+        }
+      });
+
+      // Search using backend semantic search
+      searchBtn.addEventListener('click', async () => {
+        const q = (queryEl.value || '').trim();
+        if (!q || !videoId) return;
+        resultsEl.innerHTML = '';
+        answerEl.textContent = '';
+        try {
+          const resp = await fetch('http://localhost:5000/api/search_timestamps', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ query: q, video_id: videoId, k: 50 })
+          });
+          const data = await resp.json();
+          if (data.answer) answerEl.textContent = 'Answer: ' + data.answer;
+          const arr = (data.results || []).slice(0, 3);
+          for (const r of arr) addResult(r);
+        } catch (e) {
+          resultsEl.textContent = 'Search error: ' + e;
+        }
+      });
+
+      function addResult(r) {
+        const card = document.createElement('div');
+        card.className = 'border rounded p-3';
+        card.innerHTML = `
+          <div class="text-sm text-gray-600">${r.video_file}</div>
+          <div class="font-medium">${r.start_time} - ${r.end_time}</div>
+          <div class="text-sm text-gray-700 mb-2">${escapeHtml(r.snippets || '')}</div>
+          <button class="px-3 py-1 bg-gray-800 text-white rounded">Play segment</button>
+        `;
+        const btn = card.querySelector('button');
+        btn.addEventListener('click', () => {
+          const start = parseTime(r.start_time);
+          const end = parseTime(r.end_time);
+          if (ytPlayer && typeof ytPlayer.seekTo === 'function') {
+            ytPlayer.seekTo(start, true);
+            ytPlayer.playVideo();
+            // Auto-pause at end
+            const check = () => {
+              try {
+                const t = ytPlayer.getCurrentTime();
+                if (t >= end - 0.1) {
+                  ytPlayer.pauseVideo();
+                } else {
+                  requestAnimationFrame(check);
+                }
+              } catch {}
+            };
+            requestAnimationFrame(check);
+          } else {
+            alert(`Seek to ${r.start_time} → ${r.end_time}`);
+          }
+        });
+        resultsEl.appendChild(card);
+      }
+
+      function parseTime(s) {
+        s = (s || '').trim();
+        if (s.endsWith('s')) return parseFloat(s.replace('s',''))||0;
+        if (s.endsWith('m')) {
+          const [m, sec] = s.replace('m','').split('.');
+          return (parseInt(m||'0',10)*60)+(parseInt(sec||'0',10));
+        }
+        if (s.includes(':')) {
+          const [mm, ss] = s.split(':');
+          return (parseInt(mm||'0',10)*60)+(parseInt(ss||'0',10));
+        }
+        const n = parseFloat(s); return isFinite(n)?n:0;
+      }
+
+      function getYouTubeVideoId(url){
+        const re = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
+        const m = url.match(re); return m && m[1] ? m[1] : null;
+      }
+
+      function mountYouTubePlayer(id){
+        let host = document.getElementById('yt-host');
+        if (!host){
+          host = document.createElement('div');
+          host.id = 'yt-host';
+          host.className = 'bg-white rounded-xl shadow p-4 md:p-6 mb-6';
+          host.innerHTML = '<h2 class="text-xl font-semibold mb-3">YouTube Player</h2><div id="yt-frame" class="aspect-video w-full"></div>';
+          document.querySelector('.max-w-5xl').insertBefore(host, document.querySelector('.bg-white.rounded-xl.shadow.p-4.md\:p-6.mb-6'));
+        }
+        if (window.YT && window.YT.Player){
+          ytPlayer = new YT.Player('yt-frame', { videoId: id });
+        } else {
+          window.onYouTubeIframeAPIReady = () => { ytPlayer = new YT.Player('yt-frame', { videoId: id }); };
+        }
+      }
+
+      function escapeHtml(t){
+        return t.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+      }
+
+      // Minimal AI chat (backend first)
+      chatSend.addEventListener('click', async () => {
+        const msg = (chatInput.value || '').trim();
+        if (!msg) return;
+        appendChat('user', msg);
+        chatInput.value = '';
+        try {
+          const payload = videoId ? { video_id: videoId, question: msg, k: 3 } : { question: msg };
+          const resp = await fetch('http://localhost:5000/api/ask_ai', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
+          });
+          if (!resp.ok) throw new Error('AI error ' + resp.status);
+          const data = await resp.json();
+          appendChat('ai', data.answer || 'No response');
+        } catch(e) {
+          appendChat('ai', 'AI offline. Try again with server.');
+        }
+      });
+
+      function appendChat(who, text){
+        const row = document.createElement('div');
+        row.className = who==='user' ? 'text-right' : 'text-left';
+        row.innerHTML = `<span class="inline-block px-3 py-2 rounded ${who==='user'?'bg-blue-600 text-white':'bg-gray-200 text-gray-800'}">${escapeHtml(text)}</span>`;
+        chatLog.appendChild(row);
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+    </script>
+  </body>
+  </html>
+
+

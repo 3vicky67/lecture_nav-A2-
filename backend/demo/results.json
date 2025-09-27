@@ -1,0 +1,249 @@
+{
+  "matches": [
+    {
+      "start_time": 0.0,
+      "end_time": 8.32,
+      "content": " Hey guys, I am Venkat and this is part one of Azure tutorial for beginners.  In this course, we'll discuss everything you need to know to build, deploy and scale"
+    },
+    {
+      "start_time": 8.32,
+      "end_time": 13.92,
+      "content": " Hey guys, I am Venkat and this is part one of Azure tutorial for beginners.  In this course, we'll discuss everything you need to know to build, deploy and scale  applications using Microsoft Azure."
+    },
+    {
+      "start_time": 13.92,
+      "end_time": 17.12,
+      "content": " In this course, we'll discuss everything you need to know to build, deploy and scale  applications using Microsoft Azure.  As you know, cloud is everywhere."
+    },
+    {
+      "start_time": 17.12,
+      "end_time": 19.96,
+      "content": " applications using Microsoft Azure.  As you know, cloud is everywhere.  It has completely changed the way businesses think about IT resources and software solutions."
+    },
+    {
+      "start_time": 19.96,
+      "end_time": 27.72,
+      "content": " As you know, cloud is everywhere.  It has completely changed the way businesses think about IT resources and software solutions.  The solutions of every type, size and industry are using the cloud for a wide variety of use cases."
+    },
+    {
+      "start_time": 27.72,
+      "end_time": 34.72,
+      "content": " It has completely changed the way businesses think about IT resources and software solutions.  The solutions of every type, size and industry are using the cloud for a wide variety of use cases.  Even individuals like you and me are using cloud and cloud services on a daily basis."
+    },
+    {
+      "start_time": 34.72,
+      "end_time": 41.72,
+      "content": " The solutions of every type, size and industry are using the cloud for a wide variety of use cases.  Even individuals like you and me are using cloud and cloud services on a daily basis.  Azure is a cloud computing platform from Microsoft."
+    },
+    {
+      "start_time": 41.72,
+      "end_time": 45.72,
+      "content": " Even individuals like you and me are using cloud and cloud services on a daily basis.  Azure is a cloud computing platform from Microsoft.  Initially, it was called Windows Azure."
+    },
+    {
+      "start_time": 45.72,
+      "end_time": 48.72,
+      "content": " Azure is a cloud computing platform from Microsoft.  Initially, it was called Windows Azure.  Later renamed to Microsoft Azure."
+    },
+    {
+      "start_time": 48.72,
+      "end_time": 52.72,
+      "content": " Initially, it was called Windows Azure.  Later renamed to Microsoft Azure.  It is an ever expanding set of services to help you build solutions to meet your business goals."
+    },
+    {
+      "start_time": 52.72,
+      "end_time": 59.72,
+      "content": " Later renamed to Microsoft Azure.  It is an ever expanding set of services to help you build solutions to meet your business goals.  It offers a wide variety of services."
+    },
+    {
+      "start_time": 59.72,
+      "end_time": 62.72,
+      "content": " It is an ever expanding set of services to help you build solutions to meet your business goals.  It offers a wide variety of services.  For example, we have virtual machines running in the cloud for you to host and run your software."
+    },
+    {
+      "start_time": 62.72,
+      "end_time": 69.72,
+      "content": " It offers a wide variety of services.  For example, we have virtual machines running in the cloud for you to host and run your software.  Storage services to store all sorts of data, relational, non-relational, etc."
+    },
+    {
+      "start_time": 69.72,
+      "end_time": 75.72,
+      "content": " For example, we have virtual machines running in the cloud for you to host and run your software.  Storage services to store all sorts of data, relational, non-relational, etc.  Software development and deployment services, networking and data analysis services,"
+    },
+    {
+      "start_time": 75.72,
+      "end_time": 81.72,
+      "content": " Storage services to store all sorts of data, relational, non-relational, etc.  Software development and deployment services, networking and data analysis services,  artificial intelligence, machine learning, Internet of Things, etc."
+    },
+    {
+      "start_time": 81.72,
+      "end_time": 85.72,
+      "content": " Software development and deployment services, networking and data analysis services,  artificial intelligence, machine learning, Internet of Things, etc.  The list goes on."
+    },
+    {
+      "start_time": 85.72,
+      "end_time": 87.72,
+      "content": " artificial intelligence, machine learning, Internet of Things, etc.  The list goes on.  When we think about moving to a cloud from an on-premise data center to immediate things that come to our mind are security and availability."
+    },
+    {
+      "start_time": 87.72,
+      "end_time": 97.72,
+      "content": " The list goes on.  When we think about moving to a cloud from an on-premise data center to immediate things that come to our mind are security and availability.  How secure is my data?"
+    },
+    {
+      "start_time": 97.72,
+      "end_time": 99.72,
+      "content": " When we think about moving to a cloud from an on-premise data center to immediate things that come to our mind are security and availability.  How secure is my data?  If you're thinking your applications and data are more secure in your own data center than in the cloud, you are almost certainly mistaken."
+    },
+    {
+      "start_time": 99.72,
+      "end_time": 109.72,
+      "content": " How secure is my data?  If you're thinking your applications and data are more secure in your own data center than in the cloud, you are almost certainly mistaken.  Security and privacy are foundational for Azure."
+    },
+    {
+      "start_time": 109.72,
+      "end_time": 113.72,
+      "content": " If you're thinking your applications and data are more secure in your own data center than in the cloud, you are almost certainly mistaken.  Security and privacy are foundational for Azure.  Microsoft is committed to the highest levels of trust, transparency, standards and regulatory compliance."
+    },
+    {
+      "start_time": 113.72,
+      "end_time": 121.72,
+      "content": " Security and privacy are foundational for Azure.  Microsoft is committed to the highest levels of trust, transparency, standards and regulatory compliance.  In fact, if you compare Azure with other cloud service providers, it has the most comprehensive set of compliance offerings."
+    },
+    {
+      "start_time": 121.72,
+      "end_time": 131.72,
+      "content": " Microsoft is committed to the highest levels of trust, transparency, standards and regulatory compliance.  In fact, if you compare Azure with other cloud service providers, it has the most comprehensive set of compliance offerings.  As of this recording, Azure has over 90 plus compliance offerings, the largest portfolio in the industry."
+    },
+    {
+      "start_time": 131.72,
+      "end_time": 140.72,
+      "content": " In fact, if you compare Azure with other cloud service providers, it has the most comprehensive set of compliance offerings.  As of this recording, Azure has over 90 plus compliance offerings, the largest portfolio in the industry.  Every year, Microsoft invests over $1 billion in security to protect customers' data and apps from cyber threats."
+    },
+    {
+      "start_time": 140.72,
+      "end_time": 150.72,
+      "content": " As of this recording, Azure has over 90 plus compliance offerings, the largest portfolio in the industry.  Every year, Microsoft invests over $1 billion in security to protect customers' data and apps from cyber threats.  95% of Fortune 500 companies trust their business and data on Azure."
+    },
+    {
+      "start_time": 150.72,
+      "end_time": 157.72,
+      "content": " Every year, Microsoft invests over $1 billion in security to protect customers' data and apps from cyber threats.  95% of Fortune 500 companies trust their business and data on Azure.  As far as availability is concerned, for most services, Azure promises 99.9% uptime and connectivity."
+    },
+    {
+      "start_time": 157.72,
+      "end_time": 167.72,
+      "content": " 95% of Fortune 500 companies trust their business and data on Azure.  As far as availability is concerned, for most services, Azure promises 99.9% uptime and connectivity.  Even with our own on-premise data center, it's very difficult to achieve such a high availability and uptime."
+    },
+    {
+      "start_time": 167.72,
+      "end_time": 176.72,
+      "content": " As far as availability is concerned, for most services, Azure promises 99.9% uptime and connectivity.  Even with our own on-premise data center, it's very difficult to achieve such a high availability and uptime.  Now, many people think Azure is only for Windows apps and services."
+    },
+    {
+      "start_time": 176.72,
+      "end_time": 181.72,
+      "content": " Even with our own on-premise data center, it's very difficult to achieve such a high availability and uptime.  Now, many people think Azure is only for Windows apps and services.  That's not true."
+    },
+    {
+      "start_time": 181.72,
+      "end_time": 183.72,
+      "content": " Now, many people think Azure is only for Windows apps and services.  That's not true.  Azure supports open source technologies so you can use the tools and technologies you prefer."
+    },
+    {
+      "start_time": 183.72,
+      "end_time": 191.72,
+      "content": " That's not true.  Azure supports open source technologies so you can use the tools and technologies you prefer.  As of this recording, 1 in 4 Azure virtual machines run Linux."
+    },
+    {
+      "start_time": 191.72,
+      "end_time": 196.72,
+      "content": " Azure supports open source technologies so you can use the tools and technologies you prefer.  As of this recording, 1 in 4 Azure virtual machines run Linux.  Why? Because Azure supports the open source technologies. Millions of us already rely on and trust."
+    },
+    {
+      "start_time": 196.72,
+      "end_time": 204.72,
+      "content": " As of this recording, 1 in 4 Azure virtual machines run Linux.  Why? Because Azure supports the open source technologies. Millions of us already rely on and trust.  With Azure, we have choices. We can develop, deploy and test open source components end-to-end in Azure."
+    },
+    {
+      "start_time": 204.72,
+      "end_time": 213.72,
+      "content": " Why? Because Azure supports the open source technologies. Millions of us already rely on and trust.  With Azure, we have choices. We can develop, deploy and test open source components end-to-end in Azure.  As an example, Azure offers enterprise-grade support for all popular Linux distributions,"
+    },
+    {
+      "start_time": 213.72,
+      "end_time": 221.72,
+      "content": " With Azure, we have choices. We can develop, deploy and test open source components end-to-end in Azure.  As an example, Azure offers enterprise-grade support for all popular Linux distributions,  run new and even existing business critical workloads in the cloud with Azure Marketplace."
+    },
+    {
+      "start_time": 221.72,
+      "end_time": 229.72,
+      "content": " As an example, Azure offers enterprise-grade support for all popular Linux distributions,  run new and even existing business critical workloads in the cloud with Azure Marketplace.  Almost anything that can be done with a conventional on-premise data center can be accomplished using Azure."
+    },
+    {
+      "start_time": 229.72,
+      "end_time": 238.72,
+      "content": " run new and even existing business critical workloads in the cloud with Azure Marketplace.  Almost anything that can be done with a conventional on-premise data center can be accomplished using Azure.  Actually, it opens a world of possibilities and help us build solutions that we wouldn't be able to build with our own on-premise data center."
+    },
+    {
+      "start_time": 238.72,
+      "end_time": 248.72,
+      "content": " Almost anything that can be done with a conventional on-premise data center can be accomplished using Azure.  Actually, it opens a world of possibilities and help us build solutions that we wouldn't be able to build with our own on-premise data center.  Azure has a series of data centers across the globe. So, we're able to take advantage of that global reach, massive scale and build solutions that otherwise are practically impossible."
+    },
+    {
+      "start_time": 248.72,
+      "end_time": 263.72,
+      "content": " Actually, it opens a world of possibilities and help us build solutions that we wouldn't be able to build with our own on-premise data center.  Azure has a series of data centers across the globe. So, we're able to take advantage of that global reach, massive scale and build solutions that otherwise are practically impossible.  In this course, we will start with the basics of Azure and discuss everything you need to know to build, deploy and scale applications using Microsoft Azure."
+    },
+    {
+      "start_time": 263.72,
+      "end_time": 275.72,
+      "content": " Azure has a series of data centers across the globe. So, we're able to take advantage of that global reach, massive scale and build solutions that otherwise are practically impossible.  In this course, we will start with the basics of Azure and discuss everything you need to know to build, deploy and scale applications using Microsoft Azure.  Before you start this course, I strongly recommend to watch our cloud computing tutorial for beginners course."
+    },
+    {
+      "start_time": 275.72,
+      "end_time": 282.72,
+      "content": " In this course, we will start with the basics of Azure and discuss everything you need to know to build, deploy and scale applications using Microsoft Azure.  Before you start this course, I strongly recommend to watch our cloud computing tutorial for beginners course.  In this course, we've covered all the basics of cloud computing. I'll include the link for the course in the description of this video."
+    },
+    {
+      "start_time": 282.72,
+      "end_time": 291.72,
+      "content": " Before you start this course, I strongly recommend to watch our cloud computing tutorial for beginners course.  In this course, we've covered all the basics of cloud computing. I'll include the link for the course in the description of this video.  I'll do my best to cover all Azure related concepts."
+    },
+    {
+      "start_time": 291.72,
+      "end_time": 295.72,
+      "content": " In this course, we've covered all the basics of cloud computing. I'll include the link for the course in the description of this video.  I'll do my best to cover all Azure related concepts.  But in the meantime, if you have a specific concept in mind that you want me to cover, please leave it as a comment on this video and I will surely cover it in our upcoming videos in this series."
+    },
+    {
+      "start_time": 295.72,
+      "end_time": 307.72,
+      "content": " I'll do my best to cover all Azure related concepts.  But in the meantime, if you have a specific concept in mind that you want me to cover, please leave it as a comment on this video and I will surely cover it in our upcoming videos in this series.  Finally, your feedback means a lot and trust me, it is your feedback that keeps me going."
+    },
+    {
+      "start_time": 307.72,
+      "end_time": 313.72,
+      "content": " But in the meantime, if you have a specific concept in mind that you want me to cover, please leave it as a comment on this video and I will surely cover it in our upcoming videos in this series.  Finally, your feedback means a lot and trust me, it is your feedback that keeps me going.  So, if you have a few minutes, please let me know your thoughts and feedback on this course."
+    },
+    {
+      "start_time": 313.72,
+      "end_time": 319.72,
+      "content": " Finally, your feedback means a lot and trust me, it is your feedback that keeps me going.  So, if you have a few minutes, please let me know your thoughts and feedback on this course.  I'm really excited to take you through the journey of Azure. I hope you are too."
+    },
+    {
+      "start_time": 319.72,
+      "end_time": 325.72,
+      "content": " So, if you have a few minutes, please let me know your thoughts and feedback on this course.  I'm really excited to take you through the journey of Azure. I hope you are too.  That's it in this video. I am Bankad. Thank you for listening."
+    },
+    {
+      "start_time": 325.72,
+      "end_time": 329.72,
+      "content": " I'm really excited to take you through the journey of Azure. I hope you are too.  That's it in this video. I am Bankad. Thank you for listening.  ."
+    },
+    {
+      "start_time": 349.72,
+      "end_time": 351.72,
+      "content": " That's it in this video. I am Bankad. Thank you for listening.  ."
+    }
+  ]
+}

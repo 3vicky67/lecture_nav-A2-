@@ -1,0 +1,38 @@
+[
+  {
+    "video_id": "098b5b59-949b-4cb8-8a01-ea7a42dd2f48",
+    "video_url": "kuttystory.mp4",
+    "start_time": "2.00s",
+    "end_time": "4.00s",
+    "title": "Segment 1",
+    "snippet": " What are you talking about?  Hope.  Hope.",
+    "score": 1.0
+  },
+  {
+    "video_id": "098b5b59-949b-4cb8-8a01-ea7a42dd2f48",
+    "video_url": "kuttystory.mp4",
+    "start_time": "4.00s",
+    "end_time": "6.00s",
+    "title": "Segment 2",
+    "snippet": " Hope.  Hope.  Hope.",
+    "score": 1.0
+  },
+  {
+    "video_id": "098b5b59-949b-4cb8-8a01-ea7a42dd2f48",
+    "video_url": "kuttystory.mp4",
+    "start_time": "6.00s",
+    "end_time": "8.00s",
+    "title": "Segment 3",
+    "snippet": " Hope.  Hope.  I'm gonna tell you something, my friend.",
+    "score": 1.0
+  },
+  {
+    "video_id": "098b5b59-949b-4cb8-8a01-ea7a42dd2f48",
+    "video_url": "kuttystory.mp4",
+    "start_time": "10.00s",
+    "end_time": "12.00s",
+    "title": "Segment 5",
+    "snippet": " I'm gonna tell you something, my friend.  Hope is a dangerous thing.  Hope can drive a man insane.",
+    "score": 1.0
+  }
+]

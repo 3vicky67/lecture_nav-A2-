@@ -1,0 +1,116 @@
+[
+  {
+    "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
+    "video_file": "kuttystory.mp4",
+    "t_start": 0.0,
+    "t_end": 30.0,
+    "start_time": "00:00",
+    "end_time": "00:30",
+    "title": "Segment 1 (00:00-00:30)",
+    "snippet": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things.",
+    "score": 0.5165112186130911,
+    "citation": {
+      "citation_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_0_0.0_30.0",
+      "source": {
+        "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
+        "segment_idx": 0,
+        "start_time": 0.0,
+        "end_time": 30.0,
+        "timestamp": "0.0s-30.0s"
+      },
+      "content": {
+        "text": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things.",
+        "span_start": 0,
+        "span_end": 246,
+        "span_text": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things."
+      },
+      "metadata": {
+        "relevance_score": 0.5165112186130911,
+        "created_at": "2025-09-27T11:09:31.147665",
+        "confidence": 0.5165112186130911
+      }
+    },
+    "source_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_0_0.0_30.0",
+    "spans": {
+      "start": 0,
+      "end": 246,
+      "text": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things."
+    }
+  },
+  {
+    "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
+    "video_file": "kuttystory.mp4",
+    "t_start": 15.0,
+    "t_end": 41.0,
+    "start_time": "00:15",
+    "end_time": "00:41",
+    "title": "Segment 2 (00:15-00:41)",
+    "snippet": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
+    "score": 0.4000433800992168,
+    "citation": {
+      "citation_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_1_15.0_41.0",
+      "source": {
+        "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
+        "segment_idx": 1,
+        "start_time": 15.0,
+        "end_time": 41.0,
+        "timestamp": "15.0s-41.0s"
+      },
+      "content": {
+        "text": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
+        "span_start": 0,
+        "span_end": 266,
+        "span_text": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
+      },
+      "metadata": {
+        "relevance_score": 0.4000433800992168,
+        "created_at": "2025-09-27T11:09:31.147683",
+        "confidence": 0.4000433800992168
+      }
+    },
+    "source_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_1_15.0_41.0",
+    "spans": {
+      "start": 0,
+      "end": 266,
+      "text": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
+    }
+  },
+  {
+    "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
+    "video_file": "kuttystory.mp4",
+    "t_start": 30.0,
+    "t_end": 41.0,
+    "start_time": "00:30",
+    "end_time": "00:41",
+    "title": "Segment 3 (00:30-00:41)",
+    "snippet": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
+    "score": 0.17931927740573883,
+    "citation": {
+      "citation_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_2_30.0_41.0",
+      "source": {
+        "video_id": "e0a5665d-eb14-4155-be78-96392f607f3a",
+        "segment_idx": 2,
+        "start_time": 30.0,
+        "end_time": 41.0,
+        "timestamp": "30.0s-41.0s"
+      },
+      "content": {
+        "text": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
+        "span_start": 0,
+        "span_end": 111,
+        "span_text": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
+      },
+      "metadata": {
+        "relevance_score": 0.17931927740573883,
+        "created_at": "2025-09-27T11:09:31.147690",
+        "confidence": 0.17931927740573883
+      }
+    },
+    "source_id": "cite_e0a5665d-eb14-4155-be78-96392f607f3a_2_30.0_41.0",
+    "spans": {
+      "start": 0,
+      "end": 111,
+      "text": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
+    }
+  }
+]
