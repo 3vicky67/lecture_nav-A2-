@@ -1,109 +1,119 @@
+# 🎥 Video RAG (Retrieval-Augmented Generation) Application
 
-# Video RAG (Retrieval-Augmented Generation) Application
+A powerful web application that combines **AI transcription, semantic search, and RAG (Retrieval-Augmented Generation)** to help you **find and understand relevant content inside videos** with timestamp-based navigation.
 
-A sophisticated web application that uses advanced AI embeddings and semantic search to find relevant content in videos with timestamp-based results.
+---
 
-## Features
+## 🚀 Key Features
 
-- 🎥 Video upload and transcription using OpenAI Whisper
-- 🧠 **Semantic Search** using Hugging Face embeddings and FAISS vector database
-- 🔍 **RAG-powered search** that understands context, not just keywords
-- 📊 JSON-formatted search results with relevance scores
-- 🎯 Jump to specific timestamps in videos
-- 🤖 **AI-powered Q&A** using Cohere with video context retrieval
-- 📈 Advanced logging and performance monitoring
+* **Video Upload & Transcription** → Accurate speech-to-text using **OpenAI Whisper**
+* **Semantic Search** → Contextual retrieval with Hugging Face embeddings + **FAISS**
+* **RAG-Powered Q&A** → AI answers your questions using video context with **Cohere**
+* **Timestamp Navigation** → Jump directly to exact points in the video
+* **JSON Results** → Structured search output with relevance scores
+* **Performance Monitoring** → Advanced logging for smooth workflows
 
-## OutPut Screenshot
+---
 
-![Video](https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(45).png)
+## 📸 Application Preview
 
-## Setup Instructions
+<p align="center">  
+  <img src="https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(45).png" width="600"/>  
+</p>  
 
-### Backend Setup
+<p align="center">  
+  <img src="https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(54).png" width="600"/>  
+</p>  
 
-1. **Navigate to the backend directory:**
-   ```bash
-   cd backend
-   ```
+<p align="center">  
+  <img src="https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(58).png" width="600"/>  
+</p>  
 
-2. **Install Python dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+<p align="center">  
+  <img src="https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(59).png" width="600"/>  
+</p>  
 
-3. **Start the backend server:**
-   ```bash
-   python run_server.py
-   ```
-   
-   Or directly:
-   ```bash
-   python server_fast.py
-   ```
+<p align="center">  
+  <img src="https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(60).png" width="600"/>  
+</p>  
 
-   The backend will be available at `http://localhost:5000`
+<p align="center">  
+  <img src="https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(62).png" width="600"/>  
+</p>  
 
-### Frontend Setup
+---
 
-1. **Navigate to the frontend directory:**
-   ```bash
-   cd frontend
-   ```
+## ⚡ Quick Setup
 
-2. **Install Node.js dependencies:**
-   ```bash
-   npm install
-   ```
+### 🔹 Backend (Flask + Whisper + FAISS)
 
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+```bash
+cd backend
+pip install -r requirements.txt
+python run_server.py   # or python server_fast.py
+```
 
-   The frontend will be available at `http://localhost:5173`
+Runs at **[http://localhost:5000](http://localhost:5000)**
 
-## How to Use
+### 🔹 Frontend (React + Vite + TypeScript)
 
-1. **Start both servers** (backend on port 5000, frontend on port 5173)
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-2. **Upload a video:**
-   - Click "Choose Video File" and select a video file
-   - Click "Transcribe Video" to process the video
+Runs at **[http://localhost:5173](http://localhost:5173)**
 
-3. **Search the video:**
-   - Enter your search query in the search bar
-   - Click "Search" to find relevant timestamps
-   - Results will be displayed in JSON format with:
-     - `video_id`: Unique identifier for the video
-     - `video_file`: Name of the video file
-     - `start_time`: Start timestamp (formatted)
-     - `end_time`: End timestamp (formatted)
-     - `snippets`: Relevant text content
-     - `score`: Relevance score
+---
 
-4. **Jump to timestamps:**
-   - Click "Jump to Timestamp" on any result to navigate to that point in the video
+## 🎯 How to Use
 
-## API Endpoints
+1. **Upload a Video**
 
-### POST /api/ingest_video
-Upload and transcribe a video file.
+   * Choose a file or paste a YouTube URL
+   * Click **Transcribe Video** → Whisper generates transcript
 
-**Request:**
-- Form data with `video_file` field
-- Or JSON with `video_url` or `video_file` path
+2. **Search the Video**
 
-**Response:**
+   * Enter your query in the search bar
+   * Get **JSON-formatted results** including:
+
+     * `video_id`
+     * `video_file`
+     * `start_time`, `end_time`
+     * `snippets` (relevant transcript text)
+     * `score` (semantic relevance)
+
+3. **Jump to Timestamp**
+
+   * Click **Jump to Timestamp** → Player seeks to exact point
+
+4. **Ask Questions with AI**
+
+   * Cohere + RAG retrieves relevant transcript snippets
+   * AI generates context-aware answers
+
+---
+
+## 🔌 API Endpoints
+
+### **1. Ingest Video**
+
+`POST /api/ingest_video`
+
 ```json
 {
   "video_id": "unique-video-id"
 }
 ```
 
-### POST /api/search_timestamps
-Search through transcribed video content.
+### **2. Search Timestamps**
+
+`POST /api/search_timestamps`
 
 **Request:**
+
 ```json
 {
   "video_id": "unique-video-id",
@@ -113,6 +123,7 @@ Search through transcribed video content.
 ```
 
 **Response:**
+
 ```json
 {
   "query": "search term",
@@ -129,46 +140,65 @@ Search through transcribed video content.
 }
 ```
 
-## Technical Details
+---
 
-- **Backend:** Flask with OpenAI Whisper for transcription
-- **Frontend:** React with TypeScript and Vite
-- **Search:** **Semantic search** using Hugging Face embeddings and FAISS vector database
-- **AI Integration:** Cohere with RAG (Retrieval-Augmented Generation) for context-aware responses
-- **Embeddings:** Google Gemma-2-2b model (with fallback to sentence-transformers/all-MiniLM-L6-v2)
-- **Vector Database:** FAISS for efficient similarity search
+## 🧠 How RAG Works
 
-## How RAG Works
+1. **Transcription** → Whisper converts speech → text
+2. **Embeddings** → Transcript split into chunks + encoded with Hugging Face models
+3. **Vector Indexing** → FAISS stores & indexes high-dimensional vectors
+4. **Semantic Search** → Queries embedded → cosine similarity search
+5. **Context Retrieval** → Most relevant transcript snippets selected
+6. **AI Answering** → Cohere generates context-aware responses
 
-1. **Video Ingestion:** Video is transcribed using Whisper
-2. **Embedding Creation:** Each transcript segment is converted to high-dimensional vectors using Hugging Face models
-3. **Index Building:** FAISS creates an efficient search index of all embeddings
-4. **Semantic Search:** User queries are embedded and matched against the video content using cosine similarity
-5. **Context Retrieval:** Most relevant segments are retrieved and used as context for AI responses
+---
 
-## Troubleshooting
+## 🛠️ Tech Stack
 
-- Ensure FFmpeg is installed and in your PATH
-- Make sure both servers are running on their respective ports
-- Check browser console for any CORS or connection errors
-- Verify that video files are in supported formats (MP4, MKV, WebM)
-- **GPU Support:** The system will use CUDA if available, otherwise falls back to CPU
-- **Model Loading:** First run may take time to download Hugging Face models
+* **Backend**: Flask, Whisper, Cohere, PyTorch, Transformers, FAISS
+* **Frontend**: React, TypeScript, Vite
+* **Vector DB**: FAISS for similarity search
+* **Embeddings**: Google Gemma-2-2b (fallback → `all-MiniLM-L6-v2`)
 
-## Dependencies
+---
 
-### Backend
-- Flask & Flask-CORS
-- OpenAI Whisper
-- Cohere
-- yt-dlp
-- **PyTorch** (for embeddings)
-- **Transformers** (Hugging Face models)
-- **FAISS** (vector database)
-- **NumPy** (numerical operations)
-- **Hugging Face Hub** (model access)
+## ⚙️ Troubleshooting
 
-### Frontend
-- React
-- TypeScript
-- Vite
+* ✅ Install **FFmpeg** & add to PATH
+* ✅ Ensure both servers (backend: `5000`, frontend: `5173`) are running
+* ✅ Supported video formats: `MP4`, `MKV`, `WebM`
+* ✅ First run may take time (models downloading)
+* ✅ GPU automatically used if CUDA available
+
+---
+
+## 📊 Dependencies
+
+**Backend**
+
+* Flask, Flask-CORS
+* OpenAI Whisper
+* Cohere
+* yt-dlp
+* PyTorch + Transformers
+* FAISS + NumPy
+
+**Frontend**
+
+* React
+* TypeScript
+* Vite
+
+---
+
+## 🌟 Why This Project?
+
+This system makes **long-form video content accessible** through:
+
+* Fast **contextual search**
+* Accurate **speech transcription**
+* AI-powered **Q&A**
+* Seamless **timestamp navigation**
+
+Perfect for **lecture videos, tutorials, corporate training, or any long-form content.**
+
