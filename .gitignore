@@ -1,0 +1,11 @@
+# Ignore environment files
+backend/.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Optional: other files you don’t want in Git
+*.log
+*.sqlite3

@@ -11,6 +11,8 @@ import time
 import logging
 from typing import List, Dict
 from werkzeug.utils import secure_filename
+from dotenv import load_dotenv 
+load_dotenv()
 
 # Embedding/torch
 import torch
@@ -20,17 +22,22 @@ from transformers import AutoTokenizer, AutoModel
 import numpy as np
 import faiss
 
-# ------------------ Setup ------------------ #
 os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\ffmpeg-8.0-full_build\ffmpeg-8.0-full_build\bin"
 
-COHERE_API_KEY = "myg3oaQlv4v6vYEghw13ZVTHOKjXcqwsnMWlMdG1"
+# ✅ Load keys from environment instead of hardcoding
+COHERE_API_KEY = os.getenv("COHERE_API_KEY")
+HF_TOKEN = os.getenv("HF_TOKEN")
+
+if not COHERE_API_KEY:
+    raise ValueError("❌ Missing COHERE_API_KEY. Set it in your .env or environment variables.")
+if not HF_TOKEN:
+    raise ValueError("❌ Missing HF_TOKEN. Set it in your .env or environment variables.")
+
 co = cohere.Client(COHERE_API_KEY)
 
 # ------------------ Hugging Face ------------------ #
-HF_TOKEN = "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"  # Replace with your HF token
 EMBEDDING_MODEL = "google/gemma-2-2b"  # gated model
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-
 # ------------------ Logging ------------------ #
 logger = logging.getLogger("video_rag")
 logger.setLevel(logging.INFO)
