@@ -15,7 +15,7 @@ A sophisticated web application that uses advanced AI embeddings and semantic se
 
 ## OutPut Screenshot
 
-[Video](https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(45).png)
+![Video](https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(45).png)
 
 ## Setup Instructions
 
