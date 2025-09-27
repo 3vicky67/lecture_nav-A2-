@@ -13,6 +13,10 @@ A sophisticated web application that uses advanced AI embeddings and semantic se
 - 🤖 **AI-powered Q&A** using Cohere with video context retrieval
 - 📈 Advanced logging and performance monitoring
 
+## OutPut Screenshot
+
+[Video](https://github.com/3vicky67/lecture_nav-A2-/blob/main/outputs_sample/Screenshot%20(45).png)
+
 ## Setup Instructions
 
 ### Backend Setup
