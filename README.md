@@ -33,7 +33,7 @@ A sophisticated web application that uses advanced AI embeddings and semantic se
    
    Or directly:
    ```bash
-   python server.py
+   python server_fast.py
    ```
 
    The backend will be available at `http://localhost:5000`
