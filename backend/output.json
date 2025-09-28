@@ -1,192 +1,192 @@
 [
   {
-    "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
-    "video_file": "aircAruvnKk?si=TFg_Qwz-_eOEnygX",
-    "t_start": 0.0,
-    "t_end": 45.0,
-    "start_time": "00:00",
-    "end_time": "00:45",
-    "title": "Segment 1 (00:00-00:45)",
-    "snippet": "This is a 3. It's sloppy written and rendered at an extremely low resolution of 28 by 28 pixels, but your brain has no trouble recognizing it as a 3. And I want you to take a moment to appreciate how crazy it is that brains can do this so effortlessly. I mean, this, this and this are also recognizable as 3s, even though the specific values of each pixel is very different from one image to the next. The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3. But something in that crazy smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct ideas.",
-    "score": 0.1025414690375328,
-    "citation": {
-      "citation_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_0_0.0_45.0",
-      "source": {
-        "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
-        "segment_idx": 0,
-        "start_time": 0.0,
-        "end_time": 45.0,
-        "timestamp": "0.0s-45.0s"
-      },
-      "content": {
-        "text": "This is a 3. It's sloppy written and rendered at an extremely low resolution of 28 by 28 pixels, but your brain has no trouble recognizing it as a 3. And I want you to take a moment to appreciate how crazy it is that brains can do this so effortlessly. I mean, this, this and this are also recognizable as 3s, even though the specific values of each pixel is very different from one image to the next. The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3. But something in that crazy smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct ideas.",
-        "span_start": 0,
-        "span_end": 727,
-        "span_text": "This is a 3. It's sloppy written and rendered at an extremely low resolution of 28 by 28 pixels, but your brain has no trouble recognizing it as a 3. And I want you to take a moment to appreciate how crazy it is that brains can do this so effortlessly. I mean, this, this and this are also recognizable as 3s, even though the specific values of each pixel is very different from one image to the next. The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3. But something in that crazy smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct ideas."
-      },
-      "metadata": {
-        "relevance_score": 0.1025414690375328,
-        "created_at": "2025-09-27T14:48:29.146345",
-        "confidence": 0.1025414690375328
-      }
-    },
-    "source_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_0_0.0_45.0",
-    "spans": {
-      "start": 0,
-      "end": 727,
-      "text": "This is a 3. It's sloppy written and rendered at an extremely low resolution of 28 by 28 pixels, but your brain has no trouble recognizing it as a 3. And I want you to take a moment to appreciate how crazy it is that brains can do this so effortlessly. I mean, this, this and this are also recognizable as 3s, even though the specific values of each pixel is very different from one image to the next. The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3. But something in that crazy smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct ideas."
-    }
-  },
-  {
-    "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
-    "video_file": "aircAruvnKk?si=TFg_Qwz-_eOEnygX",
+    "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
+    "video_file": "ztBJqzBU5kc?si=WBfJotF1LsCCHU7A",
     "t_start": 30.0,
     "t_end": 75.0,
     "start_time": "00:30",
     "end_time": "01:15",
     "title": "Segment 2 (00:30-01:15)",
-    "snippet": "The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3. But something in that crazy smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct ideas. But if I told you, hey, sit down and write for me a program that takes in a grid of 28 by 28 pixels like this, and outputs a single number between 0 and 10, telling you what it thinks the digit is, while the task goes from comically trivial to dauntingly difficult. Unless you've been living under a rock, I think I hardly need to motivate the relevance and importance of machine learning and neural networks to the present into the future.",
-    "score": 0.013512340374290943,
+    "snippet": "So, the best way for you to do is be able to get models that you can use offline using Olaama in this case. And I'll demonstrate how to do that, how you can feed those personal documents to a local model that's not connected to the internet. And still be able to chat with those documents, especially PDFs in this case, and make it very easy without having to upload it to a public online system that will be able to use your information for training. So, let's get started. Alright, so let's get to it. So, this project right here is you can see on my left side here I have PDF files and this could be filed on your system. That you've saved maybe your resume, maybe some lecture notes, some books or whatever that you want to chat over using the Olaama. And in this case, these are documents that the Olaama wasn't trained with. So, this is data that Olaama has never seen potentially, and you want to be able to chat with that.",
+    "score": 0.18277128159105896,
     "citation": {
-      "citation_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_1_30.0_75.0",
+      "citation_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_1_30.0_75.0",
       "source": {
-        "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
+        "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
         "segment_idx": 1,
         "start_time": 30.0,
         "end_time": 75.0,
         "timestamp": "30.0s-75.0s"
       },
       "content": {
-        "text": "The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3. But something in that crazy smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct ideas. But if I told you, hey, sit down and write for me a program that takes in a grid of 28 by 28 pixels like this, and outputs a single number between 0 and 10, telling you what it thinks the digit is, while the task goes from comically trivial to dauntingly difficult. Unless you've been living under a rock, I think I hardly need to motivate the relevance and importance of machine learning and neural networks to the present into the future.",
+        "text": "So, the best way for you to do is be able to get models that you can use offline using Olaama in this case. And I'll demonstrate how to do that, how you can feed those personal documents to a local model that's not connected to the internet. And still be able to chat with those documents, especially PDFs in this case, and make it very easy without having to upload it to a public online system that will be able to use your information for training. So, let's get started. Alright, so let's get to it. So, this project right here is you can see on my left side here I have PDF files and this could be filed on your system. That you've saved maybe your resume, maybe some lecture notes, some books or whatever that you want to chat over using the Olaama. And in this case, these are documents that the Olaama wasn't trained with. So, this is data that Olaama has never seen potentially, and you want to be able to chat with that.",
         "span_start": 0,
-        "span_end": 766,
-        "span_text": "The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3. But something in that crazy smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct ideas. But if I told you, hey, sit down and write for me a program that takes in a grid of 28 by 28 pixels like this, and outputs a single number between 0 and 10, telling you what it thinks the digit is, while the task goes from comically trivial to dauntingly difficult. Unless you've been living under a rock, I think I hardly need to motivate the relevance and importance of machine learning and neural networks to the present into the future."
+        "span_end": 930,
+        "span_text": "So, the best way for you to do is be able to get models that you can use offline using Olaama in this case. And I'll demonstrate how to do that, how you can feed those personal documents to a local model that's not connected to the internet. And still be able to chat with those documents, especially PDFs in this case, and make it very easy without having to upload it to a public online system that will be able to use your information for training. So, let's get started. Alright, so let's get to it. So, this project right here is you can see on my left side here I have PDF files and this could be filed on your system. That you've saved maybe your resume, maybe some lecture notes, some books or whatever that you want to chat over using the Olaama. And in this case, these are documents that the Olaama wasn't trained with. So, this is data that Olaama has never seen potentially, and you want to be able to chat with that."
       },
       "metadata": {
-        "relevance_score": 0.013512340374290943,
-        "created_at": "2025-09-27T14:48:29.146550",
-        "confidence": 0.013512340374290943
+        "relevance_score": 0.18277128159105896,
+        "created_at": "2025-09-28T09:26:52.117679",
+        "confidence": 0.18277128159105896
       }
     },
-    "source_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_1_30.0_75.0",
+    "source_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_1_30.0_75.0",
     "spans": {
       "start": 0,
-      "end": 766,
-      "text": "The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3. But something in that crazy smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct ideas. But if I told you, hey, sit down and write for me a program that takes in a grid of 28 by 28 pixels like this, and outputs a single number between 0 and 10, telling you what it thinks the digit is, while the task goes from comically trivial to dauntingly difficult. Unless you've been living under a rock, I think I hardly need to motivate the relevance and importance of machine learning and neural networks to the present into the future."
+      "end": 930,
+      "text": "So, the best way for you to do is be able to get models that you can use offline using Olaama in this case. And I'll demonstrate how to do that, how you can feed those personal documents to a local model that's not connected to the internet. And still be able to chat with those documents, especially PDFs in this case, and make it very easy without having to upload it to a public online system that will be able to use your information for training. So, let's get started. Alright, so let's get to it. So, this project right here is you can see on my left side here I have PDF files and this could be filed on your system. That you've saved maybe your resume, maybe some lecture notes, some books or whatever that you want to chat over using the Olaama. And in this case, these are documents that the Olaama wasn't trained with. So, this is data that Olaama has never seen potentially, and you want to be able to chat with that."
     }
   },
   {
-    "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
-    "video_file": "aircAruvnKk?si=TFg_Qwz-_eOEnygX",
-    "t_start": 1080.0,
-    "t_end": 1105.92,
-    "start_time": "18:00",
-    "end_time": "18:25",
-    "title": "Segment 37 (18:00-18:25)",
-    "snippet": "how neurons would either be activated or not. And so if it passes a certain threshold, it would be the identity function, but if it did not, then it would just not be activated, so it'd be 0. So it's kind of a simplification. Using sigmoids didn't help training or it was very difficult to train at some point and people just tried to rally you. And it happened to work very well for these incredibly deep neural networks. All right, thank you, Lisha.",
-    "score": 0.00984159205108881,
-    "citation": {
-      "citation_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_36_1080.0_1105.9",
-      "source": {
-        "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
-        "segment_idx": 36,
-        "start_time": 1080.0,
-        "end_time": 1105.92,
-        "timestamp": "1080.0s-1105.9s"
-      },
-      "content": {
-        "text": "how neurons would either be activated or not. And so if it passes a certain threshold, it would be the identity function, but if it did not, then it would just not be activated, so it'd be 0. So it's kind of a simplification. Using sigmoids didn't help training or it was very difficult to train at some point and people just tried to rally you. And it happened to work very well for these incredibly deep neural networks. All right, thank you, Lisha.",
-        "span_start": 0,
-        "span_end": 451,
-        "span_text": "how neurons would either be activated or not. And so if it passes a certain threshold, it would be the identity function, but if it did not, then it would just not be activated, so it'd be 0. So it's kind of a simplification. Using sigmoids didn't help training or it was very difficult to train at some point and people just tried to rally you. And it happened to work very well for these incredibly deep neural networks. All right, thank you, Lisha."
-      },
-      "metadata": {
-        "relevance_score": 0.00984159205108881,
-        "created_at": "2025-09-27T14:48:29.146559",
-        "confidence": 0.00984159205108881
-      }
-    },
-    "source_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_36_1080.0_1105.9",
-    "spans": {
-      "start": 0,
-      "end": 451,
-      "text": "how neurons would either be activated or not. And so if it passes a certain threshold, it would be the identity function, but if it did not, then it would just not be activated, so it'd be 0. So it's kind of a simplification. Using sigmoids didn't help training or it was very difficult to train at some point and people just tried to rally you. And it happened to work very well for these incredibly deep neural networks. All right, thank you, Lisha."
-    }
-  },
-  {
-    "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
-    "video_file": "aircAruvnKk?si=TFg_Qwz-_eOEnygX",
-    "t_start": 90.0,
-    "t_end": 135.0,
-    "start_time": "01:30",
-    "end_time": "02:15",
-    "title": "Segment 4 (01:30-02:15)",
-    "snippet": "to feel like you know what it means when you read, or you hear about a neural network, quote-unquote, learning. This video is just going to be devoted to the structure component of that, and the following one is going to tackle learning. What we're going to do is put together a neural network that can learn to recognize handwritten digits. This is a somewhat classic example for introducing the topic, and I'm happy to stick with the status quo here, because at the end of the two videos, I want to point you to a couple good resources where you can learn more, and where you can download the code that does this and play with it on your own computer. There are many, many variants of neural networks, and in recent years there's been sort of a boom in research towards these variants, but in these two introductory videos, you and",
-    "score": 0.024401357397437096,
-    "citation": {
-      "citation_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_3_90.0_135.0",
-      "source": {
-        "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
-        "segment_idx": 3,
-        "start_time": 90.0,
-        "end_time": 135.0,
-        "timestamp": "90.0s-135.0s"
-      },
-      "content": {
-        "text": "to feel like you know what it means when you read, or you hear about a neural network, quote-unquote, learning. This video is just going to be devoted to the structure component of that, and the following one is going to tackle learning. What we're going to do is put together a neural network that can learn to recognize handwritten digits. This is a somewhat classic example for introducing the topic, and I'm happy to stick with the status quo here, because at the end of the two videos, I want to point you to a couple good resources where you can learn more, and where you can download the code that does this and play with it on your own computer. There are many, many variants of neural networks, and in recent years there's been sort of a boom in research towards these variants, but in these two introductory videos, you and",
-        "span_start": 0,
-        "span_end": 833,
-        "span_text": "to feel like you know what it means when you read, or you hear about a neural network, quote-unquote, learning. This video is just going to be devoted to the structure component of that, and the following one is going to tackle learning. What we're going to do is put together a neural network that can learn to recognize handwritten digits. This is a somewhat classic example for introducing the topic, and I'm happy to stick with the status quo here, because at the end of the two videos, I want to point you to a couple good resources where you can learn more, and where you can download the code that does this and play with it on your own computer. There are many, many variants of neural networks, and in recent years there's been sort of a boom in research towards these variants, but in these two introductory videos, you and"
-      },
-      "metadata": {
-        "relevance_score": 0.024401357397437096,
-        "created_at": "2025-09-27T14:48:29.146566",
-        "confidence": 0.024401357397437096
-      }
-    },
-    "source_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_3_90.0_135.0",
-    "spans": {
-      "start": 0,
-      "end": 833,
-      "text": "to feel like you know what it means when you read, or you hear about a neural network, quote-unquote, learning. This video is just going to be devoted to the structure component of that, and the following one is going to tackle learning. What we're going to do is put together a neural network that can learn to recognize handwritten digits. This is a somewhat classic example for introducing the topic, and I'm happy to stick with the status quo here, because at the end of the two videos, I want to point you to a couple good resources where you can learn more, and where you can download the code that does this and play with it on your own computer. There are many, many variants of neural networks, and in recent years there's been sort of a boom in research towards these variants, but in these two introductory videos, you and"
-    }
-  },
-  {
-    "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
-    "video_file": "aircAruvnKk?si=TFg_Qwz-_eOEnygX",
+    "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
+    "video_file": "ztBJqzBU5kc?si=WBfJotF1LsCCHU7A",
     "t_start": 330.0,
     "t_end": 375.0,
     "start_time": "05:30",
     "end_time": "06:15",
     "title": "Segment 12 (05:30-06:15)",
-    "snippet": "what digit this image represents. And before jumping into the math for how one layer influences the next or how training works, let's just talk about why it's even reasonable to expect a layered structure like this to behave intelligently. What are we expecting here? What is the best hope for what those middle layers might be doing? Well, when you were I recognized digits, we piece together various components. A nine has a loop up top and a line on the right. And a also has a loop up top, but it's paired with another loop down low. A four basically breaks down into three specific lines and things like that. Now in a perfect world, we might hope that each neuron in the second to last layer corresponds with one of these sub components.",
-    "score": 0.008048363029956818,
+    "snippet": "the gem I hear is a model that I'm using locally, but in this case, I swapped it with LLum-A2, and you can swap it with whatever local models that you have here from OLama, and then, once it's done that, it gives you back the response to you right here as a person in the other end. So, let's see how the code looks like, right? So, let's jump over the code. So, what I've done here, ready to have three different sections here, that will go through, so the first one is ingesting the PDF, the code for ingesting the PDF, and then I have the code for creating, that the embeddings of that PDF, and then retrieving, which is asking questions over, then getting answers back to you as well. So, let's start with ingesting PDFs. So, what do we want to do here for us, we want to install unstructured and Lung chain, and also install unstructured all docs,",
+    "score": 0.20380595891818729,
     "citation": {
-      "citation_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_11_330.0_375.0",
+      "citation_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_11_330.0_375.0",
       "source": {
-        "video_id": "7abe9472-7158-44c2-b115-a1723903e1b2",
+        "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
         "segment_idx": 11,
         "start_time": 330.0,
         "end_time": 375.0,
         "timestamp": "330.0s-375.0s"
       },
       "content": {
-        "text": "what digit this image represents. And before jumping into the math for how one layer influences the next or how training works, let's just talk about why it's even reasonable to expect a layered structure like this to behave intelligently. What are we expecting here? What is the best hope for what those middle layers might be doing? Well, when you were I recognized digits, we piece together various components. A nine has a loop up top and a line on the right. And a also has a loop up top, but it's paired with another loop down low. A four basically breaks down into three specific lines and things like that. Now in a perfect world, we might hope that each neuron in the second to last layer corresponds with one of these sub components.",
+        "text": "the gem I hear is a model that I'm using locally, but in this case, I swapped it with LLum-A2, and you can swap it with whatever local models that you have here from OLama, and then, once it's done that, it gives you back the response to you right here as a person in the other end. So, let's see how the code looks like, right? So, let's jump over the code. So, what I've done here, ready to have three different sections here, that will go through, so the first one is ingesting the PDF, the code for ingesting the PDF, and then I have the code for creating, that the embeddings of that PDF, and then retrieving, which is asking questions over, then getting answers back to you as well. So, let's start with ingesting PDFs. So, what do we want to do here for us, we want to install unstructured and Lung chain, and also install unstructured all docs,",
         "span_start": 0,
-        "span_end": 743,
-        "span_text": "what digit this image represents. And before jumping into the math for how one layer influences the next or how training works, let's just talk about why it's even reasonable to expect a layered structure like this to behave intelligently. What are we expecting here? What is the best hope for what those middle layers might be doing? Well, when you were I recognized digits, we piece together various components. A nine has a loop up top and a line on the right. And a also has a loop up top, but it's paired with another loop down low. A four basically breaks down into three specific lines and things like that. Now in a perfect world, we might hope that each neuron in the second to last layer corresponds with one of these sub components."
+        "span_end": 852,
+        "span_text": "the gem I hear is a model that I'm using locally, but in this case, I swapped it with LLum-A2, and you can swap it with whatever local models that you have here from OLama, and then, once it's done that, it gives you back the response to you right here as a person in the other end. So, let's see how the code looks like, right? So, let's jump over the code. So, what I've done here, ready to have three different sections here, that will go through, so the first one is ingesting the PDF, the code for ingesting the PDF, and then I have the code for creating, that the embeddings of that PDF, and then retrieving, which is asking questions over, then getting answers back to you as well. So, let's start with ingesting PDFs. So, what do we want to do here for us, we want to install unstructured and Lung chain, and also install unstructured all docs,"
       },
       "metadata": {
-        "relevance_score": 0.008048363029956818,
-        "created_at": "2025-09-27T14:48:29.146572",
-        "confidence": 0.008048363029956818
+        "relevance_score": 0.20380595891818729,
+        "created_at": "2025-09-28T09:26:52.117724",
+        "confidence": 0.20380595891818729
       }
     },
-    "source_id": "cite_7abe9472-7158-44c2-b115-a1723903e1b2_11_330.0_375.0",
+    "source_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_11_330.0_375.0",
     "spans": {
       "start": 0,
-      "end": 743,
-      "text": "what digit this image represents. And before jumping into the math for how one layer influences the next or how training works, let's just talk about why it's even reasonable to expect a layered structure like this to behave intelligently. What are we expecting here? What is the best hope for what those middle layers might be doing? Well, when you were I recognized digits, we piece together various components. A nine has a loop up top and a line on the right. And a also has a loop up top, but it's paired with another loop down low. A four basically breaks down into three specific lines and things like that. Now in a perfect world, we might hope that each neuron in the second to last layer corresponds with one of these sub components."
+      "end": 852,
+      "text": "the gem I hear is a model that I'm using locally, but in this case, I swapped it with LLum-A2, and you can swap it with whatever local models that you have here from OLama, and then, once it's done that, it gives you back the response to you right here as a person in the other end. So, let's see how the code looks like, right? So, let's jump over the code. So, what I've done here, ready to have three different sections here, that will go through, so the first one is ingesting the PDF, the code for ingesting the PDF, and then I have the code for creating, that the embeddings of that PDF, and then retrieving, which is asking questions over, then getting answers back to you as well. So, let's start with ingesting PDFs. So, what do we want to do here for us, we want to install unstructured and Lung chain, and also install unstructured all docs,"
+    }
+  },
+  {
+    "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
+    "video_file": "ztBJqzBU5kc?si=WBfJotF1LsCCHU7A",
+    "t_start": 510.0,
+    "t_end": 555.0,
+    "start_time": "08:30",
+    "end_time": "09:15",
+    "title": "Segment 18 (08:30-09:15)",
+    "snippet": "So we say in collaboration with McKinsey and company, the global corporate barometer 2024, so let's see, and that should be page one, let's see, that's exactly what's on there, all right, so yeah, you can see in collaboration with McKinsey, the global corporation barometer 2024, okay, so it has the content that we look for, so cool. All right, so we're done with ingesting and we verify that hey, we did ingest, we can see some data, which is cool, all right, so now let's go to the next step, which is victim settings, so we want to embed this text and basically we're converting it from human readable to computer reboot, we'll be like zeros and ones and more like vectors, right, so these are something you have want to note, so for victims, For victim betting you need also bad use a victim betting model and in this case I chose to use Nami can bed and if you have all lama if you don't have all lama You system the quickest way to do it is just go to allama.ai and then from there and we can go here right now",
+    "score": 0.18755287459352507,
+    "citation": {
+      "citation_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_17_510.0_555.0",
+      "source": {
+        "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
+        "segment_idx": 17,
+        "start_time": 510.0,
+        "end_time": 555.0,
+        "timestamp": "510.0s-555.0s"
+      },
+      "content": {
+        "text": "So we say in collaboration with McKinsey and company, the global corporate barometer 2024, so let's see, and that should be page one, let's see, that's exactly what's on there, all right, so yeah, you can see in collaboration with McKinsey, the global corporation barometer 2024, okay, so it has the content that we look for, so cool. All right, so we're done with ingesting and we verify that hey, we did ingest, we can see some data, which is cool, all right, so now let's go to the next step, which is victim settings, so we want to embed this text and basically we're converting it from human readable to computer reboot, we'll be like zeros and ones and more like vectors, right, so these are something you have want to note, so for victims, For victim betting you need also bad use a victim betting model and in this case I chose to use Nami can bed and if you have all lama if you don't have all lama You system the quickest way to do it is just go to allama.ai and then from there and we can go here right now",
+        "span_start": 0,
+        "span_end": 1017,
+        "span_text": "So we say in collaboration with McKinsey and company, the global corporate barometer 2024, so let's see, and that should be page one, let's see, that's exactly what's on there, all right, so yeah, you can see in collaboration with McKinsey, the global corporation barometer 2024, okay, so it has the content that we look for, so cool. All right, so we're done with ingesting and we verify that hey, we did ingest, we can see some data, which is cool, all right, so now let's go to the next step, which is victim settings, so we want to embed this text and basically we're converting it from human readable to computer reboot, we'll be like zeros and ones and more like vectors, right, so these are something you have want to note, so for victims, For victim betting you need also bad use a victim betting model and in this case I chose to use Nami can bed and if you have all lama if you don't have all lama You system the quickest way to do it is just go to allama.ai and then from there and we can go here right now"
+      },
+      "metadata": {
+        "relevance_score": 0.18755287459352507,
+        "created_at": "2025-09-28T09:26:52.117733",
+        "confidence": 0.18755287459352507
+      }
+    },
+    "source_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_17_510.0_555.0",
+    "spans": {
+      "start": 0,
+      "end": 1017,
+      "text": "So we say in collaboration with McKinsey and company, the global corporate barometer 2024, so let's see, and that should be page one, let's see, that's exactly what's on there, all right, so yeah, you can see in collaboration with McKinsey, the global corporation barometer 2024, okay, so it has the content that we look for, so cool. All right, so we're done with ingesting and we verify that hey, we did ingest, we can see some data, which is cool, all right, so now let's go to the next step, which is victim settings, so we want to embed this text and basically we're converting it from human readable to computer reboot, we'll be like zeros and ones and more like vectors, right, so these are something you have want to note, so for victims, For victim betting you need also bad use a victim betting model and in this case I chose to use Nami can bed and if you have all lama if you don't have all lama You system the quickest way to do it is just go to allama.ai and then from there and we can go here right now"
+    }
+  },
+  {
+    "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
+    "video_file": "ztBJqzBU5kc?si=WBfJotF1LsCCHU7A",
+    "t_start": 570.0,
+    "t_end": 615.0,
+    "start_time": "09:30",
+    "end_time": "10:15",
+    "title": "Segment 20 (09:30-10:15)",
+    "snippet": "I think it's on preview right now and it's really easy to install they have like some other instructions on how to do that right now and Once you've installed it the next thing would be for you to pull models or install models within your system right so there's a list here So if you come up here to models which is allama.com slash library You'll see all the files all the models that are available for you to use locally So we have general lama to mr all mixed draw command r You have lava so many of them right here, right? So so many of them here to play with so we're gonna be using Nami can bed text and as you can see here is a high performing Open embedding model with a large token context window. Yes, so that's the key part has a large Context window that we can use and that's the key part right there so you can take in a lot of",
+    "score": 0.14942618733279928,
+    "citation": {
+      "citation_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_19_570.0_615.0",
+      "source": {
+        "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
+        "segment_idx": 19,
+        "start_time": 570.0,
+        "end_time": 615.0,
+        "timestamp": "570.0s-615.0s"
+      },
+      "content": {
+        "text": "I think it's on preview right now and it's really easy to install they have like some other instructions on how to do that right now and Once you've installed it the next thing would be for you to pull models or install models within your system right so there's a list here So if you come up here to models which is allama.com slash library You'll see all the files all the models that are available for you to use locally So we have general lama to mr all mixed draw command r You have lava so many of them right here, right? So so many of them here to play with so we're gonna be using Nami can bed text and as you can see here is a high performing Open embedding model with a large token context window. Yes, so that's the key part has a large Context window that we can use and that's the key part right there so you can take in a lot of",
+        "span_start": 0,
+        "span_end": 842,
+        "span_text": "I think it's on preview right now and it's really easy to install they have like some other instructions on how to do that right now and Once you've installed it the next thing would be for you to pull models or install models within your system right so there's a list here So if you come up here to models which is allama.com slash library You'll see all the files all the models that are available for you to use locally So we have general lama to mr all mixed draw command r You have lava so many of them right here, right? So so many of them here to play with so we're gonna be using Nami can bed text and as you can see here is a high performing Open embedding model with a large token context window. Yes, so that's the key part has a large Context window that we can use and that's the key part right there so you can take in a lot of"
+      },
+      "metadata": {
+        "relevance_score": 0.14942618733279928,
+        "created_at": "2025-09-28T09:26:52.117740",
+        "confidence": 0.14942618733279928
+      }
+    },
+    "source_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_19_570.0_615.0",
+    "spans": {
+      "start": 0,
+      "end": 842,
+      "text": "I think it's on preview right now and it's really easy to install they have like some other instructions on how to do that right now and Once you've installed it the next thing would be for you to pull models or install models within your system right so there's a list here So if you come up here to models which is allama.com slash library You'll see all the files all the models that are available for you to use locally So we have general lama to mr all mixed draw command r You have lava so many of them right here, right? So so many of them here to play with so we're gonna be using Nami can bed text and as you can see here is a high performing Open embedding model with a large token context window. Yes, so that's the key part has a large Context window that we can use and that's the key part right there so you can take in a lot of"
+    }
+  },
+  {
+    "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
+    "video_file": "ztBJqzBU5kc?si=WBfJotF1LsCCHU7A",
+    "t_start": 600.0,
+    "t_end": 645.0,
+    "start_time": "10:00",
+    "end_time": "10:45",
+    "title": "Segment 21 (10:00-10:45)",
+    "snippet": "You have lava so many of them right here, right? So so many of them here to play with so we're gonna be using Nami can bed text and as you can see here is a high performing Open embedding model with a large token context window. Yes, so that's the key part has a large Context window that we can use and that's the key part right there so you can take in a lot of Tokens that you can then load it to Vector database. So here I've already installed this. I don't need to install but this is how you would do it and I've got to Order not affected database or in a Colab notebook and then once that's done you do allama's Allama list and that way will show us all the models that are within your Local system so if you have if you just installed Nami up here if you do allama list You'll show you if it's there already and you can see here it's already in my system and I have some other ones as well",
+    "score": 0.1786617671581449,
+    "citation": {
+      "citation_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_20_600.0_645.0",
+      "source": {
+        "video_id": "2d35d95f-3391-4858-824d-e4c01650f4f6",
+        "segment_idx": 20,
+        "start_time": 600.0,
+        "end_time": 645.0,
+        "timestamp": "600.0s-645.0s"
+      },
+      "content": {
+        "text": "You have lava so many of them right here, right? So so many of them here to play with so we're gonna be using Nami can bed text and as you can see here is a high performing Open embedding model with a large token context window. Yes, so that's the key part has a large Context window that we can use and that's the key part right there so you can take in a lot of Tokens that you can then load it to Vector database. So here I've already installed this. I don't need to install but this is how you would do it and I've got to Order not affected database or in a Colab notebook and then once that's done you do allama's Allama list and that way will show us all the models that are within your Local system so if you have if you just installed Nami up here if you do allama list You'll show you if it's there already and you can see here it's already in my system and I have some other ones as well",
+        "span_start": 0,
+        "span_end": 897,
+        "span_text": "You have lava so many of them right here, right? So so many of them here to play with so we're gonna be using Nami can bed text and as you can see here is a high performing Open embedding model with a large token context window. Yes, so that's the key part has a large Context window that we can use and that's the key part right there so you can take in a lot of Tokens that you can then load it to Vector database. So here I've already installed this. I don't need to install but this is how you would do it and I've got to Order not affected database or in a Colab notebook and then once that's done you do allama's Allama list and that way will show us all the models that are within your Local system so if you have if you just installed Nami up here if you do allama list You'll show you if it's there already and you can see here it's already in my system and I have some other ones as well"
+      },
+      "metadata": {
+        "relevance_score": 0.1786617671581449,
+        "created_at": "2025-09-28T09:26:52.117748",
+        "confidence": 0.1786617671581449
+      }
+    },
+    "source_id": "cite_2d35d95f-3391-4858-824d-e4c01650f4f6_20_600.0_645.0",
+    "spans": {
+      "start": 0,
+      "end": 897,
+      "text": "You have lava so many of them right here, right? So so many of them here to play with so we're gonna be using Nami can bed text and as you can see here is a high performing Open embedding model with a large token context window. Yes, so that's the key part has a large Context window that we can use and that's the key part right there so you can take in a lot of Tokens that you can then load it to Vector database. So here I've already installed this. I don't need to install but this is how you would do it and I've got to Order not affected database or in a Colab notebook and then once that's done you do allama's Allama list and that way will show us all the models that are within your Local system so if you have if you just installed Nami up here if you do allama list You'll show you if it's there already and you can see here it's already in my system and I have some other ones as well"
     }
   }
 ]
