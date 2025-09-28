@@ -1,0 +1,66 @@
+{
+  "info": {
+    "name": "Video Transcript API",
+    "_postman_id": "12345",
+    "description": "Postman collection for testing Video Transcript API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ingest Video",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"video_url\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/ingest_video",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "ingest_video"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Search Timestamps",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"video_id\": \"your-uuid-here\",\n  \"query\": \"AI\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/search_timestamps",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "search_timestamps"
+          ]
+        }
+      }
+    }
+  ]
+}
