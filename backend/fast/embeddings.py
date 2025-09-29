@@ -2,6 +2,7 @@ from typing import List
 import numpy as np
 import torch
 from transformers import AutoTokenizer, AutoModel
+import os
 
 from .config import EMBEDDING_MODEL, DEVICE
 from .db import MODEL_CACHE
@@ -16,13 +17,31 @@ def load_embedding_model() -> None:
         model = MODEL_CACHE["model"]
         print(f"✅ Using cached embedding model '{EMBEDDING_MODEL}'")
         return
+    
     print(f"🚀 Loading fast embedding model '{EMBEDDING_MODEL}'...")
-    tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL)
-    model = AutoModel.from_pretrained(EMBEDDING_MODEL).to(DEVICE)
-    model.eval()
-    MODEL_CACHE["tokenizer"] = tokenizer
-    MODEL_CACHE["model"] = model
-    print(f"✅ Loaded fast embedding model '{EMBEDDING_MODEL}' on {DEVICE}")
+    hf_token = os.getenv("HF_TOKEN")
+    
+    try:
+        if hf_token:
+            tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL, token=hf_token)
+            model = AutoModel.from_pretrained(EMBEDDING_MODEL, token=hf_token).to(DEVICE)
+        else:
+            tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL)
+            model = AutoModel.from_pretrained(EMBEDDING_MODEL).to(DEVICE)
+        
+        model.eval()
+        MODEL_CACHE["tokenizer"] = tokenizer
+        MODEL_CACHE["model"] = model
+        print(f"✅ Loaded fast embedding model '{EMBEDDING_MODEL}' on {DEVICE}")
+    except Exception as e:
+        print(f"❌ Failed to load '{EMBEDDING_MODEL}': {e}")
+        print("🔄 Falling back to 'sentence-transformers/all-MiniLM-L6-v2'")
+        tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
+        model = AutoModel.from_pretrained("sentence-transformers/all-MiniLM-L6-v2").to(DEVICE)
+        model.eval()
+        MODEL_CACHE["tokenizer"] = tokenizer
+        MODEL_CACHE["model"] = model
+        print(f"✅ Loaded fallback embedding model on {DEVICE}")
 
 @torch.no_grad()
 def embed_texts_fast(texts: List[str], batch_size: int = 16) -> np.ndarray:

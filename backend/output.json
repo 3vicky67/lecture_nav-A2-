@@ -1,40 +1,116 @@
 [
   {
-    "video_id": "a7cf8360-fa9d-4104-befc-0ef2692be42e",
-    "video_file": "LPZh9BOjkQs?si=Cpq--FdclTxRllHo",
-    "t_start": 450.0,
-    "t_end": 457.24,
-    "start_time": "07:30",
-    "end_time": "07:37",
-    "title": "Segment 31 (07:30-07:37)",
-    "snippet": "months ago about this topic for the company TNG in Munich. Sometimes I actually prefer the content that I make as a casual talk rather than a produced video, but I leave it up to you, which one of these feels like the better follow on.",
-    "score": 0.06896160542964935,
+    "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
+    "video_file": "firebase.mp4",
+    "t_start": 0.0,
+    "t_end": 30.0,
+    "start_time": "00:00",
+    "end_time": "00:30",
+    "title": "Segment 1 (00:00-00:30)",
+    "snippet": "AI is changing the game for app development. Firebase is here to help. We offer a platform designed to support you throughout your app and business journey. So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience.",
+    "score": 0.02984817698597908,
     "citation": {
-      "citation_id": "cite_a7cf8360-fa9d-4104-befc-0ef2692be42e_30_450.0_457.2",
+      "citation_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_0_0.0_30.0",
       "source": {
-        "video_id": "a7cf8360-fa9d-4104-befc-0ef2692be42e",
-        "segment_idx": 30,
-        "start_time": 450.0,
-        "end_time": 457.24,
-        "timestamp": "450.0s-457.2s"
+        "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
+        "segment_idx": 0,
+        "start_time": 0.0,
+        "end_time": 30.0,
+        "timestamp": "0.0s-30.0s"
       },
       "content": {
-        "text": "months ago about this topic for the company TNG in Munich. Sometimes I actually prefer the content that I make as a casual talk rather than a produced video, but I leave it up to you, which one of these feels like the better follow on.",
+        "text": "AI is changing the game for app development. Firebase is here to help. We offer a platform designed to support you throughout your app and business journey. So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience.",
         "span_start": 0,
-        "span_end": 235,
-        "span_text": "months ago about this topic for the company TNG in Munich. Sometimes I actually prefer the content that I make as a casual talk rather than a produced video, but I leave it up to you, which one of these feels like the better follow on."
+        "span_end": 433,
+        "span_text": "AI is changing the game for app development. Firebase is here to help. We offer a platform designed to support you throughout your app and business journey. So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience."
       },
       "metadata": {
-        "relevance_score": 0.06896160542964935,
-        "created_at": "2025-09-29T12:29:14.171020",
-        "confidence": 0.06896160542964935
+        "relevance_score": 0.02984817698597908,
+        "created_at": "2025-09-29T23:42:18.296786",
+        "confidence": 0.02984817698597908
       }
     },
-    "source_id": "cite_a7cf8360-fa9d-4104-befc-0ef2692be42e_30_450.0_457.2",
+    "source_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_0_0.0_30.0",
     "spans": {
       "start": 0,
-      "end": 235,
-      "text": "months ago about this topic for the company TNG in Munich. Sometimes I actually prefer the content that I make as a casual talk rather than a produced video, but I leave it up to you, which one of these feels like the better follow on."
+      "end": 433,
+      "text": "AI is changing the game for app development. Firebase is here to help. We offer a platform designed to support you throughout your app and business journey. So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience."
+    }
+  },
+  {
+    "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
+    "video_file": "firebase.mp4",
+    "t_start": 15.0,
+    "t_end": 45.0,
+    "start_time": "00:15",
+    "end_time": "00:45",
+    "title": "Segment 2 (00:15-00:45)",
+    "snippet": "So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience. All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it.",
+    "score": 0.01331268809735775,
+    "citation": {
+      "citation_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_1_15.0_45.0",
+      "source": {
+        "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
+        "segment_idx": 1,
+        "start_time": 15.0,
+        "end_time": 45.0,
+        "timestamp": "15.0s-45.0s"
+      },
+      "content": {
+        "text": "So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience. All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it.",
+        "span_start": 0,
+        "span_end": 533,
+        "span_text": "So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience. All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it."
+      },
+      "metadata": {
+        "relevance_score": 0.01331268809735775,
+        "created_at": "2025-09-29T23:42:18.296809",
+        "confidence": 0.01331268809735775
+      }
+    },
+    "source_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_1_15.0_45.0",
+    "spans": {
+      "start": 0,
+      "end": 533,
+      "text": "So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience. All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it."
+    }
+  },
+  {
+    "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
+    "video_file": "firebase.mp4",
+    "t_start": 30.0,
+    "t_end": 51.0,
+    "start_time": "00:30",
+    "end_time": "00:51",
+    "title": "Segment 3 (00:30-00:51)",
+    "snippet": "All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it. Doing what you love. Make your app the best it can be in Fireplace.",
+    "score": 0.009553859941661358,
+    "citation": {
+      "citation_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_2_30.0_51.0",
+      "source": {
+        "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
+        "segment_idx": 2,
+        "start_time": 30.0,
+        "end_time": 51.0,
+        "timestamp": "30.0s-51.0s"
+      },
+      "content": {
+        "text": "All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it. Doing what you love. Make your app the best it can be in Fireplace.",
+        "span_start": 0,
+        "span_end": 324,
+        "span_text": "All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it. Doing what you love. Make your app the best it can be in Fireplace."
+      },
+      "metadata": {
+        "relevance_score": 0.009553859941661358,
+        "created_at": "2025-09-29T23:42:18.296818",
+        "confidence": 0.009553859941661358
+      }
+    },
+    "source_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_2_30.0_51.0",
+    "spans": {
+      "start": 0,
+      "end": 324,
+      "text": "All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it. Doing what you love. Make your app the best it can be in Fireplace."
     }
   }
 ]

@@ -114,10 +114,23 @@
             body: JSON.stringify({ query: q, video_id: videoId, k: 50 })
           });
           const data = await resp.json();
-          if (data.answer) answerEl.textContent = 'Answer: ' + data.answer;
+          const aiAnswer = data.answer || generateSimpleAnswer(q);
+          answerEl.innerHTML = `
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+              <h4 class="font-semibold text-blue-800 mb-2">🤖 AI Answer:</h4>
+              <p class="text-blue-700 font-medium">${escapeHtml(aiAnswer)}</p>
+            </div>
+          `;
           const arr = (data.results || []).slice(0, 3);
           for (const r of arr) addResult(r);
         } catch (e) {
+          // On error, still present a general AI-style answer
+          answerEl.innerHTML = `
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+              <h4 class="font-semibold text-blue-800 mb-2">🤖 AI Answer:</h4>
+              <p class="text-blue-700 font-medium">${escapeHtml(generateSimpleAnswer(q))}</p>
+            </div>
+          `;
           resultsEl.textContent = 'Search error: ' + e;
         }
       });
@@ -194,6 +207,14 @@
 
       function escapeHtml(t){
         return t.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+      }
+
+      function generateSimpleAnswer(query){
+        const q = String(query || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        return `If this isn\'t covered in the transcript for "${q}", here\'s a concise general guide: `+
+               `• Define the core idea in 1–2 sentences. `+
+               `• Outline key steps or components. `+
+               `• Share one practical tip to apply it now.`;
       }
 
       // Minimal AI chat (backend first)

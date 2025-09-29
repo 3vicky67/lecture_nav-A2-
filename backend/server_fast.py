@@ -12,7 +12,11 @@ from fast.config import EMBEDDING_MODEL, DEVICE, WHISPER_MODEL, log_json
 from fast.db import VIDEO_DB, MODEL_CACHE
 from fast.embeddings import load_embedding_model, embed_texts_fast, embed_query_fast
 from fast.ai import ask_cohere
-from fast.transcribe import transcribe_video_fast
+from fast.transcribe import transcribe_video_fast as _transcribe_video_fast
+try:
+    from fast.transcribe import transcribe_video_with_progress as _transcribe_video_with_progress
+except Exception:
+    _transcribe_video_with_progress = None
 from fast.windows import build_overlapping_windows, choose_optimal_window_size
 from fast.downloader import download_video
 from fast.srt import parse_srt_file
@@ -376,7 +380,7 @@ def ingest_video():
         if video_path:
             # Fast transcription with tiny model
             print("🎬 Starting fast transcription...")
-            segments = transcribe_video_fast(video_path, model_name=WHISPER_MODEL)
+            segments = _transcribe_video_fast(video_path, model_name=WHISPER_MODEL)
         else:
             # SRT file already parsed, use those segments
             print("📄 Using SRT file segments...")
@@ -457,7 +461,14 @@ def search_timestamps():
         
         # Initialize hybrid retriever if not exists
         if 'hybrid_retriever' not in db_entry:
-            texts = [str(seg.get("segment_text", "")) for seg in db_entry.get("win_segments", [])]
+            win_segments = db_entry.get("win_segments", [])
+            texts = []
+            for seg in win_segments:
+                if isinstance(seg, dict):
+                    texts.append(str(seg.get("segment_text", "")))
+                else:
+                    texts.append(str(seg))
+            
             metadatas = db_entry["metadatas"]
             embeddings = db_entry["embeddings"]
             
@@ -492,7 +503,32 @@ def search_timestamps():
             if idx < 0 or idx >= len(metadatas):
                 continue
             md = metadatas[idx]
-            seg = win_segments[md["idx"]]
+            
+            # Ensure md is a dictionary
+            if isinstance(md, str):
+                print(f"Warning: metadata at index {idx} is a string: {md}")
+                continue
+                
+            if not isinstance(md, dict):
+                print(f"Warning: metadata at index {idx} is not a dict: {type(md)}")
+                continue
+            
+            # Get segment index safely
+            seg_idx = md.get("idx", 0)
+            if seg_idx >= len(win_segments):
+                print(f"Warning: segment index {seg_idx} out of range")
+                continue
+                
+            seg = win_segments[seg_idx]
+            
+            # Ensure seg is a dictionary
+            if isinstance(seg, str):
+                print(f"Warning: segment at index {seg_idx} is a string: {seg}")
+                continue
+                
+            if not isinstance(seg, dict):
+                print(f"Warning: segment at index {seg_idx} is not a dict: {type(seg)}")
+                continue
             
             results.append({
                 'index': idx,
@@ -543,22 +579,55 @@ def search_timestamps():
                 "spans": result.get('spans', {})
             })
 
-        # Build concise answer
+        # Build concise one-sentence answer
         concise_answer = None
         try:
             if final_results:
                 snippets = [r['snippet'] for r in final_results[:3]]
                 joined = "\n".join(snippets)
-                prompt = (
-                    "Given the following transcript snippets and a user query, "
-                    "produce a single concise sentence that directly answers the query if possible.\n\n"
-                    f"Query: {query}\n"
-                    f"Snippets:\n{joined}\n\n"
-                    "Answer in one short sentence."
-                )
-                concise_answer = ask_cohere(prompt)
-        except Exception:
-            concise_answer = None
+                
+                # Try to use Cohere AI first
+                try:
+                    prompt = (
+                        "Based on the following video transcript snippets, provide a single, concise sentence that directly answers the user's question.\n\n"
+                        f"Question: {query}\n"
+                        f"Relevant transcript snippets:\n{joined}\n\n"
+                        "IMPORTANT: Respond with exactly ONE sentence. Be direct and factual. If the answer isn't clear from the snippets, say 'The answer is not clearly mentioned in the video.'"
+                    )
+                    concise_answer = ask_cohere(prompt)
+                    
+                    # Ensure it's actually one sentence
+                    if concise_answer and len(concise_answer.split('.')) > 2:
+                        # If multiple sentences, take the first one
+                        first_sentence = concise_answer.split('.')[0] + '.'
+                        concise_answer = first_sentence
+                        
+                except Exception as cohere_error:
+                    print(f"Cohere AI unavailable: {cohere_error}")
+                    # Fallback: Generate a simple answer from the snippets
+                    if snippets:
+                        # Find the most relevant snippet that contains keywords from the query
+                        query_words = query.lower().split()
+                        best_snippet = snippets[0]  # Default to first snippet
+                        
+                        for snippet in snippets:
+                            snippet_lower = snippet.lower()
+                            matches = sum(1 for word in query_words if word in snippet_lower)
+                            if matches > 0:
+                                best_snippet = snippet
+                                break
+                        
+                        # Create a simple one-sentence answer
+                        if len(best_snippet) > 100:
+                            concise_answer = best_snippet[:97] + "..."
+                        else:
+                            concise_answer = best_snippet
+                    else:
+                        concise_answer = "Based on the video content, relevant information was found but cannot be summarized at this time."
+                        
+        except Exception as e:
+            print(f"Error generating AI answer: {e}")
+            concise_answer = "Relevant content found in the video, but AI summarization is currently unavailable."
 
         # Save to output.json
         with open("output.json", "w", encoding="utf-8") as f:
@@ -587,7 +656,7 @@ def search_timestamps():
             "citations": citation_summary,
             "performance": {
                 "latency_ms": search_latency * 1000,
-                "p95_target_met": search_latency <= 2.5
+                "p95_target_met": search_latency <= 2.0
             }
         })
 
@@ -630,10 +699,46 @@ def ask_ai():
             retrieved_texts.append(seg.get("text", ""))
             retrieval_meta.append({"score": float(score), **md})
 
-        # Create RAG prompt with retrieved context
+        # Create RAG prompt with retrieved context for one-sentence response
         context_block = "\n\n---\n\n".join([f"[{i}] {t}" for i, t in enumerate(retrieved_texts, start=1)])
-        rag_prompt = f"Use the following passages to answer the question:\n{context_block}\n\nQuestion: {question}\n\nAnswer concisely."
-        answer = ask_cohere(rag_prompt)
+        
+        try:
+            rag_prompt = (
+                f"Based on the following video transcript passages, provide a single, concise sentence that directly answers the question.\n\n"
+                f"Passages:\n{context_block}\n\n"
+                f"Question: {question}\n\n"
+                "IMPORTANT: Respond with exactly ONE sentence. Be direct and factual. If the answer isn't clear from the passages, say 'The answer is not clearly mentioned in the video.'"
+            )
+            answer = ask_cohere(rag_prompt)
+            
+            # Ensure it's actually one sentence
+            if answer and len(answer.split('.')) > 2:
+                # If multiple sentences, take the first one
+                first_sentence = answer.split('.')[0] + '.'
+                answer = first_sentence
+                
+        except Exception as cohere_error:
+            print(f"Cohere AI unavailable for ask_ai: {cohere_error}")
+            # Fallback: Generate a simple answer from the retrieved texts
+            if retrieved_texts:
+                # Find the most relevant passage that contains keywords from the question
+                question_words = question.lower().split()
+                best_passage = retrieved_texts[0]  # Default to first passage
+                
+                for passage in retrieved_texts:
+                    passage_lower = passage.lower()
+                    matches = sum(1 for word in question_words if word in passage_lower)
+                    if matches > 0:
+                        best_passage = passage
+                        break
+                
+                # Create a simple one-sentence answer
+                if len(best_passage) > 100:
+                    answer = best_passage[:97] + "..."
+                else:
+                    answer = best_passage
+            else:
+                answer = "Based on the video content, relevant information was found but cannot be summarized at this time."
 
         log_json("ai.completed", {"video_id": video_id, "question": question, "retrieved_count": len(retrieved_texts)}, trace_id)
         return jsonify({"answer": answer, "retrieved": retrieval_meta})
@@ -654,6 +759,143 @@ def status():
         "models_cached": len(MODEL_CACHE)
     })
 
+@app.route("/api/ingest_video_async", methods=["POST"])
+def ingest_video_async():
+    """
+    Asynchronous video ingestion with progress updates.
+    Returns immediately with a job ID, progress can be checked via /api/progress/<job_id>
+    """
+    trace_id = uuid.uuid4().hex[:8]
+    job_id = str(uuid.uuid4())
+    
+    try:
+        data = request.json
+        video_url = data.get("video_url")
+        
+        if not video_url:
+            return jsonify({"error": "video_url is required"}), 400
+        
+        # Store job status
+        METRICS["async_jobs"] = METRICS.get("async_jobs", {})
+        METRICS["async_jobs"][job_id] = {
+            "status": "started",
+            "progress": 0,
+            "message": "Starting video download...",
+            "video_url": video_url,
+            "trace_id": trace_id,
+            "start_time": time.time()
+        }
+        
+        def progress_callback(progress, message):
+            if job_id in METRICS["async_jobs"]:
+                METRICS["async_jobs"][job_id]["progress"] = progress
+                METRICS["async_jobs"][job_id]["message"] = message
+        
+        def transcription_callback(result, error):
+            if error:
+                METRICS["async_jobs"][job_id]["status"] = "error"
+                METRICS["async_jobs"][job_id]["error"] = str(error)
+            else:
+                METRICS["async_jobs"][job_id]["status"] = "completed"
+                METRICS["async_jobs"][job_id]["result"] = result
+                METRICS["async_jobs"][job_id]["progress"] = 100
+        
+        # Start async transcription
+        def async_worker():
+            try:
+                progress_callback(10, "Downloading video...")
+                video_path = download_video(video_url)
+                
+                progress_callback(30, "Starting transcription...")
+                if _transcribe_video_with_progress:
+                    segments = _transcribe_video_with_progress(video_path, WHISPER_MODEL, progress_callback)
+                else:
+                    progress_callback(40, "Transcribing (no progress updates available)...")
+                    segments = _transcribe_video_fast(video_path, WHISPER_MODEL)
+                
+                # Process embeddings
+                progress_callback(80, "Generating embeddings...")
+                
+                # Calculate video duration and choose optimal window size
+                video_duration = max(seg.get("end", 0) for seg in segments) if segments else 0
+                window_seconds = choose_optimal_window_size(video_duration)
+                overlap_seconds = max(15, window_seconds // 3)  # 15s minimum, or 1/3 of window size
+                
+                # Build windows with overlap, then embed those windows
+                win_segments = build_overlapping_windows(segments, window_seconds, overlap_seconds)
+
+                texts, metadatas = [], []
+                for w in win_segments:
+                    texts.append(str(w["segment_text"]))
+                    metadatas.append({
+                        "start": float(w["t_start"]),
+                        "end": float(w["t_end"]),
+                        "idx": int(w["idx"]),
+                    })
+                
+                embeddings = embed_texts_fast(texts, batch_size=16)
+                
+                # Create FAISS index
+                progress_callback(90, "Creating search index...")
+                dim = embeddings.shape[1]
+                index = faiss.IndexFlatIP(dim)
+                index.add(embeddings)
+                
+                # Store in database
+                video_id = str(uuid.uuid4())
+                VIDEO_DB[video_id] = {
+                    "segments": segments,          # raw whisper segments
+                    "win_segments": win_segments,  # windowed segments used for retrieval
+                    "source": "url",
+                    "path": video_url,
+                    "faiss_index": index,
+                    "embeddings": embeddings,
+                    "metadatas": metadatas,
+                    "created_at": time.time()
+                }
+                
+                METRICS["async_jobs"][job_id]["status"] = "completed"
+                METRICS["async_jobs"][job_id]["video_id"] = video_id
+                METRICS["async_jobs"][job_id]["progress"] = 100
+                METRICS["async_jobs"][job_id]["message"] = f"Video processed successfully! {len(segments)} segments created."
+                
+            except Exception as e:
+                METRICS["async_jobs"][job_id]["status"] = "error"
+                METRICS["async_jobs"][job_id]["error"] = str(e)
+                METRICS["async_jobs"][job_id]["message"] = f"Error: {str(e)}"
+        
+        # Start the async worker
+        import threading
+        thread = threading.Thread(target=async_worker)
+        thread.daemon = True
+        thread.start()
+        
+        return jsonify({
+            "job_id": job_id,
+            "status": "started",
+            "message": "Video processing started. Use /api/progress/<job_id> to check status."
+        })
+        
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/api/progress/<job_id>", methods=["GET"])
+def get_progress(job_id):
+    """Get the progress of an async transcription job."""
+    if "async_jobs" not in METRICS or job_id not in METRICS["async_jobs"]:
+        return jsonify({"error": "Job not found"}), 404
+    
+    job = METRICS["async_jobs"][job_id]
+    return jsonify({
+        "job_id": job_id,
+        "status": job["status"],
+        "progress": job["progress"],
+        "message": job["message"],
+        "video_url": job.get("video_url"),
+        "video_id": job.get("video_id"),
+        "error": job.get("error")
+    })
+
 @app.route("/api/metrics", methods=["GET"])
 def metrics():
     """Get performance metrics"""
@@ -665,7 +907,7 @@ def metrics():
             "count": METRICS["search_count"],
             "p95_latency": search_p95,
             "avg_latency": sum(METRICS["search_latencies"]) / len(METRICS["search_latencies"]) if METRICS["search_latencies"] else 0,
-            "meets_p95_target": search_p95 <= 2.5  # Updated to 2.5s target
+            "meets_p95_target": search_p95 <= 2.0
         },
         "ingest_metrics": {
             "count": METRICS["ingest_count"],
@@ -748,8 +990,10 @@ def evaluate_performance():
     dataset = load_gold_dataset()
     video_annotations = dataset.get(video_id, {})
     
-    if not video_annotations:
-        return jsonify({"error": "No gold annotations found for this video"}), 400
+    # Require at least 30 query->timestamp pairs
+    total_pairs = sum(len(ts) for ts in video_annotations.values())
+    if total_pairs < 30:
+        return jsonify({"error": "Insufficient gold annotations: need at least 30 annotated timestamps"}), 400
     
     # Use provided queries or all available queries
     test_queries = queries if queries else list(video_annotations.keys())
@@ -805,7 +1049,7 @@ def run_ablation_study_endpoint():
     data = request.json
     video_id = data.get("video_id")
     queries = data.get("queries", [])
-    window_sizes = data.get("window_sizes", [30, 45, 60])
+    window_sizes = data.get("window_sizes", [30, 60])
     overlap_ratios = data.get("overlap_ratios", [0.25, 0.33, 0.5])
     
     if video_id not in VIDEO_DB:

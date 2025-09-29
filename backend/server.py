@@ -5,7 +5,9 @@ import tempfile
 import uuid
 import time
 import logging
+import json
 from werkzeug.utils import secure_filename
+from dotenv import load_dotenv
 
 # Hugging Face / Cohere / Torch / FAISS imports
 import whisper
@@ -17,11 +19,19 @@ import faiss
 from typing import List, Dict
 
 # ------------------ Setup ------------------ #
+# Load environment variables from .env file
+load_dotenv()
+
 os.environ["PATH"] += os.pathsep + r"C:\ffmpeg\ffmpeg-8.0-full_build\ffmpeg-8.0-full_build\bin"
 
-# ------------------ Secrets (replace with env vars in production) ------------------ #
-COHERE_API_KEY = "xxxxxxxxxxxxxxxxxxx"
-HF_TOKEN = "xxxxxxxxxxxxxxxxxxx"
+# ------------------ Secrets from environment variables ------------------ #
+COHERE_API_KEY = os.getenv("COHERE_API_KEY")
+HF_TOKEN = os.getenv("HF_TOKEN")
+
+if not COHERE_API_KEY:
+    raise ValueError("COHERE_API_KEY environment variable is required")
+if not HF_TOKEN:
+    raise ValueError("HF_TOKEN environment variable is required")
 
 co = cohere.Client(COHERE_API_KEY)
 
@@ -52,8 +62,8 @@ model = None
 def load_embedding_model():
     global tokenizer, model
     try:
-        tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL, use_auth_token=HF_TOKEN, use_fast=True)
-        model = AutoModel.from_pretrained(EMBEDDING_MODEL, use_auth_token=HF_TOKEN).to(DEVICE)
+        tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL, token=HF_TOKEN, use_fast=True)
+        model = AutoModel.from_pretrained(EMBEDDING_MODEL, token=HF_TOKEN).to(DEVICE)
         model.eval()
         print(f"Loaded embedding model '{EMBEDDING_MODEL}'")
     except Exception as e:
