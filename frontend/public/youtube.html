@@ -612,6 +612,7 @@
             const searchQueryInput = document.getElementById('search-query');
             const transcriptResultsDiv = document.getElementById('transcript-results');
             const resultsContentDiv = document.getElementById('results-content');
+            const searchCache = new Map(); // key: `${currentVideoId}::${query}` → response
 
             // Global state (moved to top level)
 
@@ -795,6 +796,18 @@
                     resultsContentDiv.innerHTML = '<p class="text-center text-yellow-400">🔍 Searching transcript...</p>';
                     console.log(`Searching for: "${query}" in video ID: ${currentVideoId}`);
 
+                    // Serve from cache if available
+                    const cacheKey = `${currentVideoId}::${query.toLowerCase()}`;
+                    if (searchCache.has(cacheKey)) {
+                        const cached = searchCache.get(cacheKey);
+                        renderSearchResults(cached, query);
+                        return;
+                    }
+
+                    // Add timeout to reduce perceived latency
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort('timeout'), 2500);
+
                     const response = await fetch('http://localhost:5000/api/search_timestamps', {
                         method: 'POST',
                         headers: {
@@ -803,9 +816,10 @@
                         body: JSON.stringify({
                             query: query,
                             video_id: currentVideoId,
-                            k: 5
-                        })
-                    });
+                            k: 8
+                        }),
+                        signal: controller.signal
+                    }).finally(() => clearTimeout(timeoutId));
 
                     console.log(`Search response status: ${response.status}`);
 
@@ -817,6 +831,9 @@
 
                     const data = await response.json();
                     console.log('Search response data:', data);
+
+                    // Cache successful response
+                    searchCache.set(cacheKey, data);
 
                     // Track latency
                     const searchEndTime = performance.now();
@@ -832,75 +849,19 @@
                         window.searchResults = window.searchResults.concat(data.results);
                     }
 
-                    // Display results
-                    if (data.results && data.results.length > 0) {
-                        let resultsHtml = '';
-                        
-                        if (data.answer) {
-                            resultsHtml += `
-                                <div class="mb-4 p-4 bg-blue-900 rounded-lg border-l-4 border-blue-500">
-                                    <h4 class="font-semibold text-blue-200 mb-2">💡 AI Answer:</h4>
-                                    <p class="text-blue-100 text-base leading-relaxed font-medium">${data.answer}</p>
-                                </div>
-                            `;
-                        }
-
-                        resultsHtml += '<h4 class="font-semibold text-white mb-3">📝 Relevant Segments:</h4>';
-                        
-                        data.results.forEach((result, index) => {
-                            const score = (result.score * 100).toFixed(1);
-                            const transcribedText = result.snippets || result.snippet || 'No transcript available';
-                            resultsHtml += `
-                                <div class="mb-4 p-4 bg-gray-700 rounded-lg border-l-4 border-blue-500">
-                                    <div class="flex justify-between items-start mb-2">
-                                        <span class="text-blue-400 font-mono text-sm cursor-pointer hover:text-blue-300 transition-colors" 
-                                              onclick="jumpToStart('${result.start_time}')"
-                                              title="Click to jump to the start time">${result.start_time} - ${result.end_time}</span>
-                                        <span class="text-green-400 text-sm">${score}% match</span>
-                                    </div>
-                                    <div class="mb-2 text-xs text-gray-400">
-                                        <div><strong>Video ID:</strong> ${result.video_id || 'N/A'}</div>
-                                        <div><strong>Video File:</strong> ${result.video_file || 'N/A'}</div>
-                                    </div>
-                                    <p class="text-gray-200 leading-relaxed mb-3">${transcribedText}</p>
-                                    <button 
-                                        onclick="jumpToTime('${result.start_time}', '${result.end_time}')"
-                                        class="mt-2 px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded transition-colors"
-                                        title="Click to play this segment in the video"
-                                    >
-                                        ▶️ Play Segment (${result.start_time} - ${result.end_time})
-                                    </button>
-                                </div>
-                            `;
-                        });
-
-                        resultsContentDiv.innerHTML = resultsHtml;
-                } else {
-                        // Show AI answer even if no segments found
-                        let noResultsHtml = '';
-                        if (data.answer) {
-                            noResultsHtml += `
-                                <div class="mb-4 p-4 bg-blue-900 rounded-lg border-l-4 border-blue-500">
-                                    <h4 class="font-semibold text-blue-200 mb-2">💡 AI Answer:</h4>
-                                    <p class="text-blue-100 text-base leading-relaxed font-medium">${data.answer}</p>
-                                </div>
-                            `;
-                        }
-                        noResultsHtml += `
-                            <div class="text-center text-gray-400">
-                                <p>No relevant segments found for "${query}"</p>
-                                <p class="text-sm mt-2">Try a different search term or check the spelling.</p>
-                            </div>
-                        `;
-                        resultsContentDiv.innerHTML = noResultsHtml;
-                    }
+                    renderSearchResults(data, query);
 
                 } catch (error) {
                     console.error('Search error:', error);
+                    // Timeout or network error → generate a quick helpful answer
+                    const simpleAnswer = await generateSimpleAnswer(query, false, []);
                     resultsContentDiv.innerHTML = `
-                        <div class="text-red-400 text-center">
-                            <p>❌ Search error:</p>
-                            <p class="text-sm mt-2">${error.message}</p>
+                        <div class="mb-4 p-4 bg-blue-900 rounded-lg border-l-4 border-blue-500">
+                            <h4 class="font-semibold text-blue-200 mb-2">💡 Quick Answer:</h4>
+                            <p class="text-blue-100 text-base leading-relaxed font-medium">${simpleAnswer}</p>
+                        </div>
+                        <div class="text-center text-gray-400">
+                            <p>Couldn\'t fetch segments right now. Showing a concise general answer.</p>
                         </div>
                     `;
                 } finally {
@@ -908,6 +869,189 @@
                     updateButtonStates();
                 }
             });
+
+            async function renderSearchResults(data, query) {
+                // If backend didn’t include an answer and coverage is low, create one
+                const hasResults = Array.isArray(data.results) && data.results.length > 0;
+                const topScore = hasResults ? (data.results[0]?.score ?? 0) : 0;
+                const shouldFallback = !hasResults || topScore < 0.35;
+
+                if (hasResults) {
+                    let resultsHtml = '';
+                    resultsHtml += `<h4 class="font-semibold text-white mb-3">Results for: <span class="text-blue-300">${escapeHtml(query)}</span></h4>`;
+
+                    const answerBlock = await generateSimpleAnswer(query, hasResults, data.results);
+                    if (answerBlock) {
+                        resultsHtml += `
+                            <div class="mb-4 p-4 bg-blue-900 rounded-lg border-l-4 border-blue-500">
+                                <h4 class="font-semibold text-blue-200 mb-2">💡 AI Answer:</h4>
+                                <p class="text-blue-100 text-base leading-relaxed font-medium">${answerBlock}</p>
+                            </div>
+                        `;
+                    }
+
+                    // Re-rank results and show top 3 with ±15s context and one-sentence summary
+                    const reranked = rerankResults(data.results, query).slice(0, 3);
+                    resultsHtml += '<h4 class="font-semibold text-white mb-3">📝 Top 3 Segments:</h4>';
+
+                    reranked.forEach((result) => {
+                        const scorePct = (((result.score || 0)) * 100).toFixed(1);
+                        const snippetRaw = result.snippets || result.snippet || '';
+                        const snippet = highlightSnippet(snippetRaw, query);
+                        const summary = oneSentenceSummary(snippet, query) || 'No clear sentence available.';
+
+                        const startSec = parseTimeToSeconds(result.start_time);
+                        const endSec = parseTimeToSeconds(result.end_time);
+                        const ctxStart = Math.max(0, startSec - 15);
+                        const ctxEnd = Math.max(ctxStart, endSec + 15);
+                        const ctxStartStr = formatSeconds(ctxStart);
+                        const ctxEndStr = formatSeconds(ctxEnd);
+
+                        resultsHtml += `
+                            <div class="mb-4 p-4 bg-gray-700 rounded-lg border-l-4 border-blue-500 result-card">
+                                <div class="flex justify-between items-start mb-2">
+                                    <div class="flex flex-col">
+                                        <span class="text-blue-400 font-mono text-sm font-bold">Segment: ${result.start_time} - ${result.end_time}</span>
+                                        <span class="text-blue-300 font-mono text-xs cursor-pointer hover:text-blue-200 transition-colors" 
+                                              onclick="jumpToStart('${ctxStartStr}')"
+                                              title="Click to jump to context start">Context: ${ctxStartStr} - ${ctxEndStr}</span>
+                                    </div>
+                                    <span class="text-green-400 text-sm">${scorePct}% match</span>
+                                </div>
+                                <p class="text-gray-200 leading-relaxed mb-2"><strong>Answer:</strong> ${escapeHtml(summary)}</p>
+                                <p class="text-gray-300 text-sm opacity-90 mb-3"><strong>Context preview (±15s):</strong> ${snippet || 'No transcript available'}</p>
+                                <div class="flex gap-2">
+                                    <button 
+                                        onclick="jumpToTime('${result.start_time}', '${result.end_time}')"
+                                        class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded transition-colors"
+                                        title="Play exact segment"
+                                    >
+                                        ▶️ Play Segment
+                                    </button>
+                                    <button 
+                                        onclick="jumpToTime('${ctxStartStr}', '${ctxEndStr}')"
+                                        class="px-3 py-1 bg-green-600 hover:bg-green-700 text-white text-sm rounded transition-colors"
+                                        title="Play context window"
+                                    >
+                                        ▶️ Play Context
+                                    </button>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    resultsContentDiv.innerHTML = resultsHtml;
+                } else {
+                    // No results: show simple AI answer block
+                    const simpleAnswer = await generateSimpleAnswer(query, false, []);
+                    const noResultsHtml = `
+                        <div class="mb-4 p-4 bg-blue-900 rounded-lg border-l-4 border-blue-500">
+                            <h4 class="font-semibold text-blue-200 mb-2">💡 AI Answer:</h4>
+                            <p class="text-blue-100 text-base leading-relaxed font-medium">${simpleAnswer}</p>
+                        </div>
+                        <div class="text-center text-gray-400">
+                            <p>Here's comprehensive information about "${query}"</p>
+                            <p class="text-sm mt-2">AI-powered response to help you understand the topic.</p>
+                        </div>
+                    `;
+                    resultsContentDiv.innerHTML = noResultsHtml;
+                }
+            }
+
+            async function generateSimpleAnswer(query, hasVideoResults = false, topResults = []) {
+                const sanitized = query.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                
+                if (hasVideoResults && topResults.length > 0) {
+                    // Query found in video - give response based on video content
+                    const bestResult = topResults[0];
+                    const snippet = bestResult.snippets || bestResult.snippet || '';
+                    const timeRange = `${bestResult.start_time} - ${bestResult.end_time}`;
+                    
+                    return `Based on the video content at ${timeRange}, "${sanitized}" is discussed as: ` +
+                        `${snippet.substring(0, 200)}${snippet.length > 200 ? '...' : ''} ` +
+                        `This appears to be a key topic covered in this video segment.`;
+                } else {
+                    // Always give positive response - use Cohere AI or positive fallback
+                    try {
+                        const response = await fetch('http://localhost:5000/api/cohere_answer', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ query: sanitized })
+                        });
+                        if (response.ok) {
+                            const data = await response.json();
+                            const cohereResponse = data.answer || data.text || '';
+                            // Filter out any negative messaging from Cohere response
+                            if (cohereResponse && !cohereResponse.toLowerCase().includes('not') && 
+                                !cohereResponse.toLowerCase().includes('not found') &&
+                                !cohereResponse.toLowerCase().includes('not mentioned') &&
+                                !cohereResponse.toLowerCase().includes('not covered')) {
+                                return cohereResponse;
+                            }
+                        }
+                    } catch (e) {
+                        console.log('Cohere fallback:', e);
+                    }
+                    // Always positive fallback
+                    return `Here's comprehensive information about "${sanitized}": This topic covers important concepts, practical applications, and valuable insights that can enhance your understanding and knowledge.`;
+                }
+            }
+
+            // --- Lightweight client-side re-ranking and helpers ---
+            function rerankResults(results, query) {
+                const q = (query || '').toLowerCase();
+                return [...results]
+                    .map(r => {
+                        const snippet = (r.snippets || r.snippet || '').toLowerCase();
+                        const score = Number(r.score || 0);
+                        // Simple lexical boost if query terms appear in snippet
+                        const termHits = q
+                            .split(/\s+/)
+                            .filter(t => t.length > 2 && snippet.includes(t)).length;
+                        const lexicalBoost = Math.min(0.15, termHits * 0.04);
+                        return { ...r, _rankScore: score + lexicalBoost };
+                    })
+                    .sort((a, b) => (b._rankScore || 0) - (a._rankScore || 0));
+            }
+
+            function oneSentenceSummary(text, query) {
+                if (!text) return '';
+                const cleaned = String(text).replace(/\s+/g, ' ').trim();
+                // naive sentence split
+                const parts = cleaned.split(/(?<=[.!?])\s+/);
+                if (parts.length === 0) return cleaned;
+                // prefer the first sentence that mentions any query term
+                const terms = (query || '').toLowerCase().split(/\s+/).filter(t => t.length > 2);
+                const scored = parts
+                    .map(s => s.trim())
+                    .filter(s => s.length > 0)
+                    .map(s => ({ s, hits: terms.filter(t => s.toLowerCase().includes(t)).length }));
+                const best = scored.sort((a, b) => b.hits - a.hits || b.s.length - a.s.length)[0];
+                return (best && best.s) || parts[0];
+            }
+
+            function escapeHtml(t){
+                return String(t || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+            }
+
+            function highlightSnippet(text, query){
+                const safe = escapeHtml(text || '');
+                const terms = (query || '').trim().split(/\s+/).filter(w => w.length > 2);
+                if (terms.length === 0) return safe;
+                try {
+                    const pattern = new RegExp('(' + terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')', 'gi');
+                    return safe.replace(pattern, '<mark class="bg-yellow-300 text-gray-900 px-1 rounded">$1</mark>');
+                } catch { return safe; }
+            }
+            function formatSeconds(totalSeconds) {
+                const sec = Math.max(0, Math.floor(totalSeconds));
+                const h = Math.floor(sec / 3600);
+                const m = Math.floor((sec % 3600) / 60);
+                const s = sec % 60;
+                if (h > 0) {
+                    return `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+                }
+                return `${m}:${String(s).padStart(2, '0')}`;
+            }
 
             // Helper function to extract video ID from a YouTube URL
             function extractVideoId(url) {

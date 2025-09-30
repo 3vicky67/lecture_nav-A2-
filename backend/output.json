@@ -1,116 +1,116 @@
 [
   {
-    "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
-    "video_file": "firebase.mp4",
+    "video_id": "f5a8561a-845c-4400-b657-d7f16fb524ef",
+    "video_file": "kuttystory.mp4",
     "t_start": 0.0,
     "t_end": 30.0,
     "start_time": "00:00",
     "end_time": "00:30",
     "title": "Segment 1 (00:00-00:30)",
-    "snippet": "AI is changing the game for app development. Firebase is here to help. We offer a platform designed to support you throughout your app and business journey. So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience.",
-    "score": 0.02984817698597908,
+    "snippet": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things.",
+    "score": 0.12272292375564575,
     "citation": {
-      "citation_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_0_0.0_30.0",
+      "citation_id": "cite_f5a8561a-845c-4400-b657-d7f16fb524ef_0_0.0_30.0",
       "source": {
-        "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
+        "video_id": "f5a8561a-845c-4400-b657-d7f16fb524ef",
         "segment_idx": 0,
         "start_time": 0.0,
         "end_time": 30.0,
         "timestamp": "0.0s-30.0s"
       },
       "content": {
-        "text": "AI is changing the game for app development. Firebase is here to help. We offer a platform designed to support you throughout your app and business journey. So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience.",
+        "text": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things.",
         "span_start": 0,
-        "span_end": 433,
-        "span_text": "AI is changing the game for app development. Firebase is here to help. We offer a platform designed to support you throughout your app and business journey. So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience."
+        "span_end": 246,
+        "span_text": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things."
       },
       "metadata": {
-        "relevance_score": 0.02984817698597908,
-        "created_at": "2025-09-29T23:42:18.296786",
-        "confidence": 0.02984817698597908
+        "relevance_score": 0.12272292375564575,
+        "created_at": "2025-09-30T09:45:38.306006",
+        "confidence": 0.12272292375564575
       }
     },
-    "source_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_0_0.0_30.0",
+    "source_id": "cite_f5a8561a-845c-4400-b657-d7f16fb524ef_0_0.0_30.0",
     "spans": {
       "start": 0,
-      "end": 433,
-      "text": "AI is changing the game for app development. Firebase is here to help. We offer a platform designed to support you throughout your app and business journey. So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience."
+      "end": 246,
+      "text": "I'm talking about... Hope. Hope. We'll take some of our friends. Hope is a dangerous thing. Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things."
     }
   },
   {
-    "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
-    "video_file": "firebase.mp4",
+    "video_id": "f5a8561a-845c-4400-b657-d7f16fb524ef",
+    "video_file": "kuttystory.mp4",
     "t_start": 15.0,
-    "t_end": 45.0,
+    "t_end": 41.0,
     "start_time": "00:15",
-    "end_time": "00:45",
-    "title": "Segment 2 (00:15-00:45)",
-    "snippet": "So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience. All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it.",
-    "score": 0.01331268809735775,
+    "end_time": "00:41",
+    "title": "Segment 2 (00:15-00:41)",
+    "snippet": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
+    "score": 0.1578909158706665,
     "citation": {
-      "citation_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_1_15.0_45.0",
+      "citation_id": "cite_f5a8561a-845c-4400-b657-d7f16fb524ef_1_15.0_41.0",
       "source": {
-        "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
+        "video_id": "f5a8561a-845c-4400-b657-d7f16fb524ef",
         "segment_idx": 1,
         "start_time": 15.0,
-        "end_time": 45.0,
-        "timestamp": "15.0s-45.0s"
+        "end_time": 41.0,
+        "timestamp": "15.0s-41.0s"
       },
       "content": {
-        "text": "So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience. All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it.",
+        "text": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
         "span_start": 0,
-        "span_end": 533,
-        "span_text": "So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience. All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it."
+        "span_end": 266,
+        "span_text": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
       },
       "metadata": {
-        "relevance_score": 0.01331268809735775,
-        "created_at": "2025-09-29T23:42:18.296809",
-        "confidence": 0.01331268809735775
+        "relevance_score": 0.1578909158706665,
+        "created_at": "2025-09-30T09:45:38.306022",
+        "confidence": 0.1578909158706665
       }
     },
-    "source_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_1_15.0_45.0",
+    "source_id": "cite_f5a8561a-845c-4400-b657-d7f16fb524ef_1_15.0_41.0",
     "spans": {
       "start": 0,
-      "end": 533,
-      "text": "So you can rapidly build, release, monitor, and optimize apps with Google's latest AI technology. Easily build AI powered experiences into your apps with speed and safety. Then launch, monitor, and iterate with AI tools that help you optimize your apps quality and experience. All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it."
+      "end": 266,
+      "text": "Hope and grab a man insane. He's got no use on you, sir. But he didn't use to deny it, yeah. Remember Red? Hope is a good thing. Maybe the best of things. And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
     }
   },
   {
-    "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
-    "video_file": "firebase.mp4",
+    "video_id": "f5a8561a-845c-4400-b657-d7f16fb524ef",
+    "video_file": "kuttystory.mp4",
     "t_start": 30.0,
-    "t_end": 51.0,
+    "t_end": 41.0,
     "start_time": "00:30",
-    "end_time": "00:51",
-    "title": "Segment 3 (00:30-00:51)",
-    "snippet": "All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it. Doing what you love. Make your app the best it can be in Fireplace.",
-    "score": 0.009553859941661358,
+    "end_time": "00:41",
+    "title": "Segment 3 (00:30-00:41)",
+    "snippet": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
+    "score": 0.1161082535982132,
     "citation": {
-      "citation_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_2_30.0_51.0",
+      "citation_id": "cite_f5a8561a-845c-4400-b657-d7f16fb524ef_2_30.0_41.0",
       "source": {
-        "video_id": "b8563af9-4acd-41f3-9e51-2d02d663d0ea",
+        "video_id": "f5a8561a-845c-4400-b657-d7f16fb524ef",
         "segment_idx": 2,
         "start_time": 30.0,
-        "end_time": 51.0,
-        "timestamp": "30.0s-51.0s"
+        "end_time": 41.0,
+        "timestamp": "30.0s-41.0s"
       },
       "content": {
-        "text": "All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it. Doing what you love. Make your app the best it can be in Fireplace.",
+        "text": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy.",
         "span_start": 0,
-        "span_end": 324,
-        "span_text": "All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it. Doing what you love. Make your app the best it can be in Fireplace."
+        "span_end": 111,
+        "span_text": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
       },
       "metadata": {
-        "relevance_score": 0.009553859941661358,
-        "created_at": "2025-09-29T23:42:18.296818",
-        "confidence": 0.009553859941661358
+        "relevance_score": 0.1161082535982132,
+        "created_at": "2025-09-30T09:45:38.306027",
+        "confidence": 0.1161082535982132
       }
     },
-    "source_id": "cite_b8563af9-4acd-41f3-9e51-2d02d663d0ea_2_30.0_51.0",
+    "source_id": "cite_f5a8561a-845c-4400-b657-d7f16fb524ef_2_30.0_41.0",
     "spans": {
       "start": 0,
-      "end": 324,
-      "text": "All with assistance provided by Gemini, Google's largest and most capable AI model, helping you to work faster and smarter. Firebase helps you run your app with confidence, deliver the best experience for new users, and get to market quickly and secure it. Doing what you love. Make your app the best it can be in Fireplace."
+      "end": 111,
+      "text": "And no good thing ever does. I will be hoping that this letter finds you. It finds you well. Your friend. Andy."
     }
   }
 ]
