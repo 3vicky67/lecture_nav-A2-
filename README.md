@@ -5,7 +5,7 @@ A powerful web application that combines **AI transcription, semantic search, an
 ---
 
 ## 🚀 Key Features
-* **google-gemma 2bmodel->for transcription and embedding model
+* google-gemma 2bmodel ->for transcription and embedding model
 * **Video Upload & Transcription** → Accurate speech-to-text using **OpenAI Whisper**
 * **Semantic Search** → Contextual retrieval with Hugging Face embeddings + **FAISS**
 * **RAG-Powered Q&A** → AI answers your questions using video context with **Cohere**
