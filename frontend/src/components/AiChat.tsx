@@ -15,6 +15,11 @@ const AiChat: React.FC<AiChatProps> = ({ videoId }) => {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // Keep prop wired without affecting behavior (answers are general-purpose)
+  if (videoId) {
+    // no-op: reserved for future context-aware enhancements
+  }
+
   const sendMessage = async () => {
     if (!input.trim()) return;
 
@@ -25,9 +30,8 @@ const AiChat: React.FC<AiChatProps> = ({ videoId }) => {
     try {
       // Prefer backend RAG when available
       try {
-        const payload = videoId
-          ? { video_id: videoId, question: input, k: 3 }
-          : { question: input };
+        // Irrespective of video context, always ask a general question
+        const payload = { question: input };
 
         const resp = await fetch('http://localhost:5000/api/ask_ai', {
           method: 'POST',
@@ -37,9 +41,12 @@ const AiChat: React.FC<AiChatProps> = ({ videoId }) => {
 
         if (!resp.ok) throw new Error(`Backend AI error: ${resp.status}`);
         const data = await resp.json();
-        const text = data.answer || "No response";
-        setMessages((prev) => [...prev, { sender: "ai", text }]);
-        return;
+        const backendText = (data && data.answer) ? String(data.answer) : "";
+        const isNegative = /not\s+(?:found|mentioned|covered|available)/i.test(backendText);
+        if (backendText && !isNegative) {
+          setMessages((prev) => [...prev, { sender: "ai", text: backendText }]);
+          return;
+        }
       } catch (e) {
         console.warn("[v0] Backend AI unavailable, falling back to Cohere in frontend.", e);
       }
@@ -53,7 +60,13 @@ const AiChat: React.FC<AiChatProps> = ({ videoId }) => {
         return;
       }
 
-      const chat = await co.chat({ model: "command-xlarge-nightly", message: input });
+      const chat = await co.chat({
+        model: "command-xlarge-nightly",
+        message: input,
+        temperature: 0.6,
+        maxTokens: 512,
+        connectors: [],
+      });
       setMessages((prev) => [
         ...prev,
         { sender: "ai", text: chat.text || "No response" },
