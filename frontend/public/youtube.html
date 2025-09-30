@@ -95,9 +95,13 @@
 
         <div class="input-group">
                 <label for="youtube-url">YouTube Video URL</label>
-                <div class="flex gap-2">
+                <div class="flex gap-2 items-center flex-wrap">
                     <input type="text" id="youtube-url" placeholder="e.g. https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                     <button id="load-video-btn" class="btn btn-primary whitespace-nowrap">Load & Get Transcript</button>
+                    <label class="flex items-center gap-2 text-sm text-gray-300 ml-2">
+                        <input id="use-gemini" type="checkbox" class="h-4 w-4">
+                        <span>Use Gemini Flash Lite</span>
+                    </label>
             </div>
         </div>
 
@@ -608,6 +612,7 @@
             const loadVideoBtn = document.getElementById('load-video-btn');
             const searchBtn = document.getElementById('search-btn');
             const youtubeUrlInput = document.getElementById('youtube-url');
+            const useGeminiCheckbox = document.getElementById('use-gemini');
             const videoEmbedContainer = document.getElementById('video-embed-container');
             const searchQueryInput = document.getElementById('search-query');
             const transcriptResultsDiv = document.getElementById('transcript-results');
@@ -677,16 +682,34 @@
                     resultsContentDiv.innerHTML = '<p class="text-center text-yellow-400">🎬 Processing video and generating transcript...</p>';
                     transcriptResultsDiv.classList.remove('hidden');
 
-                    // Use async endpoint for better user experience
-                    const response = await fetch('http://localhost:5000/api/ingest_video_async', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            video_url: url
-                        })
-                    });
+                    // Choose endpoint based on Gemini toggle
+                    const endpointGemini = 'http://localhost:5000/api/transcribe_gemini';
+                    const endpointDefault = 'http://localhost:5000/api/ingest_video_async';
+                    const wantGemini = !!(useGeminiCheckbox && useGeminiCheckbox.checked);
+                    let response;
+                    try {
+                        const chosen = wantGemini ? endpointGemini : endpointDefault;
+                        response = await fetch(chosen, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({ video_url: url })
+                        });
+                        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    } catch (e) {
+                        if (wantGemini) {
+                            // Fallback to default pipeline if Gemini endpoint is unavailable
+                            console.warn('Gemini endpoint failed, falling back to default ingest.', e);
+                            response = await fetch(endpointDefault, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ video_url: url })
+                            });
+                        } else {
+                            throw e;
+                        }
+                    }
 
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);

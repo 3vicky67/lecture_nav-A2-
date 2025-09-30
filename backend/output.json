@@ -1,306 +1,306 @@
 [
   {
-    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
-    "t_start": 30.0,
-    "t_end": 60.0,
-    "start_time": "00:30",
-    "end_time": "01:00",
-    "title": "Segment 3 (00:30-01:00)",
-    "snippet": "so that we can clear up some of the myths and misconceptions around this. In addition, something else has happened since that video was recorded. And that is the absolute explosion of this area of generative AI. Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other?",
-    "score": 0.045946575701236725,
-    "citation": {
-      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_2_30.0_60.0",
-      "source": {
-        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-        "segment_idx": 2,
-        "start_time": 30.0,
-        "end_time": 60.0,
-        "timestamp": "30.0s-60.0s"
-      },
-      "content": {
-        "text": "so that we can clear up some of the myths and misconceptions around this. In addition, something else has happened since that video was recorded. And that is the absolute explosion of this area of generative AI. Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other?",
-        "span_start": 0,
-        "span_end": 463,
-        "span_text": "so that we can clear up some of the myths and misconceptions around this. In addition, something else has happened since that video was recorded. And that is the absolute explosion of this area of generative AI. Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other?"
-      },
-      "metadata": {
-        "relevance_score": 0.045946575701236725,
-        "created_at": "2025-09-30T13:16:10.211195",
-        "confidence": 0.045946575701236725
-      }
-    },
-    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_2_30.0_60.0",
-    "spans": {
-      "start": 0,
-      "end": 463,
-      "text": "so that we can clear up some of the myths and misconceptions around this. In addition, something else has happened since that video was recorded. And that is the absolute explosion of this area of generative AI. Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other?"
-    }
-  },
-  {
-    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
-    "t_start": 585.0,
-    "t_end": 595.68,
-    "start_time": "09:45",
-    "end_time": "09:55",
-    "title": "Segment 40 (09:45-09:55)",
-    "snippet": "and make sure that we can reap the benefits from all of this technology. If you liked this video and want to see more like it, please like and subscribe. If you have any questions or want to share your thoughts about this topic, please leave a comment below.",
-    "score": 0.030366184189915657,
-    "citation": {
-      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_39_585.0_595.7",
-      "source": {
-        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-        "segment_idx": 39,
-        "start_time": 585.0,
-        "end_time": 595.68,
-        "timestamp": "585.0s-595.7s"
-      },
-      "content": {
-        "text": "and make sure that we can reap the benefits from all of this technology. If you liked this video and want to see more like it, please like and subscribe. If you have any questions or want to share your thoughts about this topic, please leave a comment below.",
-        "span_start": 0,
-        "span_end": 258,
-        "span_text": "and make sure that we can reap the benefits from all of this technology. If you liked this video and want to see more like it, please like and subscribe. If you have any questions or want to share your thoughts about this topic, please leave a comment below."
-      },
-      "metadata": {
-        "relevance_score": 0.030366184189915657,
-        "created_at": "2025-09-30T13:16:10.211219",
-        "confidence": 0.030366184189915657
-      }
-    },
-    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_39_585.0_595.7",
-    "spans": {
-      "start": 0,
-      "end": 258,
-      "text": "and make sure that we can reap the benefits from all of this technology. If you liked this video and want to see more like it, please like and subscribe. If you have any questions or want to share your thoughts about this topic, please leave a comment below."
-    }
-  },
-  {
-    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
-    "t_start": 45.0,
-    "t_end": 75.0,
-    "start_time": "00:45",
-    "end_time": "01:15",
-    "title": "Segment 4 (00:45-01:15)",
-    "snippet": "Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other? How are they related to each other? We're going to take a look at that in this video and try to explain how all these technologies relate, and how we can use them. First off, a little bit of a disclaimer. I'm going to have to simplify some of these concepts in order to not make this video last for a week.",
-    "score": 0.05406929552555084,
-    "citation": {
-      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_3_45.0_75.0",
-      "source": {
-        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-        "segment_idx": 3,
-        "start_time": 45.0,
-        "end_time": 75.0,
-        "timestamp": "45.0s-75.0s"
-      },
-      "content": {
-        "text": "Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other? How are they related to each other? We're going to take a look at that in this video and try to explain how all these technologies relate, and how we can use them. First off, a little bit of a disclaimer. I'm going to have to simplify some of these concepts in order to not make this video last for a week.",
-        "span_start": 0,
-        "span_end": 558,
-        "span_text": "Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other? How are they related to each other? We're going to take a look at that in this video and try to explain how all these technologies relate, and how we can use them. First off, a little bit of a disclaimer. I'm going to have to simplify some of these concepts in order to not make this video last for a week."
-      },
-      "metadata": {
-        "relevance_score": 0.05406929552555084,
-        "created_at": "2025-09-30T13:16:10.211243",
-        "confidence": 0.05406929552555084
-      }
-    },
-    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_3_45.0_75.0",
-    "spans": {
-      "start": 0,
-      "end": 558,
-      "text": "Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other? How are they related to each other? We're going to take a look at that in this video and try to explain how all these technologies relate, and how we can use them. First off, a little bit of a disclaimer. I'm going to have to simplify some of these concepts in order to not make this video last for a week."
-    }
-  },
-  {
-    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
-    "t_start": 75.0,
-    "t_end": 105.0,
-    "start_time": "01:15",
-    "end_time": "01:45",
-    "title": "Segment 6 (01:15-01:45)",
-    "snippet": "I'm going to have to simplify some of these concepts in order to not make this video last for a week. So those of you that are really deep experts in the field apologies in advance, but we're going to try to make this simple and that will involve some generalizations. First of all, the start with AI. Artificial intelligence is basically trying to simulate with a computer something that would match or exceed human intelligence. What is intelligence? Well, it could be a lot of different things, but generally we tend to think of it",
-    "score": 0.058555517345666885,
-    "citation": {
-      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_5_75.0_105.0",
-      "source": {
-        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-        "segment_idx": 5,
-        "start_time": 75.0,
-        "end_time": 105.0,
-        "timestamp": "75.0s-105.0s"
-      },
-      "content": {
-        "text": "I'm going to have to simplify some of these concepts in order to not make this video last for a week. So those of you that are really deep experts in the field apologies in advance, but we're going to try to make this simple and that will involve some generalizations. First of all, the start with AI. Artificial intelligence is basically trying to simulate with a computer something that would match or exceed human intelligence. What is intelligence? Well, it could be a lot of different things, but generally we tend to think of it",
-        "span_start": 0,
-        "span_end": 534,
-        "span_text": "I'm going to have to simplify some of these concepts in order to not make this video last for a week. So those of you that are really deep experts in the field apologies in advance, but we're going to try to make this simple and that will involve some generalizations. First of all, the start with AI. Artificial intelligence is basically trying to simulate with a computer something that would match or exceed human intelligence. What is intelligence? Well, it could be a lot of different things, but generally we tend to think of it"
-      },
-      "metadata": {
-        "relevance_score": 0.058555517345666885,
-        "created_at": "2025-09-30T13:16:10.211259",
-        "confidence": 0.058555517345666885
-      }
-    },
-    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_5_75.0_105.0",
-    "spans": {
-      "start": 0,
-      "end": 534,
-      "text": "I'm going to have to simplify some of these concepts in order to not make this video last for a week. So those of you that are really deep experts in the field apologies in advance, but we're going to try to make this simple and that will involve some generalizations. First of all, the start with AI. Artificial intelligence is basically trying to simulate with a computer something that would match or exceed human intelligence. What is intelligence? Well, it could be a lot of different things, but generally we tend to think of it"
-    }
-  },
-  {
-    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
-    "t_start": 150.0,
-    "t_end": 180.0,
-    "start_time": "02:30",
-    "end_time": "03:00",
-    "title": "Segment 11 (02:30-03:00)",
-    "snippet": "And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this. All of this was something that we did before we ever touched in to the next topic. I'm going to talk about. And that's the area of machine learning. Machine learning is, as its name implies, the machine is learning.",
-    "score": 0.05728750303387642,
-    "citation": {
-      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_10_150.0_180.0",
-      "source": {
-        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-        "segment_idx": 10,
-        "start_time": 150.0,
-        "end_time": 180.0,
-        "timestamp": "150.0s-180.0s"
-      },
-      "content": {
-        "text": "And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this. All of this was something that we did before we ever touched in to the next topic. I'm going to talk about. And that's the area of machine learning. Machine learning is, as its name implies, the machine is learning.",
-        "span_start": 0,
-        "span_end": 468,
-        "span_text": "And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this. All of this was something that we did before we ever touched in to the next topic. I'm going to talk about. And that's the area of machine learning. Machine learning is, as its name implies, the machine is learning."
-      },
-      "metadata": {
-        "relevance_score": 0.05728750303387642,
-        "created_at": "2025-09-30T13:16:10.211267",
-        "confidence": 0.05728750303387642
-      }
-    },
-    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_10_150.0_180.0",
-    "spans": {
-      "start": 0,
-      "end": 468,
-      "text": "And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this. All of this was something that we did before we ever touched in to the next topic. I'm going to talk about. And that's the area of machine learning. Machine learning is, as its name implies, the machine is learning."
-    }
-  },
-  {
-    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
-    "t_start": 135.0,
-    "t_end": 165.0,
-    "start_time": "02:15",
-    "end_time": "02:45",
-    "title": "Segment 10 (02:15-02:45)",
-    "snippet": "But I can tell you as an undergrad, which for me was back during these times, we were doing AI work. In fact, we would use programming languages like this or prologue. And these kinds of things were kind of the predecessors to what became later expert systems. And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this.",
-    "score": 0.030717436224222183,
-    "citation": {
-      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_9_135.0_165.0",
-      "source": {
-        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-        "segment_idx": 9,
-        "start_time": 135.0,
-        "end_time": 165.0,
-        "timestamp": "135.0s-165.0s"
-      },
-      "content": {
-        "text": "But I can tell you as an undergrad, which for me was back during these times, we were doing AI work. In fact, we would use programming languages like this or prologue. And these kinds of things were kind of the predecessors to what became later expert systems. And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this.",
-        "span_start": 0,
-        "span_end": 513,
-        "span_text": "But I can tell you as an undergrad, which for me was back during these times, we were doing AI work. In fact, we would use programming languages like this or prologue. And these kinds of things were kind of the predecessors to what became later expert systems. And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this."
-      },
-      "metadata": {
-        "relevance_score": 0.030717436224222183,
-        "created_at": "2025-09-30T13:16:10.211274",
-        "confidence": 0.030717436224222183
-      }
-    },
-    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_9_135.0_165.0",
-    "spans": {
-      "start": 0,
-      "end": 513,
-      "text": "But I can tell you as an undergrad, which for me was back during these times, we were doing AI work. In fact, we would use programming languages like this or prologue. And these kinds of things were kind of the predecessors to what became later expert systems. And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this."
-    }
-  },
-  {
-    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
     "t_start": 420.0,
     "t_end": 450.0,
     "start_time": "07:00",
     "end_time": "07:30",
     "title": "Segment 29 (07:00-07:30)",
-    "snippet": "And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format. Well, let me give you an analogy. If you take music, for instance, then every note has already been invented. So in a sense, every song is just a recombination, some other permutation of all the notes that already exist already,",
-    "score": 0.030403394252061844,
+    "snippet": "better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details",
+    "score": 0.059727635234594345,
     "citation": {
-      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_28_420.0_450.0",
+      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_28_420.0_450.0",
       "source": {
-        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
         "segment_idx": 28,
         "start_time": 420.0,
         "end_time": 450.0,
         "timestamp": "420.0s-450.0s"
       },
       "content": {
-        "text": "And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format. Well, let me give you an analogy. If you take music, for instance, then every note has already been invented. So in a sense, every song is just a recombination, some other permutation of all the notes that already exist already,",
+        "text": "better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details",
         "span_start": 0,
-        "span_end": 525,
-        "span_text": "And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format. Well, let me give you an analogy. If you take music, for instance, then every note has already been invented. So in a sense, every song is just a recombination, some other permutation of all the notes that already exist already,"
+        "span_end": 379,
+        "span_text": "better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details"
       },
       "metadata": {
-        "relevance_score": 0.030403394252061844,
-        "created_at": "2025-09-30T13:16:10.211315",
-        "confidence": 0.030403394252061844
+        "relevance_score": 0.059727635234594345,
+        "created_at": "2025-09-30T15:48:10.574975",
+        "confidence": 0.059727635234594345
       }
     },
-    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_28_420.0_450.0",
+    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_28_420.0_450.0",
     "spans": {
       "start": 0,
-      "end": 525,
-      "text": "And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format. Well, let me give you an analogy. If you take music, for instance, then every note has already been invented. So in a sense, every song is just a recombination, some other permutation of all the notes that already exist already,"
+      "end": 379,
+      "text": "better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details"
     }
   },
   {
-    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
-    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
+    "t_start": 165.0,
+    "t_end": 195.0,
+    "start_time": "02:45",
+    "end_time": "03:15",
+    "title": "Segment 12 (02:45-03:15)",
+    "snippet": "let's say if we combine that with the idea of courier taking one thing for one place to another what happens if we combine both of these ideas if we combine it we get the idea of word delivery now that's how humans take right they take one idea let me take another and mix it that's how human creativity likes I think we might have all learned in our schools at least I have that energy is not converted and all those kind of stuff I don't remember the whole thing but similarly a",
+    "score": 0.08770114928483963,
+    "citation": {
+      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_11_165.0_195.0",
+      "source": {
+        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+        "segment_idx": 11,
+        "start_time": 165.0,
+        "end_time": 195.0,
+        "timestamp": "165.0s-195.0s"
+      },
+      "content": {
+        "text": "let's say if we combine that with the idea of courier taking one thing for one place to another what happens if we combine both of these ideas if we combine it we get the idea of word delivery now that's how humans take right they take one idea let me take another and mix it that's how human creativity likes I think we might have all learned in our schools at least I have that energy is not converted and all those kind of stuff I don't remember the whole thing but similarly a",
+        "span_start": 0,
+        "span_end": 480,
+        "span_text": "let's say if we combine that with the idea of courier taking one thing for one place to another what happens if we combine both of these ideas if we combine it we get the idea of word delivery now that's how humans take right they take one idea let me take another and mix it that's how human creativity likes I think we might have all learned in our schools at least I have that energy is not converted and all those kind of stuff I don't remember the whole thing but similarly a"
+      },
+      "metadata": {
+        "relevance_score": 0.08770114928483963,
+        "created_at": "2025-09-30T15:48:10.575005",
+        "confidence": 0.08770114928483963
+      }
+    },
+    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_11_165.0_195.0",
+    "spans": {
+      "start": 0,
+      "end": 480,
+      "text": "let's say if we combine that with the idea of courier taking one thing for one place to another what happens if we combine both of these ideas if we combine it we get the idea of word delivery now that's how humans take right they take one idea let me take another and mix it that's how human creativity likes I think we might have all learned in our schools at least I have that energy is not converted and all those kind of stuff I don't remember the whole thing but similarly a"
+    }
+  },
+  {
+    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
     "t_start": 405.0,
     "t_end": 435.0,
     "start_time": "06:45",
     "end_time": "07:15",
     "title": "Segment 28 (06:45-07:15)",
-    "snippet": "Except in this case with large language models, they're not predicting the next word. They're predicting the next sentence, the next paragraph, the next entire document. So there's a really an amazing exponential leap in what these things are able to do. And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format.",
-    "score": 0.05516698956489563,
+    "snippet": "another video that will force your game in nightmares right this method we all know him he's the great actor right so both look unrealistic but at least this is better this is better better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully",
+    "score": 0.06319109350442886,
     "citation": {
-      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_27_405.0_435.0",
+      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_27_405.0_435.0",
       "source": {
-        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
         "segment_idx": 27,
         "start_time": 405.0,
         "end_time": 435.0,
         "timestamp": "405.0s-435.0s"
       },
       "content": {
-        "text": "Except in this case with large language models, they're not predicting the next word. They're predicting the next sentence, the next paragraph, the next entire document. So there's a really an amazing exponential leap in what these things are able to do. And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format.",
+        "text": "another video that will force your game in nightmares right this method we all know him he's the great actor right so both look unrealistic but at least this is better this is better better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully",
         "span_start": 0,
-        "span_end": 551,
-        "span_text": "Except in this case with large language models, they're not predicting the next word. They're predicting the next sentence, the next paragraph, the next entire document. So there's a really an amazing exponential leap in what these things are able to do. And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format."
+        "span_end": 459,
+        "span_text": "another video that will force your game in nightmares right this method we all know him he's the great actor right so both look unrealistic but at least this is better this is better better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully"
       },
       "metadata": {
-        "relevance_score": 0.05516698956489563,
-        "created_at": "2025-09-30T13:16:10.211325",
-        "confidence": 0.05516698956489563
+        "relevance_score": 0.06319109350442886,
+        "created_at": "2025-09-30T15:48:10.575013",
+        "confidence": 0.06319109350442886
       }
     },
-    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_27_405.0_435.0",
+    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_27_405.0_435.0",
     "spans": {
       "start": 0,
-      "end": 551,
-      "text": "Except in this case with large language models, they're not predicting the next word. They're predicting the next sentence, the next paragraph, the next entire document. So there's a really an amazing exponential leap in what these things are able to do. And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format."
+      "end": 459,
+      "text": "another video that will force your game in nightmares right this method we all know him he's the great actor right so both look unrealistic but at least this is better this is better better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully"
+    }
+  },
+  {
+    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
+    "t_start": 435.0,
+    "t_end": 465.0,
+    "start_time": "07:15",
+    "end_time": "07:45",
+    "title": "Segment 30 (07:15-07:45)",
+    "snippet": "not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details well this is the AI generated see if it it like confuses you that's the great part even one person said lower right that's crazy that people believe this is the AI generated I'll show a small trick okay so you will really focus on the video this looks pretty real but camera movement",
+    "score": 0.08676104247570038,
+    "citation": {
+      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_29_435.0_465.0",
+      "source": {
+        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+        "segment_idx": 29,
+        "start_time": 435.0,
+        "end_time": 465.0,
+        "timestamp": "435.0s-465.0s"
+      },
+      "content": {
+        "text": "not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details well this is the AI generated see if it it like confuses you that's the great part even one person said lower right that's crazy that people believe this is the AI generated I'll show a small trick okay so you will really focus on the video this looks pretty real but camera movement",
+        "span_start": 0,
+        "span_end": 468,
+        "span_text": "not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details well this is the AI generated see if it it like confuses you that's the great part even one person said lower right that's crazy that people believe this is the AI generated I'll show a small trick okay so you will really focus on the video this looks pretty real but camera movement"
+      },
+      "metadata": {
+        "relevance_score": 0.08676104247570038,
+        "created_at": "2025-09-30T15:48:10.575021",
+        "confidence": 0.08676104247570038
+      }
+    },
+    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_29_435.0_465.0",
+    "spans": {
+      "start": 0,
+      "end": 468,
+      "text": "not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details well this is the AI generated see if it it like confuses you that's the great part even one person said lower right that's crazy that people believe this is the AI generated I'll show a small trick okay so you will really focus on the video this looks pretty real but camera movement"
+    }
+  },
+  {
+    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
+    "t_start": 210.0,
+    "t_end": 240.0,
+    "start_time": "03:30",
+    "end_time": "04:00",
+    "title": "Segment 15 (03:30-04:00)",
+    "snippet": "from the time we are a child we learn from that and create a new idea okay so that is how humans think okay now this is how AI things okay let's combine the idea of avocado everyone has avocado right what happens if we combine the idea of avocado and a chair avocado chair and guess what this picture that you see on the screen right now is the AI generating is avocado chair real no right part when the help of AI it can create new pictures let's take the idea of a dog in space it",
+    "score": 0.08704452216625214,
+    "citation": {
+      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_14_210.0_240.0",
+      "source": {
+        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+        "segment_idx": 14,
+        "start_time": 210.0,
+        "end_time": 240.0,
+        "timestamp": "210.0s-240.0s"
+      },
+      "content": {
+        "text": "from the time we are a child we learn from that and create a new idea okay so that is how humans think okay now this is how AI things okay let's combine the idea of avocado everyone has avocado right what happens if we combine the idea of avocado and a chair avocado chair and guess what this picture that you see on the screen right now is the AI generating is avocado chair real no right part when the help of AI it can create new pictures let's take the idea of a dog in space it",
+        "span_start": 0,
+        "span_end": 482,
+        "span_text": "from the time we are a child we learn from that and create a new idea okay so that is how humans think okay now this is how AI things okay let's combine the idea of avocado everyone has avocado right what happens if we combine the idea of avocado and a chair avocado chair and guess what this picture that you see on the screen right now is the AI generating is avocado chair real no right part when the help of AI it can create new pictures let's take the idea of a dog in space it"
+      },
+      "metadata": {
+        "relevance_score": 0.08704452216625214,
+        "created_at": "2025-09-30T15:48:10.575029",
+        "confidence": 0.08704452216625214
+      }
+    },
+    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_14_210.0_240.0",
+    "spans": {
+      "start": 0,
+      "end": 482,
+      "text": "from the time we are a child we learn from that and create a new idea okay so that is how humans think okay now this is how AI things okay let's combine the idea of avocado everyone has avocado right what happens if we combine the idea of avocado and a chair avocado chair and guess what this picture that you see on the screen right now is the AI generating is avocado chair real no right part when the help of AI it can create new pictures let's take the idea of a dog in space it"
+    }
+  },
+  {
+    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
+    "t_start": 345.0,
+    "t_end": 375.0,
+    "start_time": "05:45",
+    "end_time": "06:15",
+    "title": "Segment 24 (05:45-06:15)",
+    "snippet": "want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right even though the text is clear lot of stuff they see AI can generate messy pictures AI pictures can be super realistic nowadays so the thing is that AI really smart right so pictures is got we can't trust anything on social media right now I could see I'm the prime minister of India",
+    "score": 0.097342349588871,
+    "citation": {
+      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_23_345.0_375.0",
+      "source": {
+        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+        "segment_idx": 23,
+        "start_time": 345.0,
+        "end_time": 375.0,
+        "timestamp": "345.0s-375.0s"
+      },
+      "content": {
+        "text": "want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right even though the text is clear lot of stuff they see AI can generate messy pictures AI pictures can be super realistic nowadays so the thing is that AI really smart right so pictures is got we can't trust anything on social media right now I could see I'm the prime minister of India",
+        "span_start": 0,
+        "span_end": 479,
+        "span_text": "want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right even though the text is clear lot of stuff they see AI can generate messy pictures AI pictures can be super realistic nowadays so the thing is that AI really smart right so pictures is got we can't trust anything on social media right now I could see I'm the prime minister of India"
+      },
+      "metadata": {
+        "relevance_score": 0.097342349588871,
+        "created_at": "2025-09-30T15:48:10.575035",
+        "confidence": 0.097342349588871
+      }
+    },
+    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_23_345.0_375.0",
+    "spans": {
+      "start": 0,
+      "end": 479,
+      "text": "want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right even though the text is clear lot of stuff they see AI can generate messy pictures AI pictures can be super realistic nowadays so the thing is that AI really smart right so pictures is got we can't trust anything on social media right now I could see I'm the prime minister of India"
+    }
+  },
+  {
+    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
+    "t_start": 465.0,
+    "t_end": 495.0,
+    "start_time": "07:45",
+    "end_time": "08:15",
+    "title": "Segment 32 (07:45-08:15)",
+    "snippet": "a small trick okay so you will really focus on the video this looks pretty real but camera movement still we can still notice it but here's a small trick that no one will notice okay I bet none of you did okay check at this side okay can you guys see a small spelling mistake here see the yellow text that is not that is because it's AI generated it's some language actually we don't use it in so this scribble lot of words and all because it's AI generated they can't do text good yet",
+    "score": 0.15510405600070953,
+    "citation": {
+      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_31_465.0_495.0",
+      "source": {
+        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+        "segment_idx": 31,
+        "start_time": 465.0,
+        "end_time": 495.0,
+        "timestamp": "465.0s-495.0s"
+      },
+      "content": {
+        "text": "a small trick okay so you will really focus on the video this looks pretty real but camera movement still we can still notice it but here's a small trick that no one will notice okay I bet none of you did okay check at this side okay can you guys see a small spelling mistake here see the yellow text that is not that is because it's AI generated it's some language actually we don't use it in so this scribble lot of words and all because it's AI generated they can't do text good yet",
+        "span_start": 0,
+        "span_end": 485,
+        "span_text": "a small trick okay so you will really focus on the video this looks pretty real but camera movement still we can still notice it but here's a small trick that no one will notice okay I bet none of you did okay check at this side okay can you guys see a small spelling mistake here see the yellow text that is not that is because it's AI generated it's some language actually we don't use it in so this scribble lot of words and all because it's AI generated they can't do text good yet"
+      },
+      "metadata": {
+        "relevance_score": 0.15510405600070953,
+        "created_at": "2025-09-30T15:48:10.575042",
+        "confidence": 0.15510405600070953
+      }
+    },
+    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_31_465.0_495.0",
+    "spans": {
+      "start": 0,
+      "end": 485,
+      "text": "a small trick okay so you will really focus on the video this looks pretty real but camera movement still we can still notice it but here's a small trick that no one will notice okay I bet none of you did okay check at this side okay can you guys see a small spelling mistake here see the yellow text that is not that is because it's AI generated it's some language actually we don't use it in so this scribble lot of words and all because it's AI generated they can't do text good yet"
+    }
+  },
+  {
+    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
+    "t_start": 330.0,
+    "t_end": 360.0,
+    "start_time": "05:30",
+    "end_time": "06:00",
+    "title": "Segment 23 (05:30-06:00)",
+    "snippet": "in the same way but what is different the number of data in it now I'm going to show you three pictures right we are still going to ask you questions carry way scarce is the first picture so this picture is an AI generated is this picture AI generated or is this picture AI generated so we want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right",
+    "score": 0.06458581984043121,
+    "citation": {
+      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_22_330.0_360.0",
+      "source": {
+        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+        "segment_idx": 22,
+        "start_time": 330.0,
+        "end_time": 360.0,
+        "timestamp": "330.0s-360.0s"
+      },
+      "content": {
+        "text": "in the same way but what is different the number of data in it now I'm going to show you three pictures right we are still going to ask you questions carry way scarce is the first picture so this picture is an AI generated is this picture AI generated or is this picture AI generated so we want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right",
+        "span_start": 0,
+        "span_end": 486,
+        "span_text": "in the same way but what is different the number of data in it now I'm going to show you three pictures right we are still going to ask you questions carry way scarce is the first picture so this picture is an AI generated is this picture AI generated or is this picture AI generated so we want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right"
+      },
+      "metadata": {
+        "relevance_score": 0.06458581984043121,
+        "created_at": "2025-09-30T15:48:10.575048",
+        "confidence": 0.06458581984043121
+      }
+    },
+    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_22_330.0_360.0",
+    "spans": {
+      "start": 0,
+      "end": 486,
+      "text": "in the same way but what is different the number of data in it now I'm going to show you three pictures right we are still going to ask you questions carry way scarce is the first picture so this picture is an AI generated is this picture AI generated or is this picture AI generated so we want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right"
     }
   }
 ]

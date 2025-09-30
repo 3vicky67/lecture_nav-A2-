@@ -1,4 +1,11 @@
 /* ===== Global Layout ===== */
+/* Stylish global background */
+body {
+  background: radial-gradient(1200px 600px at 10% 10%, #eefcf9 0%, transparent 60%),
+              radial-gradient(1000px 500px at 90% 20%, #eef2ff 0%, transparent 60%),
+              linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+}
+
 .container {
   display: flex;
   max-width: 100vw;
@@ -6,7 +13,7 @@
   padding: 0 20px 20px 0; /* Removed top padding to eliminate gray space above title */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-  background-color: white; /* Changed from #f5f5f5 to white for overall background */
+  background-color: transparent;
   min-height: 100vh;
   gap: 40px; /* Increased gap from 15px to 40px for more space between containers */
 }
@@ -15,26 +22,33 @@
 .left-content {
   flex: 1;
   max-width: calc(100vw - 420px); /* Increased space for AI chat (320px) + margins (100px) */
-  padding: 20px; /* Restore normal padding */
-  background: transparent; /* Removed white background to fix overlapping backgrounds */
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-left: 0; /* Reset to normal positioning */
-  margin-top: 0; /* Ensure no top margin to start from very top */
-  margin-right: 160px; /* Increased right margin for better spacing from AI chat */
-  text-align: center; /* Keep center alignment for main content */
-  min-height: calc(100vh - 40px); /* Ensure content takes full height */
-  overflow-x: visible; /* Allow content to be fully visible */
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: saturate(1.2) blur(6px);
+  -webkit-backdrop-filter: saturate(1.2) blur(6px);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  margin-left: 0;
+  margin-top: 16px;
+  margin-right: 160px;
+  text-align: center;
+  min-height: calc(100vh - 40px);
+  overflow-x: visible;
 }
 
 h1 {
-  text-align: center; /* Keep title centered */
+  text-align: center;
   margin-bottom: 24px;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #222;
-  width: 100%; /* Ensure full width for proper centering */
-  position: relative; /* Ensure proper positioning */
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #111827, #065f46 40%, #2563eb 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -0.02em;
+  width: 100%;
+  position: relative;
 }
 
 /* ===== Search Bar ===== */
@@ -87,15 +101,19 @@ h1 {
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
-  background-color: #00bfa6;
+  background: linear-gradient(135deg, #10b981, #06b6d4);
   color: #fff;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: box-shadow 0.2s, transform 0.08s ease-in-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar button:hover {
-  background-color: #009d8c;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+}
+
+.search-bar button:active {
+  transform: translateY(1px);
 }
 
 .search-bar input:disabled {
@@ -122,9 +140,9 @@ h1 {
 
 .video-player {
   background: #1a1a1a;
-  border-radius: 12px;
-  padding: 40px; /* Increased padding from 20px to 40px for wider container */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
   width: 80%; /* Ensure full width usage */
   max-width: 100%; /* Prevent overflow */
@@ -214,12 +232,12 @@ h1 {
   right: 20px; /* Reduced from 30px to 20px for better screen utilization */
   width: 320px; /* Slightly increased width for better usability */
   height: calc(100vh - 40px);
-  background: #2d3748;
-  border-radius: 12px;
+  background: rgba(30, 41, 59, 0.85);
+  border-radius: 16px;
   padding: 16px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 24px 50px rgba(2, 6, 23, 0.5);
   z-index: 1000; /* Keep AI chat on top but don't interfere with content */
   color: white;
   max-height: calc(100vh - 40px); /* Ensure it doesn't exceed viewport */
@@ -373,13 +391,13 @@ h1 {
 /* Updated class name from result-item to result-card to match component */
 .result-card {
   background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 16px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 14px;
+  padding: 18px;
   margin-bottom: 12px;
   margin-left: 0; /* Reset to normal positioning */
   margin-right: 80px; /* Increased right margin to maintain distance from AI chat */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
   max-width: calc(100% - 80px); /* Ensure cards don't extend too far right */
   text-align: left; /* Align card content to left */
   position: relative; /* Allow for positioning adjustments */
@@ -446,16 +464,17 @@ h1 {
 .result-card button {
   padding: 8px 16px;
   border: none;
-  border-radius: 6px;
-  background-color: #00bfa6;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #10b981, #06b6d4);
   color: #fff;
   cursor: pointer;
   font-size: 14px;
-  transition: background 0.2s;
+  transition: box-shadow 0.2s, transform 0.08s ease-in-out;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.25);
 }
 
 .result-card button:hover {
-  background-color: #009d8c;
+  box-shadow: 0 10px 26px rgba(16, 185, 129, 0.35);
 }
 
 /* Added transcription status styles */
