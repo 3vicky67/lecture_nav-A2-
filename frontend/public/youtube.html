@@ -877,24 +877,24 @@
                 const shouldFallback = !hasResults || topScore < 0.35;
 
                 if (hasResults) {
-                    let resultsHtml = '';
+                        let resultsHtml = '';
                     resultsHtml += `<h4 class="font-semibold text-white mb-3">Results for: <span class="text-blue-300">${escapeHtml(query)}</span></h4>`;
-
+                        
                     const answerBlock = await generateSimpleAnswer(query, hasResults, data.results);
                     if (answerBlock) {
-                        resultsHtml += `
-                            <div class="mb-4 p-4 bg-blue-900 rounded-lg border-l-4 border-blue-500">
-                                <h4 class="font-semibold text-blue-200 mb-2">💡 AI Answer:</h4>
+                            resultsHtml += `
+                                <div class="mb-4 p-4 bg-blue-900 rounded-lg border-l-4 border-blue-500">
+                                    <h4 class="font-semibold text-blue-200 mb-2">💡 AI Answer:</h4>
                                 <p class="text-blue-100 text-base leading-relaxed font-medium">${answerBlock}</p>
-                            </div>
-                        `;
-                    }
+                                </div>
+                            `;
+                        }
 
-                    // Re-rank results and show top 3 with ±15s context and one-sentence summary
-                    const reranked = rerankResults(data.results, query).slice(0, 3);
-                    resultsHtml += '<h4 class="font-semibold text-white mb-3">📝 Top 3 Segments:</h4>';
+                    // Show segments similar to home page: top 3 if >3 else all (preserve backend order)
+                    const displayed = data.results.length > 3 ? data.results.slice(0, 3) : data.results;
+                    resultsHtml += `<h4 class="font-semibold text-white mb-3">📝 Segments (${displayed.length}${data.results.length > 3 ? ' of ' + data.results.length : ''})</h4>`;
 
-                    reranked.forEach((result) => {
+                    displayed.forEach((result) => {
                         const scorePct = (((result.score || 0)) * 100).toFixed(1);
                         const snippetRaw = result.snippets || result.snippet || '';
                         const snippet = highlightSnippet(snippetRaw, query);
@@ -907,9 +907,9 @@
                         const ctxStartStr = formatSeconds(ctxStart);
                         const ctxEndStr = formatSeconds(ctxEnd);
 
-                        resultsHtml += `
+                            resultsHtml += `
                             <div class="mb-4 p-4 bg-gray-700 rounded-lg border-l-4 border-blue-500 result-card">
-                                <div class="flex justify-between items-start mb-2">
+                                    <div class="flex justify-between items-start mb-2">
                                     <div class="flex flex-col">
                                         <span class="text-blue-400 font-mono text-sm font-bold">Segment: ${result.start_time} - ${result.end_time}</span>
                                         <span class="text-blue-300 font-mono text-xs cursor-pointer hover:text-blue-200 transition-colors" 
@@ -917,7 +917,7 @@
                                               title="Click to jump to context start">Context: ${ctxStartStr} - ${ctxEndStr}</span>
                                     </div>
                                     <span class="text-green-400 text-sm">${scorePct}% match</span>
-                                </div>
+                                    </div>
                                 <p class="text-gray-300 text-sm opacity-90 mb-3"><strong>Context preview (±15s):</strong> ${snippet || 'No transcript available'}</p>
                                 <div class="flex gap-2">
                                     <button 
@@ -935,25 +935,25 @@
                                         ▶️ Play Context
                                     </button>
                                 </div>
-                            </div>
-                        `;
-                    });
-                    resultsContentDiv.innerHTML = resultsHtml;
+                                </div>
+                            `;
+                        });
+                        resultsContentDiv.innerHTML = resultsHtml;
                 } else {
                     // No results: show simple AI answer block
                     const simpleAnswer = await generateSimpleAnswer(query, false, []);
                     const noResultsHtml = `
-                        <div class="mb-4 p-4 bg-blue-900 rounded-lg border-l-4 border-blue-500">
-                            <h4 class="font-semibold text-blue-200 mb-2">💡 AI Answer:</h4>
+                                <div class="mb-4 p-4 bg-blue-900 rounded-lg border-l-4 border-blue-500">
+                                    <h4 class="font-semibold text-blue-200 mb-2">💡 AI Answer:</h4>
                             <p class="text-blue-100 text-base leading-relaxed font-medium">${simpleAnswer}</p>
-                        </div>
-                        <div class="text-center text-gray-400">
+                                </div>
+                            <div class="text-center text-gray-400">
                             <p>Here's comprehensive information about "${query}"</p>
                             <p class="text-sm mt-2">AI-powered response to help you understand the topic.</p>
-                        </div>
-                    `;
-                    resultsContentDiv.innerHTML = noResultsHtml;
-                }
+                            </div>
+                        `;
+                        resultsContentDiv.innerHTML = noResultsHtml;
+                    }
             }
 
             async function generateSimpleAnswer(query, hasVideoResults = false, topResults = []) {
@@ -995,22 +995,7 @@
                 }
             }
 
-            // --- Lightweight client-side re-ranking and helpers ---
-            function rerankResults(results, query) {
-                const q = (query || '').toLowerCase();
-                return [...results]
-                    .map(r => {
-                        const snippet = (r.snippets || r.snippet || '').toLowerCase();
-                        const score = Number(r.score || 0);
-                        // Simple lexical boost if query terms appear in snippet
-                        const termHits = q
-                            .split(/\s+/)
-                            .filter(t => t.length > 2 && snippet.includes(t)).length;
-                        const lexicalBoost = Math.min(0.15, termHits * 0.04);
-                        return { ...r, _rankScore: score + lexicalBoost };
-                    })
-                    .sort((a, b) => (b._rankScore || 0) - (a._rankScore || 0));
-            }
+            // --- Helpers ---
 
             function oneSentenceSummary(text, query) {
                 if (!text) return '';

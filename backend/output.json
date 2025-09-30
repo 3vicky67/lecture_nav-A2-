@@ -1,40 +1,306 @@
 [
   {
-    "video_id": "bae31898-6de6-4db1-85d5-9f279453779f",
-    "video_file": "6MaGYkDpuJE?si=GJ8rhnLyyhZiUBi4",
-    "t_start": 1110.0,
-    "t_end": 1113.68,
-    "start_time": "18:30",
-    "end_time": "18:33",
-    "title": "Segment 38 (18:30-18:33)",
-    "snippet": "all in the next one. Take care.",
-    "score": 0.09496266394853592,
+    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "t_start": 30.0,
+    "t_end": 60.0,
+    "start_time": "00:30",
+    "end_time": "01:00",
+    "title": "Segment 3 (00:30-01:00)",
+    "snippet": "so that we can clear up some of the myths and misconceptions around this. In addition, something else has happened since that video was recorded. And that is the absolute explosion of this area of generative AI. Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other?",
+    "score": 0.045946575701236725,
     "citation": {
-      "citation_id": "cite_bae31898-6de6-4db1-85d5-9f279453779f_37_1110.0_1113.7",
+      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_2_30.0_60.0",
       "source": {
-        "video_id": "bae31898-6de6-4db1-85d5-9f279453779f",
-        "segment_idx": 37,
-        "start_time": 1110.0,
-        "end_time": 1113.68,
-        "timestamp": "1110.0s-1113.7s"
+        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "segment_idx": 2,
+        "start_time": 30.0,
+        "end_time": 60.0,
+        "timestamp": "30.0s-60.0s"
       },
       "content": {
-        "text": "all in the next one. Take care.",
+        "text": "so that we can clear up some of the myths and misconceptions around this. In addition, something else has happened since that video was recorded. And that is the absolute explosion of this area of generative AI. Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other?",
         "span_start": 0,
-        "span_end": 31,
-        "span_text": "all in the next one. Take care."
+        "span_end": 463,
+        "span_text": "so that we can clear up some of the myths and misconceptions around this. In addition, something else has happened since that video was recorded. And that is the absolute explosion of this area of generative AI. Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other?"
       },
       "metadata": {
-        "relevance_score": 0.09496266394853592,
-        "created_at": "2025-09-30T12:06:10.616402",
-        "confidence": 0.09496266394853592
+        "relevance_score": 0.045946575701236725,
+        "created_at": "2025-09-30T13:16:10.211195",
+        "confidence": 0.045946575701236725
       }
     },
-    "source_id": "cite_bae31898-6de6-4db1-85d5-9f279453779f_37_1110.0_1113.7",
+    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_2_30.0_60.0",
     "spans": {
       "start": 0,
-      "end": 31,
-      "text": "all in the next one. Take care."
+      "end": 463,
+      "text": "so that we can clear up some of the myths and misconceptions around this. In addition, something else has happened since that video was recorded. And that is the absolute explosion of this area of generative AI. Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other?"
+    }
+  },
+  {
+    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "t_start": 585.0,
+    "t_end": 595.68,
+    "start_time": "09:45",
+    "end_time": "09:55",
+    "title": "Segment 40 (09:45-09:55)",
+    "snippet": "and make sure that we can reap the benefits from all of this technology. If you liked this video and want to see more like it, please like and subscribe. If you have any questions or want to share your thoughts about this topic, please leave a comment below.",
+    "score": 0.030366184189915657,
+    "citation": {
+      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_39_585.0_595.7",
+      "source": {
+        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "segment_idx": 39,
+        "start_time": 585.0,
+        "end_time": 595.68,
+        "timestamp": "585.0s-595.7s"
+      },
+      "content": {
+        "text": "and make sure that we can reap the benefits from all of this technology. If you liked this video and want to see more like it, please like and subscribe. If you have any questions or want to share your thoughts about this topic, please leave a comment below.",
+        "span_start": 0,
+        "span_end": 258,
+        "span_text": "and make sure that we can reap the benefits from all of this technology. If you liked this video and want to see more like it, please like and subscribe. If you have any questions or want to share your thoughts about this topic, please leave a comment below."
+      },
+      "metadata": {
+        "relevance_score": 0.030366184189915657,
+        "created_at": "2025-09-30T13:16:10.211219",
+        "confidence": 0.030366184189915657
+      }
+    },
+    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_39_585.0_595.7",
+    "spans": {
+      "start": 0,
+      "end": 258,
+      "text": "and make sure that we can reap the benefits from all of this technology. If you liked this video and want to see more like it, please like and subscribe. If you have any questions or want to share your thoughts about this topic, please leave a comment below."
+    }
+  },
+  {
+    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "t_start": 45.0,
+    "t_end": 75.0,
+    "start_time": "00:45",
+    "end_time": "01:15",
+    "title": "Segment 4 (00:45-01:15)",
+    "snippet": "Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other? How are they related to each other? We're going to take a look at that in this video and try to explain how all these technologies relate, and how we can use them. First off, a little bit of a disclaimer. I'm going to have to simplify some of these concepts in order to not make this video last for a week.",
+    "score": 0.05406929552555084,
+    "citation": {
+      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_3_45.0_75.0",
+      "source": {
+        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "segment_idx": 3,
+        "start_time": 45.0,
+        "end_time": 75.0,
+        "timestamp": "45.0s-75.0s"
+      },
+      "content": {
+        "text": "Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other? How are they related to each other? We're going to take a look at that in this video and try to explain how all these technologies relate, and how we can use them. First off, a little bit of a disclaimer. I'm going to have to simplify some of these concepts in order to not make this video last for a week.",
+        "span_start": 0,
+        "span_end": 558,
+        "span_text": "Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other? How are they related to each other? We're going to take a look at that in this video and try to explain how all these technologies relate, and how we can use them. First off, a little bit of a disclaimer. I'm going to have to simplify some of these concepts in order to not make this video last for a week."
+      },
+      "metadata": {
+        "relevance_score": 0.05406929552555084,
+        "created_at": "2025-09-30T13:16:10.211243",
+        "confidence": 0.05406929552555084
+      }
+    },
+    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_3_45.0_75.0",
+    "spans": {
+      "start": 0,
+      "end": 558,
+      "text": "Things like large language models and chat bots seem to be taking over the world. We see them everywhere, really interesting technology. And then also things like deep fakes. These are all within the realm of AI, but how do they fit within each other? How are they related to each other? We're going to take a look at that in this video and try to explain how all these technologies relate, and how we can use them. First off, a little bit of a disclaimer. I'm going to have to simplify some of these concepts in order to not make this video last for a week."
+    }
+  },
+  {
+    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "t_start": 75.0,
+    "t_end": 105.0,
+    "start_time": "01:15",
+    "end_time": "01:45",
+    "title": "Segment 6 (01:15-01:45)",
+    "snippet": "I'm going to have to simplify some of these concepts in order to not make this video last for a week. So those of you that are really deep experts in the field apologies in advance, but we're going to try to make this simple and that will involve some generalizations. First of all, the start with AI. Artificial intelligence is basically trying to simulate with a computer something that would match or exceed human intelligence. What is intelligence? Well, it could be a lot of different things, but generally we tend to think of it",
+    "score": 0.058555517345666885,
+    "citation": {
+      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_5_75.0_105.0",
+      "source": {
+        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "segment_idx": 5,
+        "start_time": 75.0,
+        "end_time": 105.0,
+        "timestamp": "75.0s-105.0s"
+      },
+      "content": {
+        "text": "I'm going to have to simplify some of these concepts in order to not make this video last for a week. So those of you that are really deep experts in the field apologies in advance, but we're going to try to make this simple and that will involve some generalizations. First of all, the start with AI. Artificial intelligence is basically trying to simulate with a computer something that would match or exceed human intelligence. What is intelligence? Well, it could be a lot of different things, but generally we tend to think of it",
+        "span_start": 0,
+        "span_end": 534,
+        "span_text": "I'm going to have to simplify some of these concepts in order to not make this video last for a week. So those of you that are really deep experts in the field apologies in advance, but we're going to try to make this simple and that will involve some generalizations. First of all, the start with AI. Artificial intelligence is basically trying to simulate with a computer something that would match or exceed human intelligence. What is intelligence? Well, it could be a lot of different things, but generally we tend to think of it"
+      },
+      "metadata": {
+        "relevance_score": 0.058555517345666885,
+        "created_at": "2025-09-30T13:16:10.211259",
+        "confidence": 0.058555517345666885
+      }
+    },
+    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_5_75.0_105.0",
+    "spans": {
+      "start": 0,
+      "end": 534,
+      "text": "I'm going to have to simplify some of these concepts in order to not make this video last for a week. So those of you that are really deep experts in the field apologies in advance, but we're going to try to make this simple and that will involve some generalizations. First of all, the start with AI. Artificial intelligence is basically trying to simulate with a computer something that would match or exceed human intelligence. What is intelligence? Well, it could be a lot of different things, but generally we tend to think of it"
+    }
+  },
+  {
+    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "t_start": 150.0,
+    "t_end": 180.0,
+    "start_time": "02:30",
+    "end_time": "03:00",
+    "title": "Segment 11 (02:30-03:00)",
+    "snippet": "And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this. All of this was something that we did before we ever touched in to the next topic. I'm going to talk about. And that's the area of machine learning. Machine learning is, as its name implies, the machine is learning.",
+    "score": 0.05728750303387642,
+    "citation": {
+      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_10_150.0_180.0",
+      "source": {
+        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "segment_idx": 10,
+        "start_time": 150.0,
+        "end_time": 180.0,
+        "timestamp": "150.0s-180.0s"
+      },
+      "content": {
+        "text": "And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this. All of this was something that we did before we ever touched in to the next topic. I'm going to talk about. And that's the area of machine learning. Machine learning is, as its name implies, the machine is learning.",
+        "span_start": 0,
+        "span_end": 468,
+        "span_text": "And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this. All of this was something that we did before we ever touched in to the next topic. I'm going to talk about. And that's the area of machine learning. Machine learning is, as its name implies, the machine is learning."
+      },
+      "metadata": {
+        "relevance_score": 0.05728750303387642,
+        "created_at": "2025-09-30T13:16:10.211267",
+        "confidence": 0.05728750303387642
+      }
+    },
+    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_10_150.0_180.0",
+    "spans": {
+      "start": 0,
+      "end": 468,
+      "text": "And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this. All of this was something that we did before we ever touched in to the next topic. I'm going to talk about. And that's the area of machine learning. Machine learning is, as its name implies, the machine is learning."
+    }
+  },
+  {
+    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "t_start": 135.0,
+    "t_end": 165.0,
+    "start_time": "02:15",
+    "end_time": "02:45",
+    "title": "Segment 10 (02:15-02:45)",
+    "snippet": "But I can tell you as an undergrad, which for me was back during these times, we were doing AI work. In fact, we would use programming languages like this or prologue. And these kinds of things were kind of the predecessors to what became later expert systems. And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this.",
+    "score": 0.030717436224222183,
+    "citation": {
+      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_9_135.0_165.0",
+      "source": {
+        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "segment_idx": 9,
+        "start_time": 135.0,
+        "end_time": 165.0,
+        "timestamp": "135.0s-165.0s"
+      },
+      "content": {
+        "text": "But I can tell you as an undergrad, which for me was back during these times, we were doing AI work. In fact, we would use programming languages like this or prologue. And these kinds of things were kind of the predecessors to what became later expert systems. And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this.",
+        "span_start": 0,
+        "span_end": 513,
+        "span_text": "But I can tell you as an undergrad, which for me was back during these times, we were doing AI work. In fact, we would use programming languages like this or prologue. And these kinds of things were kind of the predecessors to what became later expert systems. And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this."
+      },
+      "metadata": {
+        "relevance_score": 0.030717436224222183,
+        "created_at": "2025-09-30T13:16:10.211274",
+        "confidence": 0.030717436224222183
+      }
+    },
+    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_9_135.0_165.0",
+    "spans": {
+      "start": 0,
+      "end": 513,
+      "text": "But I can tell you as an undergrad, which for me was back during these times, we were doing AI work. In fact, we would use programming languages like this or prologue. And these kinds of things were kind of the predecessors to what became later expert systems. And this was a technology. Again, some of these things existed previous, but that's when it really hit the kind of a critical mass and became more popularized. So expert systems of the 1980s, maybe in the 90s. And again, we used technologies like this."
+    }
+  },
+  {
+    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "t_start": 420.0,
+    "t_end": 450.0,
+    "start_time": "07:00",
+    "end_time": "07:30",
+    "title": "Segment 29 (07:00-07:30)",
+    "snippet": "And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format. Well, let me give you an analogy. If you take music, for instance, then every note has already been invented. So in a sense, every song is just a recombination, some other permutation of all the notes that already exist already,",
+    "score": 0.030403394252061844,
+    "citation": {
+      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_28_420.0_450.0",
+      "source": {
+        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "segment_idx": 28,
+        "start_time": 420.0,
+        "end_time": 450.0,
+        "timestamp": "420.0s-450.0s"
+      },
+      "content": {
+        "text": "And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format. Well, let me give you an analogy. If you take music, for instance, then every note has already been invented. So in a sense, every song is just a recombination, some other permutation of all the notes that already exist already,",
+        "span_start": 0,
+        "span_end": 525,
+        "span_text": "And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format. Well, let me give you an analogy. If you take music, for instance, then every note has already been invented. So in a sense, every song is just a recombination, some other permutation of all the notes that already exist already,"
+      },
+      "metadata": {
+        "relevance_score": 0.030403394252061844,
+        "created_at": "2025-09-30T13:16:10.211315",
+        "confidence": 0.030403394252061844
+      }
+    },
+    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_28_420.0_450.0",
+    "spans": {
+      "start": 0,
+      "end": 525,
+      "text": "And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format. Well, let me give you an analogy. If you take music, for instance, then every note has already been invented. So in a sense, every song is just a recombination, some other permutation of all the notes that already exist already,"
+    }
+  },
+  {
+    "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+    "video_file": "qYNweeDHiyU?si=Lyx7Yy3Sc4QZxuiA",
+    "t_start": 405.0,
+    "t_end": 435.0,
+    "start_time": "06:45",
+    "end_time": "07:15",
+    "title": "Segment 28 (06:45-07:15)",
+    "snippet": "Except in this case with large language models, they're not predicting the next word. They're predicting the next sentence, the next paragraph, the next entire document. So there's a really an amazing exponential leap in what these things are able to do. And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format.",
+    "score": 0.05516698956489563,
+    "citation": {
+      "citation_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_27_405.0_435.0",
+      "source": {
+        "video_id": "b6768cda-c4b8-496a-9acd-6990b4694c90",
+        "segment_idx": 27,
+        "start_time": 405.0,
+        "end_time": 435.0,
+        "timestamp": "405.0s-435.0s"
+      },
+      "content": {
+        "text": "Except in this case with large language models, they're not predicting the next word. They're predicting the next sentence, the next paragraph, the next entire document. So there's a really an amazing exponential leap in what these things are able to do. And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format.",
+        "span_start": 0,
+        "span_end": 551,
+        "span_text": "Except in this case with large language models, they're not predicting the next word. They're predicting the next sentence, the next paragraph, the next entire document. So there's a really an amazing exponential leap in what these things are able to do. And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format."
+      },
+      "metadata": {
+        "relevance_score": 0.05516698956489563,
+        "created_at": "2025-09-30T13:16:10.211325",
+        "confidence": 0.05516698956489563
+      }
+    },
+    "source_id": "cite_b6768cda-c4b8-496a-9acd-6990b4694c90_27_405.0_435.0",
+    "spans": {
+      "start": 0,
+      "end": 551,
+      "text": "Except in this case with large language models, they're not predicting the next word. They're predicting the next sentence, the next paragraph, the next entire document. So there's a really an amazing exponential leap in what these things are able to do. And we call all of these technologies generative because they are generating new content. Some people have actually made the argument that the generative AI isn't really generative, that the these technologies are really just regurgitating, existing information, inputting it in different format."
     }
   }
 ]
