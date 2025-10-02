@@ -128,6 +128,12 @@
 
         <div id="transcript-results" class="hidden">
             <h3 class="text-lg font-semibold mb-2 text-white">Transcript Search Results</h3>
+            <div class="flex items-center justify-between mb-2">
+                <div class="text-gray-300 text-sm" id="video-id-label"></div>
+                <button id="download-transcript-btn" class="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded disabled:opacity-50" disabled>
+                    📄 Download Transcript
+                </button>
+            </div>
             <div id="results-content" class="text-gray-300"></div>
         </div>
     </div>
@@ -618,6 +624,8 @@
             const transcriptResultsDiv = document.getElementById('transcript-results');
             const resultsContentDiv = document.getElementById('results-content');
             const searchCache = new Map(); // key: `${currentVideoId}::${query}` → response
+            const downloadBtn = document.getElementById('download-transcript-btn');
+            const videoIdLabel = document.getElementById('video-id-label');
 
             // Global state (moved to top level)
 
@@ -627,6 +635,8 @@
                 searchBtn.disabled = isProcessing || !currentVideoId;
                 searchQueryInput.disabled = isProcessing || !currentVideoId;
                 loadVideoBtn.textContent = isProcessing ? 'Processing...' : 'Load & Get Transcript';
+                if (downloadBtn) downloadBtn.disabled = !currentVideoId;
+                if (videoIdLabel) videoIdLabel.textContent = currentVideoId ? `Video ID: ${currentVideoId}` : '';
             }
 
             // Initialize button states
@@ -750,9 +760,10 @@
                     `;
                                 console.log('Video processed with ID:', currentVideoId);
                                 
-                                // Enable search functionality
+                                // Enable search functionality and update controls
                                 searchBtn.disabled = false;
                                 searchQueryInput.disabled = false;
+                                updateButtonStates();
                             } else if (progressData.status === 'error') {
                                 clearInterval(progressInterval);
                                 throw new Error(progressData.error || 'Unknown error occurred');
@@ -1067,6 +1078,54 @@
                 return match ? match[1] : null;
             }
 
+
+            // Download transcript handler
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', async () => {
+                    if (!currentVideoId) {
+                        alert('No processed video found. Please load a YouTube URL first.');
+                        return;
+                    }
+                    try {
+                        const res = await fetch(`http://localhost:5000/api/transcript?video_id=${encodeURIComponent(currentVideoId)}`);
+                        if (!res.ok) {
+                            throw new Error(`HTTP ${res.status}`);
+                        }
+                        const data = await res.json();
+                        const segments = Array.isArray(data.segments) ? data.segments : [];
+                        if (!segments.length) {
+                            alert('Transcript not available yet. Please try again shortly.');
+                            return;
+                        }
+                        const formatTime = (seconds) => {
+                            const n = Number(seconds) || 0;
+                            if (n < 60) return `${n.toFixed(2)}s`;
+                            const mins = Math.floor(n / 60);
+                            const sec = n % 60;
+                            return `${mins}.${Math.floor(sec).toString().padStart(2, '0')}m`;
+                        };
+                        const text = segments.map(s => {
+                            const start = formatTime(s.start);
+                            const end = formatTime(s.end);
+                            return `[${start} - ${end}] ${String(s.text || '')}`;
+                        }).join('\n\n');
+                        const blob = new Blob([text], { type: 'text/plain' });
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        const base = (data.filename && typeof data.filename === 'string') ? data.filename.replace(/\.[^/.]+$/, '') : 'youtube_video';
+                        const date = new Date().toISOString().split('T')[0];
+                        a.href = url;
+                        a.download = `transcript_${base}_${date}.txt`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        URL.revokeObjectURL(url);
+                    } catch (e) {
+                        console.error('Failed to download transcript:', e);
+                        alert('Failed to download transcript. Please try again.');
+                    }
+                });
+            }
 
             // Update search button state when video is processed
             youtubeUrlInput.addEventListener('input', () => {

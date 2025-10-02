@@ -94,6 +94,24 @@ function App() {
           setVideoData(updatedVideoData)
           setIsTranscriptionComplete(true)
           console.log("[v0] Video uploaded to backend with ID:", data.video_id)
+
+          // Fetch transcript segments from backend and store locally
+          try {
+            const tRes = await fetch(`http://localhost:5000/api/transcript?video_id=${encodeURIComponent(data.video_id)}`)
+            if (tRes.ok) {
+              const tData = await tRes.json()
+              const segs: TranscriptSegment[] = (tData.segments || []).map((s: any) => ({
+                start: typeof s.start === 'number' ? s.start : Number(s.start) || 0,
+                end: typeof s.end === 'number' ? s.end : Number(s.end) || 0,
+                text: String(s.text || '')
+              }))
+              setTranscript(segs)
+            } else {
+              console.warn('[v0] Failed to fetch transcript, status:', tRes.status)
+            }
+          } catch (e) {
+            console.warn('[v0] Error fetching transcript:', e)
+          }
         }
       } else {
         throw new Error(`Backend upload failed: ${response.status}`)
@@ -169,14 +187,37 @@ function App() {
     }
   }
 
-  const downloadFullNotes = () => {
+  const downloadFullNotes = async () => {
     if (!videoData) {
       alert("No transcription data available")
       return
     }
 
+    // Ensure we have transcript; if not, fetch from backend
+    let segs: TranscriptSegment[] = transcript
+    if ((!segs || segs.length === 0) && videoData.videoId) {
+      try {
+        const tRes = await fetch(`http://localhost:5000/api/transcript?video_id=${encodeURIComponent(videoData.videoId)}`)
+        if (tRes.ok) {
+          const tData = await tRes.json()
+          segs = (tData.segments || []).map((s: any) => ({
+            start: typeof s.start === 'number' ? s.start : Number(s.start) || 0,
+            end: typeof s.end === 'number' ? s.end : Number(s.end) || 0,
+            text: String(s.text || '')
+          }))
+        }
+      } catch (e) {
+        console.warn('[v0] Error fetching transcript for download:', e)
+      }
+    }
+
+    if (!segs || segs.length === 0) {
+      alert('Transcript not available yet. Please try again in a moment.')
+      return
+    }
+
     // Create simple text-only transcript for download
-    const transcriptText = videoData.segments
+    const transcriptText = segs
       .map((segment) => {
         const startTime = formatTimeForDownload(segment.start)
         const endTime = formatTimeForDownload(segment.end)

@@ -1,306 +1,306 @@
 [
   {
-    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
-    "t_start": 420.0,
-    "t_end": 450.0,
-    "start_time": "07:00",
-    "end_time": "07:30",
-    "title": "Segment 29 (07:00-07:30)",
-    "snippet": "better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details",
-    "score": 0.059727635234594345,
+    "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+    "video_file": "2aHIb2vrkuQ?si=rgkguGnNB-hGuzET",
+    "t_start": 1840.0,
+    "t_end": 1844.68,
+    "start_time": "30:40",
+    "end_time": "30:44",
+    "title": "Segment 47 (30:40-30:44)",
+    "snippet": "And before you go, also watch this video about Google AMOm. If you want to get more inspiration, see you next time.",
+    "score": 0.05779454484581947,
     "citation": {
-      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_28_420.0_450.0",
+      "citation_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_46_1840.0_1844.7",
       "source": {
-        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-        "segment_idx": 28,
-        "start_time": 420.0,
-        "end_time": 450.0,
-        "timestamp": "420.0s-450.0s"
+        "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+        "segment_idx": 46,
+        "start_time": 1840.0,
+        "end_time": 1844.68,
+        "timestamp": "1840.0s-1844.7s"
       },
       "content": {
-        "text": "better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details",
+        "text": "And before you go, also watch this video about Google AMOm. If you want to get more inspiration, see you next time.",
         "span_start": 0,
-        "span_end": 379,
-        "span_text": "better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details"
+        "span_end": 115,
+        "span_text": "And before you go, also watch this video about Google AMOm. If you want to get more inspiration, see you next time."
       },
       "metadata": {
-        "relevance_score": 0.059727635234594345,
-        "created_at": "2025-09-30T15:48:10.574975",
-        "confidence": 0.059727635234594345
+        "relevance_score": 0.05779454484581947,
+        "created_at": "2025-10-02T12:08:02.827399",
+        "confidence": 0.05779454484581947
       }
     },
-    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_28_420.0_450.0",
+    "source_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_46_1840.0_1844.7",
     "spans": {
       "start": 0,
-      "end": 379,
-      "text": "better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details"
+      "end": 115,
+      "text": "And before you go, also watch this video about Google AMOm. If you want to get more inspiration, see you next time."
     }
   },
   {
-    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
-    "t_start": 165.0,
-    "t_end": 195.0,
-    "start_time": "02:45",
-    "end_time": "03:15",
-    "title": "Segment 12 (02:45-03:15)",
-    "snippet": "let's say if we combine that with the idea of courier taking one thing for one place to another what happens if we combine both of these ideas if we combine it we get the idea of word delivery now that's how humans take right they take one idea let me take another and mix it that's how human creativity likes I think we might have all learned in our schools at least I have that energy is not converted and all those kind of stuff I don't remember the whole thing but similarly a",
-    "score": 0.08770114928483963,
+    "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+    "video_file": "2aHIb2vrkuQ?si=rgkguGnNB-hGuzET",
+    "t_start": 280.0,
+    "t_end": 340.0,
+    "start_time": "04:40",
+    "end_time": "05:40",
+    "title": "Segment 8 (04:40-05:40)",
+    "snippet": "And the middle use is for your product page, machine or marketing campaign. So like in this case just give Gemini the product image as the reference. And the base image and also to make any adhes that you like. So perhaps I want this model to hold the handbag which I can use as a lifestyle machine. And I am really impressed the character consistency is very high. And it's really like the same person holding a handbag. And you can also ask Gemini to combine these two images into something new. So like in this case I want to blank these two images where this model is wearing this handbag in a straight scene for an ad campaign. So the results really blew my mind. It's very natural. The product just blaming so well and it looks very real. Another way is to use it for a professional project. So perhaps maybe you have your own selfie and you just want to turn it into a professional studio portrait. And then just give it to Gemini and ask it to change your outfit which is suitable for professional settings. And it looks pretty good although I still prefer using my own photo.",
+    "score": 0.05404990538954735,
     "citation": {
-      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_11_165.0_195.0",
+      "citation_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_7_280.0_340.0",
       "source": {
-        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+        "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+        "segment_idx": 7,
+        "start_time": 280.0,
+        "end_time": 340.0,
+        "timestamp": "280.0s-340.0s"
+      },
+      "content": {
+        "text": "And the middle use is for your product page, machine or marketing campaign. So like in this case just give Gemini the product image as the reference. And the base image and also to make any adhes that you like. So perhaps I want this model to hold the handbag which I can use as a lifestyle machine. And I am really impressed the character consistency is very high. And it's really like the same person holding a handbag. And you can also ask Gemini to combine these two images into something new. So like in this case I want to blank these two images where this model is wearing this handbag in a straight scene for an ad campaign. So the results really blew my mind. It's very natural. The product just blaming so well and it looks very real. Another way is to use it for a professional project. So perhaps maybe you have your own selfie and you just want to turn it into a professional studio portrait. And then just give it to Gemini and ask it to change your outfit which is suitable for professional settings. And it looks pretty good although I still prefer using my own photo.",
+        "span_start": 0,
+        "span_end": 1084,
+        "span_text": "And the middle use is for your product page, machine or marketing campaign. So like in this case just give Gemini the product image as the reference. And the base image and also to make any adhes that you like. So perhaps I want this model to hold the handbag which I can use as a lifestyle machine. And I am really impressed the character consistency is very high. And it's really like the same person holding a handbag. And you can also ask Gemini to combine these two images into something new. So like in this case I want to blank these two images where this model is wearing this handbag in a straight scene for an ad campaign. So the results really blew my mind. It's very natural. The product just blaming so well and it looks very real. Another way is to use it for a professional project. So perhaps maybe you have your own selfie and you just want to turn it into a professional studio portrait. And then just give it to Gemini and ask it to change your outfit which is suitable for professional settings. And it looks pretty good although I still prefer using my own photo."
+      },
+      "metadata": {
+        "relevance_score": 0.05404990538954735,
+        "created_at": "2025-10-02T12:08:02.827425",
+        "confidence": 0.05404990538954735
+      }
+    },
+    "source_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_7_280.0_340.0",
+    "spans": {
+      "start": 0,
+      "end": 1084,
+      "text": "And the middle use is for your product page, machine or marketing campaign. So like in this case just give Gemini the product image as the reference. And the base image and also to make any adhes that you like. So perhaps I want this model to hold the handbag which I can use as a lifestyle machine. And I am really impressed the character consistency is very high. And it's really like the same person holding a handbag. And you can also ask Gemini to combine these two images into something new. So like in this case I want to blank these two images where this model is wearing this handbag in a straight scene for an ad campaign. So the results really blew my mind. It's very natural. The product just blaming so well and it looks very real. Another way is to use it for a professional project. So perhaps maybe you have your own selfie and you just want to turn it into a professional studio portrait. And then just give it to Gemini and ask it to change your outfit which is suitable for professional settings. And it looks pretty good although I still prefer using my own photo."
+    }
+  },
+  {
+    "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+    "video_file": "2aHIb2vrkuQ?si=rgkguGnNB-hGuzET",
+    "t_start": 440.0,
+    "t_end": 500.0,
+    "start_time": "07:20",
+    "end_time": "08:20",
+    "title": "Segment 12 (07:20-08:20)",
+    "snippet": "So Gemna not only dropped entire article, but also generated unique images for each section. So you can get everything ready all within one single platform. And these images look really nice. And of course, you can always use more detail prompting for these images. And you can just directly export to Google Doc for fine tuning or publishing. A bonus tip is you can just one click here to download all the images in generate. So this is super handy. Another last discussed free feature from Gemna is the gut learning. So this small is specifically designed for creating structure, personalized learning journey. So you can ask any learning question to Gemna. And it would give you step by step guidance. So like this example, I asked Gemna to explain the concept of record mean. So instead of just delivering answers, Gemna asked me open and question and guide me through each step of the problem. And you can see it adapts the answer based on my response. And this strengthening your memory by forcing you to think more deeply, instead of just passively accepting the answers.",
+    "score": 0.057169776409864426,
+    "citation": {
+      "citation_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_11_440.0_500.0",
+      "source": {
+        "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
         "segment_idx": 11,
-        "start_time": 165.0,
-        "end_time": 195.0,
-        "timestamp": "165.0s-195.0s"
+        "start_time": 440.0,
+        "end_time": 500.0,
+        "timestamp": "440.0s-500.0s"
       },
       "content": {
-        "text": "let's say if we combine that with the idea of courier taking one thing for one place to another what happens if we combine both of these ideas if we combine it we get the idea of word delivery now that's how humans take right they take one idea let me take another and mix it that's how human creativity likes I think we might have all learned in our schools at least I have that energy is not converted and all those kind of stuff I don't remember the whole thing but similarly a",
+        "text": "So Gemna not only dropped entire article, but also generated unique images for each section. So you can get everything ready all within one single platform. And these images look really nice. And of course, you can always use more detail prompting for these images. And you can just directly export to Google Doc for fine tuning or publishing. A bonus tip is you can just one click here to download all the images in generate. So this is super handy. Another last discussed free feature from Gemna is the gut learning. So this small is specifically designed for creating structure, personalized learning journey. So you can ask any learning question to Gemna. And it would give you step by step guidance. So like this example, I asked Gemna to explain the concept of record mean. So instead of just delivering answers, Gemna asked me open and question and guide me through each step of the problem. And you can see it adapts the answer based on my response. And this strengthening your memory by forcing you to think more deeply, instead of just passively accepting the answers.",
         "span_start": 0,
-        "span_end": 480,
-        "span_text": "let's say if we combine that with the idea of courier taking one thing for one place to another what happens if we combine both of these ideas if we combine it we get the idea of word delivery now that's how humans take right they take one idea let me take another and mix it that's how human creativity likes I think we might have all learned in our schools at least I have that energy is not converted and all those kind of stuff I don't remember the whole thing but similarly a"
+        "span_end": 1078,
+        "span_text": "So Gemna not only dropped entire article, but also generated unique images for each section. So you can get everything ready all within one single platform. And these images look really nice. And of course, you can always use more detail prompting for these images. And you can just directly export to Google Doc for fine tuning or publishing. A bonus tip is you can just one click here to download all the images in generate. So this is super handy. Another last discussed free feature from Gemna is the gut learning. So this small is specifically designed for creating structure, personalized learning journey. So you can ask any learning question to Gemna. And it would give you step by step guidance. So like this example, I asked Gemna to explain the concept of record mean. So instead of just delivering answers, Gemna asked me open and question and guide me through each step of the problem. And you can see it adapts the answer based on my response. And this strengthening your memory by forcing you to think more deeply, instead of just passively accepting the answers."
       },
       "metadata": {
-        "relevance_score": 0.08770114928483963,
-        "created_at": "2025-09-30T15:48:10.575005",
-        "confidence": 0.08770114928483963
+        "relevance_score": 0.057169776409864426,
+        "created_at": "2025-10-02T12:08:02.827433",
+        "confidence": 0.057169776409864426
       }
     },
-    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_11_165.0_195.0",
+    "source_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_11_440.0_500.0",
     "spans": {
       "start": 0,
-      "end": 480,
-      "text": "let's say if we combine that with the idea of courier taking one thing for one place to another what happens if we combine both of these ideas if we combine it we get the idea of word delivery now that's how humans take right they take one idea let me take another and mix it that's how human creativity likes I think we might have all learned in our schools at least I have that energy is not converted and all those kind of stuff I don't remember the whole thing but similarly a"
+      "end": 1078,
+      "text": "So Gemna not only dropped entire article, but also generated unique images for each section. So you can get everything ready all within one single platform. And these images look really nice. And of course, you can always use more detail prompting for these images. And you can just directly export to Google Doc for fine tuning or publishing. A bonus tip is you can just one click here to download all the images in generate. So this is super handy. Another last discussed free feature from Gemna is the gut learning. So this small is specifically designed for creating structure, personalized learning journey. So you can ask any learning question to Gemna. And it would give you step by step guidance. So like this example, I asked Gemna to explain the concept of record mean. So instead of just delivering answers, Gemna asked me open and question and guide me through each step of the problem. And you can see it adapts the answer based on my response. And this strengthening your memory by forcing you to think more deeply, instead of just passively accepting the answers."
     }
   },
   {
-    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
-    "t_start": 405.0,
-    "t_end": 435.0,
-    "start_time": "06:45",
-    "end_time": "07:15",
-    "title": "Segment 28 (06:45-07:15)",
-    "snippet": "another video that will force your game in nightmares right this method we all know him he's the great actor right so both look unrealistic but at least this is better this is better better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully",
-    "score": 0.06319109350442886,
+    "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+    "video_file": "2aHIb2vrkuQ?si=rgkguGnNB-hGuzET",
+    "t_start": 560.0,
+    "t_end": 620.0,
+    "start_time": "09:20",
+    "end_time": "10:20",
+    "title": "Segment 15 (09:20-10:20)",
+    "snippet": "meta pose, you can just paste them in this gem and it will revise or copy output to match your brand voice. So think about other recurring tasks that you need to do often and set up different jam and it will save you loss of time. And in case you don't know, there are different free make jam by Google as well. Like the story book jam, it allows you to create and customize a picture book. It sounds like it's just for kids. But this is fantastic for turning complex information into a memorable story. So for example, we have this super lengthy content about data privacy that we need to share to the internal team. So we can just give the content and even the character. The tongue avoids document if you prefer and then I'll just turn on to create a short and simple story for the team. So the generated story book is pretty nice and you can see it is based on the data privacy document that we give to generate this story and you can even play it allowed. Meet Donnie, a delightful robot who loved exploring the vast digital world. So this is great if you need to do different internal training, sharing and you want",
+    "score": 0.053191687911748886,
     "citation": {
-      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_27_405.0_435.0",
+      "citation_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_14_560.0_620.0",
       "source": {
-        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-        "segment_idx": 27,
-        "start_time": 405.0,
-        "end_time": 435.0,
-        "timestamp": "405.0s-435.0s"
-      },
-      "content": {
-        "text": "another video that will force your game in nightmares right this method we all know him he's the great actor right so both look unrealistic but at least this is better this is better better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully",
-        "span_start": 0,
-        "span_end": 459,
-        "span_text": "another video that will force your game in nightmares right this method we all know him he's the great actor right so both look unrealistic but at least this is better this is better better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully"
-      },
-      "metadata": {
-        "relevance_score": 0.06319109350442886,
-        "created_at": "2025-09-30T15:48:10.575013",
-        "confidence": 0.06319109350442886
-      }
-    },
-    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_27_405.0_435.0",
-    "spans": {
-      "start": 0,
-      "end": 459,
-      "text": "another video that will force your game in nightmares right this method we all know him he's the great actor right so both look unrealistic but at least this is better this is better better right so that is the specialty about AI videos but now you can't say it is kind of real but also you will know when it is fake kind of people are really near will know this but people are not will not know this okay so is this AI generated check this out look carefully"
-    }
-  },
-  {
-    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
-    "t_start": 435.0,
-    "t_end": 465.0,
-    "start_time": "07:15",
-    "end_time": "07:45",
-    "title": "Segment 30 (07:15-07:45)",
-    "snippet": "not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details well this is the AI generated see if it it like confuses you that's the great part even one person said lower right that's crazy that people believe this is the AI generated I'll show a small trick okay so you will really focus on the video this looks pretty real but camera movement",
-    "score": 0.08676104247570038,
-    "citation": {
-      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_29_435.0_465.0",
-      "source": {
-        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-        "segment_idx": 29,
-        "start_time": 435.0,
-        "end_time": 465.0,
-        "timestamp": "435.0s-465.0s"
-      },
-      "content": {
-        "text": "not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details well this is the AI generated see if it it like confuses you that's the great part even one person said lower right that's crazy that people believe this is the AI generated I'll show a small trick okay so you will really focus on the video this looks pretty real but camera movement",
-        "span_start": 0,
-        "span_end": 468,
-        "span_text": "not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details well this is the AI generated see if it it like confuses you that's the great part even one person said lower right that's crazy that people believe this is the AI generated I'll show a small trick okay so you will really focus on the video this looks pretty real but camera movement"
-      },
-      "metadata": {
-        "relevance_score": 0.08676104247570038,
-        "created_at": "2025-09-30T15:48:10.575021",
-        "confidence": 0.08676104247570038
-      }
-    },
-    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_29_435.0_465.0",
-    "spans": {
-      "start": 0,
-      "end": 468,
-      "text": "not will not know this okay so is this AI generated check this out look carefully and I want you to go look at this really carefully that same okay look at the face look at the details well this is the AI generated see if it it like confuses you that's the great part even one person said lower right that's crazy that people believe this is the AI generated I'll show a small trick okay so you will really focus on the video this looks pretty real but camera movement"
-    }
-  },
-  {
-    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
-    "t_start": 210.0,
-    "t_end": 240.0,
-    "start_time": "03:30",
-    "end_time": "04:00",
-    "title": "Segment 15 (03:30-04:00)",
-    "snippet": "from the time we are a child we learn from that and create a new idea okay so that is how humans think okay now this is how AI things okay let's combine the idea of avocado everyone has avocado right what happens if we combine the idea of avocado and a chair avocado chair and guess what this picture that you see on the screen right now is the AI generating is avocado chair real no right part when the help of AI it can create new pictures let's take the idea of a dog in space it",
-    "score": 0.08704452216625214,
-    "citation": {
-      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_14_210.0_240.0",
-      "source": {
-        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
+        "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
         "segment_idx": 14,
-        "start_time": 210.0,
-        "end_time": 240.0,
-        "timestamp": "210.0s-240.0s"
+        "start_time": 560.0,
+        "end_time": 620.0,
+        "timestamp": "560.0s-620.0s"
       },
       "content": {
-        "text": "from the time we are a child we learn from that and create a new idea okay so that is how humans think okay now this is how AI things okay let's combine the idea of avocado everyone has avocado right what happens if we combine the idea of avocado and a chair avocado chair and guess what this picture that you see on the screen right now is the AI generating is avocado chair real no right part when the help of AI it can create new pictures let's take the idea of a dog in space it",
+        "text": "meta pose, you can just paste them in this gem and it will revise or copy output to match your brand voice. So think about other recurring tasks that you need to do often and set up different jam and it will save you loss of time. And in case you don't know, there are different free make jam by Google as well. Like the story book jam, it allows you to create and customize a picture book. It sounds like it's just for kids. But this is fantastic for turning complex information into a memorable story. So for example, we have this super lengthy content about data privacy that we need to share to the internal team. So we can just give the content and even the character. The tongue avoids document if you prefer and then I'll just turn on to create a short and simple story for the team. So the generated story book is pretty nice and you can see it is based on the data privacy document that we give to generate this story and you can even play it allowed. Meet Donnie, a delightful robot who loved exploring the vast digital world. So this is great if you need to do different internal training, sharing and you want",
         "span_start": 0,
-        "span_end": 482,
-        "span_text": "from the time we are a child we learn from that and create a new idea okay so that is how humans think okay now this is how AI things okay let's combine the idea of avocado everyone has avocado right what happens if we combine the idea of avocado and a chair avocado chair and guess what this picture that you see on the screen right now is the AI generating is avocado chair real no right part when the help of AI it can create new pictures let's take the idea of a dog in space it"
+        "span_end": 1121,
+        "span_text": "meta pose, you can just paste them in this gem and it will revise or copy output to match your brand voice. So think about other recurring tasks that you need to do often and set up different jam and it will save you loss of time. And in case you don't know, there are different free make jam by Google as well. Like the story book jam, it allows you to create and customize a picture book. It sounds like it's just for kids. But this is fantastic for turning complex information into a memorable story. So for example, we have this super lengthy content about data privacy that we need to share to the internal team. So we can just give the content and even the character. The tongue avoids document if you prefer and then I'll just turn on to create a short and simple story for the team. So the generated story book is pretty nice and you can see it is based on the data privacy document that we give to generate this story and you can even play it allowed. Meet Donnie, a delightful robot who loved exploring the vast digital world. So this is great if you need to do different internal training, sharing and you want"
       },
       "metadata": {
-        "relevance_score": 0.08704452216625214,
-        "created_at": "2025-09-30T15:48:10.575029",
-        "confidence": 0.08704452216625214
+        "relevance_score": 0.053191687911748886,
+        "created_at": "2025-10-02T12:08:02.827487",
+        "confidence": 0.053191687911748886
       }
     },
-    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_14_210.0_240.0",
+    "source_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_14_560.0_620.0",
     "spans": {
       "start": 0,
-      "end": 482,
-      "text": "from the time we are a child we learn from that and create a new idea okay so that is how humans think okay now this is how AI things okay let's combine the idea of avocado everyone has avocado right what happens if we combine the idea of avocado and a chair avocado chair and guess what this picture that you see on the screen right now is the AI generating is avocado chair real no right part when the help of AI it can create new pictures let's take the idea of a dog in space it"
+      "end": 1121,
+      "text": "meta pose, you can just paste them in this gem and it will revise or copy output to match your brand voice. So think about other recurring tasks that you need to do often and set up different jam and it will save you loss of time. And in case you don't know, there are different free make jam by Google as well. Like the story book jam, it allows you to create and customize a picture book. It sounds like it's just for kids. But this is fantastic for turning complex information into a memorable story. So for example, we have this super lengthy content about data privacy that we need to share to the internal team. So we can just give the content and even the character. The tongue avoids document if you prefer and then I'll just turn on to create a short and simple story for the team. So the generated story book is pretty nice and you can see it is based on the data privacy document that we give to generate this story and you can even play it allowed. Meet Donnie, a delightful robot who loved exploring the vast digital world. So this is great if you need to do different internal training, sharing and you want"
     }
   },
   {
-    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
-    "t_start": 345.0,
-    "t_end": 375.0,
-    "start_time": "05:45",
-    "end_time": "06:15",
-    "title": "Segment 24 (05:45-06:15)",
-    "snippet": "want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right even though the text is clear lot of stuff they see AI can generate messy pictures AI pictures can be super realistic nowadays so the thing is that AI really smart right so pictures is got we can't trust anything on social media right now I could see I'm the prime minister of India",
-    "score": 0.097342349588871,
+    "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+    "video_file": "2aHIb2vrkuQ?si=rgkguGnNB-hGuzET",
+    "t_start": 640.0,
+    "t_end": 700.0,
+    "start_time": "10:40",
+    "end_time": "11:40",
+    "title": "Segment 17 (10:40-11:40)",
+    "snippet": "A bonus tip is to use to promote all data analysis tasks with its advanced reasoning. But just be mindful that for the free plan you have a limited usage for the promo tool and also the context of when a size. And then you can start asking different business questions like the best selling products, business hours for sales and you can even answer to create an interactive dashboard for these data sets. A bonus tip for you is to pay these data set data directly into the prompt instead of uploading the file. And this makes sure it will not hallucinate and make up the data when generating the dashboard. So immediately you have a beautiful design, fully functional dashboard with filters for your reporting purposes. There are so many different things Gemina can build for you. So another useful way is to build a neat manner prototype. So perhaps you want to create a fun, engaging online quest to embed on your website. You can just be paired with quest content, with quest and answers. And then just give it to Gemina and ask it to build this interactive tool and just like",
+    "score": 0.04875025898218155,
     "citation": {
-      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_23_345.0_375.0",
+      "citation_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_16_640.0_700.0",
       "source": {
-        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-        "segment_idx": 23,
-        "start_time": 345.0,
-        "end_time": 375.0,
-        "timestamp": "345.0s-375.0s"
+        "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+        "segment_idx": 16,
+        "start_time": 640.0,
+        "end_time": 700.0,
+        "timestamp": "640.0s-700.0s"
       },
       "content": {
-        "text": "want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right even though the text is clear lot of stuff they see AI can generate messy pictures AI pictures can be super realistic nowadays so the thing is that AI really smart right so pictures is got we can't trust anything on social media right now I could see I'm the prime minister of India",
+        "text": "A bonus tip is to use to promote all data analysis tasks with its advanced reasoning. But just be mindful that for the free plan you have a limited usage for the promo tool and also the context of when a size. And then you can start asking different business questions like the best selling products, business hours for sales and you can even answer to create an interactive dashboard for these data sets. A bonus tip for you is to pay these data set data directly into the prompt instead of uploading the file. And this makes sure it will not hallucinate and make up the data when generating the dashboard. So immediately you have a beautiful design, fully functional dashboard with filters for your reporting purposes. There are so many different things Gemina can build for you. So another useful way is to build a neat manner prototype. So perhaps you want to create a fun, engaging online quest to embed on your website. You can just be paired with quest content, with quest and answers. And then just give it to Gemina and ask it to build this interactive tool and just like",
         "span_start": 0,
-        "span_end": 479,
-        "span_text": "want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right even though the text is clear lot of stuff they see AI can generate messy pictures AI pictures can be super realistic nowadays so the thing is that AI really smart right so pictures is got we can't trust anything on social media right now I could see I'm the prime minister of India"
+        "span_end": 1080,
+        "span_text": "A bonus tip is to use to promote all data analysis tasks with its advanced reasoning. But just be mindful that for the free plan you have a limited usage for the promo tool and also the context of when a size. And then you can start asking different business questions like the best selling products, business hours for sales and you can even answer to create an interactive dashboard for these data sets. A bonus tip for you is to pay these data set data directly into the prompt instead of uploading the file. And this makes sure it will not hallucinate and make up the data when generating the dashboard. So immediately you have a beautiful design, fully functional dashboard with filters for your reporting purposes. There are so many different things Gemina can build for you. So another useful way is to build a neat manner prototype. So perhaps you want to create a fun, engaging online quest to embed on your website. You can just be paired with quest content, with quest and answers. And then just give it to Gemina and ask it to build this interactive tool and just like"
       },
       "metadata": {
-        "relevance_score": 0.097342349588871,
-        "created_at": "2025-09-30T15:48:10.575035",
-        "confidence": 0.097342349588871
+        "relevance_score": 0.04875025898218155,
+        "created_at": "2025-10-02T12:08:02.827504",
+        "confidence": 0.04875025898218155
       }
     },
-    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_23_345.0_375.0",
+    "source_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_16_640.0_700.0",
     "spans": {
       "start": 0,
-      "end": 479,
-      "text": "want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right even though the text is clear lot of stuff they see AI can generate messy pictures AI pictures can be super realistic nowadays so the thing is that AI really smart right so pictures is got we can't trust anything on social media right now I could see I'm the prime minister of India"
+      "end": 1080,
+      "text": "A bonus tip is to use to promote all data analysis tasks with its advanced reasoning. But just be mindful that for the free plan you have a limited usage for the promo tool and also the context of when a size. And then you can start asking different business questions like the best selling products, business hours for sales and you can even answer to create an interactive dashboard for these data sets. A bonus tip for you is to pay these data set data directly into the prompt instead of uploading the file. And this makes sure it will not hallucinate and make up the data when generating the dashboard. So immediately you have a beautiful design, fully functional dashboard with filters for your reporting purposes. There are so many different things Gemina can build for you. So another useful way is to build a neat manner prototype. So perhaps you want to create a fun, engaging online quest to embed on your website. You can just be paired with quest content, with quest and answers. And then just give it to Gemina and ask it to build this interactive tool and just like"
     }
   },
   {
-    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
-    "t_start": 465.0,
-    "t_end": 495.0,
-    "start_time": "07:45",
-    "end_time": "08:15",
-    "title": "Segment 32 (07:45-08:15)",
-    "snippet": "a small trick okay so you will really focus on the video this looks pretty real but camera movement still we can still notice it but here's a small trick that no one will notice okay I bet none of you did okay check at this side okay can you guys see a small spelling mistake here see the yellow text that is not that is because it's AI generated it's some language actually we don't use it in so this scribble lot of words and all because it's AI generated they can't do text good yet",
-    "score": 0.15510405600070953,
+    "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+    "video_file": "2aHIb2vrkuQ?si=rgkguGnNB-hGuzET",
+    "t_start": 1040.0,
+    "t_end": 1100.0,
+    "start_time": "17:20",
+    "end_time": "18:20",
+    "title": "Segment 27 (17:20-18:20)",
+    "snippet": "I like to know more about the delivery time and maybe somewhere pictures of the chair in different settings. So you can hear that this is an absolute pavo use case and not only U.S. may be feedback about your learning page copy, your life presentation, real time code review, so many ways you can use it. Alright, let's talk about the BOLAM. Probably one of the best Gigo Air products I've ever used and is a completely free note taking and research tool to free plan allows you to import up to 50 sources per notebook. So first is for competitor intelligence and this is one of my favorite use case as a market app. So perhaps I want to understand what are the target customer profiles for my competitor. And then by using the search operator, I can scrape a list of search results together with your else for the customer case studies and then I can just copy these list of your else and bulk import to Nipple L.M. Using is website URL in for features and this is a huge time saver and you no longer need to import your L one by one. And you can then generate different kinds of notes like a my map, breathing document,",
+    "score": 0.058815427124500275,
     "citation": {
-      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_31_465.0_495.0",
+      "citation_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_26_1040.0_1100.0",
       "source": {
-        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-        "segment_idx": 31,
-        "start_time": 465.0,
-        "end_time": 495.0,
-        "timestamp": "465.0s-495.0s"
+        "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+        "segment_idx": 26,
+        "start_time": 1040.0,
+        "end_time": 1100.0,
+        "timestamp": "1040.0s-1100.0s"
       },
       "content": {
-        "text": "a small trick okay so you will really focus on the video this looks pretty real but camera movement still we can still notice it but here's a small trick that no one will notice okay I bet none of you did okay check at this side okay can you guys see a small spelling mistake here see the yellow text that is not that is because it's AI generated it's some language actually we don't use it in so this scribble lot of words and all because it's AI generated they can't do text good yet",
+        "text": "I like to know more about the delivery time and maybe somewhere pictures of the chair in different settings. So you can hear that this is an absolute pavo use case and not only U.S. may be feedback about your learning page copy, your life presentation, real time code review, so many ways you can use it. Alright, let's talk about the BOLAM. Probably one of the best Gigo Air products I've ever used and is a completely free note taking and research tool to free plan allows you to import up to 50 sources per notebook. So first is for competitor intelligence and this is one of my favorite use case as a market app. So perhaps I want to understand what are the target customer profiles for my competitor. And then by using the search operator, I can scrape a list of search results together with your else for the customer case studies and then I can just copy these list of your else and bulk import to Nipple L.M. Using is website URL in for features and this is a huge time saver and you no longer need to import your L one by one. And you can then generate different kinds of notes like a my map, breathing document,",
         "span_start": 0,
-        "span_end": 485,
-        "span_text": "a small trick okay so you will really focus on the video this looks pretty real but camera movement still we can still notice it but here's a small trick that no one will notice okay I bet none of you did okay check at this side okay can you guys see a small spelling mistake here see the yellow text that is not that is because it's AI generated it's some language actually we don't use it in so this scribble lot of words and all because it's AI generated they can't do text good yet"
+        "span_end": 1121,
+        "span_text": "I like to know more about the delivery time and maybe somewhere pictures of the chair in different settings. So you can hear that this is an absolute pavo use case and not only U.S. may be feedback about your learning page copy, your life presentation, real time code review, so many ways you can use it. Alright, let's talk about the BOLAM. Probably one of the best Gigo Air products I've ever used and is a completely free note taking and research tool to free plan allows you to import up to 50 sources per notebook. So first is for competitor intelligence and this is one of my favorite use case as a market app. So perhaps I want to understand what are the target customer profiles for my competitor. And then by using the search operator, I can scrape a list of search results together with your else for the customer case studies and then I can just copy these list of your else and bulk import to Nipple L.M. Using is website URL in for features and this is a huge time saver and you no longer need to import your L one by one. And you can then generate different kinds of notes like a my map, breathing document,"
       },
       "metadata": {
-        "relevance_score": 0.15510405600070953,
-        "created_at": "2025-09-30T15:48:10.575042",
-        "confidence": 0.15510405600070953
+        "relevance_score": 0.058815427124500275,
+        "created_at": "2025-10-02T12:08:02.827513",
+        "confidence": 0.058815427124500275
       }
     },
-    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_31_465.0_495.0",
+    "source_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_26_1040.0_1100.0",
     "spans": {
       "start": 0,
-      "end": 485,
-      "text": "a small trick okay so you will really focus on the video this looks pretty real but camera movement still we can still notice it but here's a small trick that no one will notice okay I bet none of you did okay check at this side okay can you guys see a small spelling mistake here see the yellow text that is not that is because it's AI generated it's some language actually we don't use it in so this scribble lot of words and all because it's AI generated they can't do text good yet"
+      "end": 1121,
+      "text": "I like to know more about the delivery time and maybe somewhere pictures of the chair in different settings. So you can hear that this is an absolute pavo use case and not only U.S. may be feedback about your learning page copy, your life presentation, real time code review, so many ways you can use it. Alright, let's talk about the BOLAM. Probably one of the best Gigo Air products I've ever used and is a completely free note taking and research tool to free plan allows you to import up to 50 sources per notebook. So first is for competitor intelligence and this is one of my favorite use case as a market app. So perhaps I want to understand what are the target customer profiles for my competitor. And then by using the search operator, I can scrape a list of search results together with your else for the customer case studies and then I can just copy these list of your else and bulk import to Nipple L.M. Using is website URL in for features and this is a huge time saver and you no longer need to import your L one by one. And you can then generate different kinds of notes like a my map, breathing document,"
     }
   },
   {
-    "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-    "video_file": "DI2gyY8WxSg?si=a1cYdNSPZDaccmbK",
-    "t_start": 330.0,
-    "t_end": 360.0,
-    "start_time": "05:30",
-    "end_time": "06:00",
-    "title": "Segment 23 (05:30-06:00)",
-    "snippet": "in the same way but what is different the number of data in it now I'm going to show you three pictures right we are still going to ask you questions carry way scarce is the first picture so this picture is an AI generated is this picture AI generated or is this picture AI generated so we want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right",
-    "score": 0.06458581984043121,
+    "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+    "video_file": "2aHIb2vrkuQ?si=rgkguGnNB-hGuzET",
+    "t_start": 1080.0,
+    "t_end": 1140.0,
+    "start_time": "18:00",
+    "end_time": "19:00",
+    "title": "Segment 28 (18:00-19:00)",
+    "snippet": "And then by using the search operator, I can scrape a list of search results together with your else for the customer case studies and then I can just copy these list of your else and bulk import to Nipple L.M. Using is website URL in for features and this is a huge time saver and you no longer need to import your L one by one. And you can then generate different kinds of notes like a my map, breathing document, study guide, all using the building functions. And then you can ask for the three most common target audience profiles and then it would give you the key target audience positioning message. And you can even follow up about any underserved audience segment that you could target. And this would give you lots of organized insights for your strategy. And if you stock about what source to import that discovery new source features is a game changer. So you can just click the discover and then describe anything about your subject and formats. It can be text talks, expert keynote videos, industry reports, white paper, anything. So just type in the prom and it will prioritize our 30 source which are ready to import.",
+    "score": 0.05575807765126228,
     "citation": {
-      "citation_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_22_330.0_360.0",
+      "citation_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_27_1080.0_1140.0",
       "source": {
-        "video_id": "b98555bf-8df1-44fe-91d8-f46dde2801a6",
-        "segment_idx": 22,
-        "start_time": 330.0,
-        "end_time": 360.0,
-        "timestamp": "330.0s-360.0s"
+        "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+        "segment_idx": 27,
+        "start_time": 1080.0,
+        "end_time": 1140.0,
+        "timestamp": "1080.0s-1140.0s"
       },
       "content": {
-        "text": "in the same way but what is different the number of data in it now I'm going to show you three pictures right we are still going to ask you questions carry way scarce is the first picture so this picture is an AI generated is this picture AI generated or is this picture AI generated so we want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right",
+        "text": "And then by using the search operator, I can scrape a list of search results together with your else for the customer case studies and then I can just copy these list of your else and bulk import to Nipple L.M. Using is website URL in for features and this is a huge time saver and you no longer need to import your L one by one. And you can then generate different kinds of notes like a my map, breathing document, study guide, all using the building functions. And then you can ask for the three most common target audience profiles and then it would give you the key target audience positioning message. And you can even follow up about any underserved audience segment that you could target. And this would give you lots of organized insights for your strategy. And if you stock about what source to import that discovery new source features is a game changer. So you can just click the discover and then describe anything about your subject and formats. It can be text talks, expert keynote videos, industry reports, white paper, anything. So just type in the prom and it will prioritize our 30 source which are ready to import.",
         "span_start": 0,
-        "span_end": 486,
-        "span_text": "in the same way but what is different the number of data in it now I'm going to show you three pictures right we are still going to ask you questions carry way scarce is the first picture so this picture is an AI generated is this picture AI generated or is this picture AI generated so we want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right"
+        "span_end": 1133,
+        "span_text": "And then by using the search operator, I can scrape a list of search results together with your else for the customer case studies and then I can just copy these list of your else and bulk import to Nipple L.M. Using is website URL in for features and this is a huge time saver and you no longer need to import your L one by one. And you can then generate different kinds of notes like a my map, breathing document, study guide, all using the building functions. And then you can ask for the three most common target audience profiles and then it would give you the key target audience positioning message. And you can even follow up about any underserved audience segment that you could target. And this would give you lots of organized insights for your strategy. And if you stock about what source to import that discovery new source features is a game changer. So you can just click the discover and then describe anything about your subject and formats. It can be text talks, expert keynote videos, industry reports, white paper, anything. So just type in the prom and it will prioritize our 30 source which are ready to import."
       },
       "metadata": {
-        "relevance_score": 0.06458581984043121,
-        "created_at": "2025-09-30T15:48:10.575048",
-        "confidence": 0.06458581984043121
+        "relevance_score": 0.05575807765126228,
+        "created_at": "2025-10-02T12:08:02.827522",
+        "confidence": 0.05575807765126228
       }
     },
-    "source_id": "cite_b98555bf-8df1-44fe-91d8-f46dde2801a6_22_330.0_360.0",
+    "source_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_27_1080.0_1140.0",
     "spans": {
       "start": 0,
-      "end": 486,
-      "text": "in the same way but what is different the number of data in it now I'm going to show you three pictures right we are still going to ask you questions carry way scarce is the first picture so this picture is an AI generated is this picture AI generated or is this picture AI generated so we want to name this this one two and three right so one two and three one two and three so can you guys yes which is AI generated all of them are AI generated well let's see this man's face AI right"
+      "end": 1133,
+      "text": "And then by using the search operator, I can scrape a list of search results together with your else for the customer case studies and then I can just copy these list of your else and bulk import to Nipple L.M. Using is website URL in for features and this is a huge time saver and you no longer need to import your L one by one. And you can then generate different kinds of notes like a my map, breathing document, study guide, all using the building functions. And then you can ask for the three most common target audience profiles and then it would give you the key target audience positioning message. And you can even follow up about any underserved audience segment that you could target. And this would give you lots of organized insights for your strategy. And if you stock about what source to import that discovery new source features is a game changer. So you can just click the discover and then describe anything about your subject and formats. It can be text talks, expert keynote videos, industry reports, white paper, anything. So just type in the prom and it will prioritize our 30 source which are ready to import."
+    }
+  },
+  {
+    "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+    "video_file": "2aHIb2vrkuQ?si=rgkguGnNB-hGuzET",
+    "t_start": 1280.0,
+    "t_end": 1340.0,
+    "start_time": "21:20",
+    "end_time": "22:20",
+    "title": "Segment 33 (21:20-22:20)",
+    "snippet": "present point of view and focus on these core areas as part of a pitch. And you can even choose a different language. We've got a clear data driven plan and I want to walk you through exactly how we're going to be our market. And these absolutely blew my mind. The visuals are simple, but it tells the story exactly as I instruct them. It's really like someone is trying to pitch you the best plan for the company. And the best thing I like about is that it will use the information from an import source with the least amount of hallucination. A bonus tip is now you can re-import this pitch video and get the transcript and use them at the speaker note for crafting your internal pitch. And you can even use this free video generation for building cores or training materials. So perhaps you have different authority source about a subject. Like in this case, about problem solving and work. So you can just ask NuppoLM to design a cores curriculum with the module details. So it will design how to structure the cores and what modules topics to cover. And this is absolutely amazing.",
+    "score": 0.05886863172054291,
+    "citation": {
+      "citation_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_32_1280.0_1340.0",
+      "source": {
+        "video_id": "c23bff35-a543-4d63-8b23-c9d5b4b9c150",
+        "segment_idx": 32,
+        "start_time": 1280.0,
+        "end_time": 1340.0,
+        "timestamp": "1280.0s-1340.0s"
+      },
+      "content": {
+        "text": "present point of view and focus on these core areas as part of a pitch. And you can even choose a different language. We've got a clear data driven plan and I want to walk you through exactly how we're going to be our market. And these absolutely blew my mind. The visuals are simple, but it tells the story exactly as I instruct them. It's really like someone is trying to pitch you the best plan for the company. And the best thing I like about is that it will use the information from an import source with the least amount of hallucination. A bonus tip is now you can re-import this pitch video and get the transcript and use them at the speaker note for crafting your internal pitch. And you can even use this free video generation for building cores or training materials. So perhaps you have different authority source about a subject. Like in this case, about problem solving and work. So you can just ask NuppoLM to design a cores curriculum with the module details. So it will design how to structure the cores and what modules topics to cover. And this is absolutely amazing.",
+        "span_start": 0,
+        "span_end": 1086,
+        "span_text": "present point of view and focus on these core areas as part of a pitch. And you can even choose a different language. We've got a clear data driven plan and I want to walk you through exactly how we're going to be our market. And these absolutely blew my mind. The visuals are simple, but it tells the story exactly as I instruct them. It's really like someone is trying to pitch you the best plan for the company. And the best thing I like about is that it will use the information from an import source with the least amount of hallucination. A bonus tip is now you can re-import this pitch video and get the transcript and use them at the speaker note for crafting your internal pitch. And you can even use this free video generation for building cores or training materials. So perhaps you have different authority source about a subject. Like in this case, about problem solving and work. So you can just ask NuppoLM to design a cores curriculum with the module details. So it will design how to structure the cores and what modules topics to cover. And this is absolutely amazing."
+      },
+      "metadata": {
+        "relevance_score": 0.05886863172054291,
+        "created_at": "2025-10-02T12:08:02.827531",
+        "confidence": 0.05886863172054291
+      }
+    },
+    "source_id": "cite_c23bff35-a543-4d63-8b23-c9d5b4b9c150_32_1280.0_1340.0",
+    "spans": {
+      "start": 0,
+      "end": 1086,
+      "text": "present point of view and focus on these core areas as part of a pitch. And you can even choose a different language. We've got a clear data driven plan and I want to walk you through exactly how we're going to be our market. And these absolutely blew my mind. The visuals are simple, but it tells the story exactly as I instruct them. It's really like someone is trying to pitch you the best plan for the company. And the best thing I like about is that it will use the information from an import source with the least amount of hallucination. A bonus tip is now you can re-import this pitch video and get the transcript and use them at the speaker note for crafting your internal pitch. And you can even use this free video generation for building cores or training materials. So perhaps you have different authority source about a subject. Like in this case, about problem solving and work. So you can just ask NuppoLM to design a cores curriculum with the module details. So it will design how to structure the cores and what modules topics to cover. And this is absolutely amazing."
     }
   }
 ]

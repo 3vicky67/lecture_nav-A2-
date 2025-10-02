@@ -323,6 +323,43 @@ def home():
     return "🚀 Fast Video RAG API is running! Use /api/ingest_video and /api/search_timestamps endpoints."
 
 # ------------------ Fast API Endpoints ------------------ #
+@app.route("/api/transcript", methods=["GET"])
+def get_transcript():
+    """Return raw transcript segments for a given video_id.
+
+    Query params:
+      - video_id: required
+
+    Response JSON:
+      {
+        "video_id": str,
+        "filename": str | None,
+        "segments": [{"start": float, "end": float, "text": str}, ...]
+      }
+    """
+    video_id = request.args.get("video_id")
+    if not video_id:
+        return jsonify({"error": "video_id is required"}), 400
+
+    if video_id not in VIDEO_DB:
+        return jsonify({"error": f"Video ID {video_id} not found"}), 404
+
+    entry = VIDEO_DB[video_id]
+    segments = entry.get("segments", [])
+    # Try to derive a human-friendly filename from the source path/url
+    src = entry.get("path")
+    filename = None
+    try:
+        if isinstance(src, str):
+            filename = os.path.basename(src) or src
+    except Exception:
+        filename = None
+
+    return jsonify({
+        "video_id": video_id,
+        "filename": filename,
+        "segments": segments,
+    })
 @app.route("/api/ingest_video", methods=["POST"])
 def ingest_video():
     trace_id = uuid.uuid4().hex[:8]
